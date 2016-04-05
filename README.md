@@ -17,3 +17,11 @@ Test
 ----
 
 open a prompt in `test/` and run `python test.py`
+
+
+Problems
+--------
+
+There are some problems with overloaded C++ functions and I had to rename the 
+`BoardDetector::detect(const Mat&)` function to `BoardDetector::detect_mat(const Mat&)` respectively `aruco.BoardDetector.detect_mat()`. Maybe there are more 
+overloaded functions that cause these problems. Just open an Issue with the problem and I will take a look at it.
