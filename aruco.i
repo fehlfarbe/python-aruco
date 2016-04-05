@@ -9,6 +9,8 @@ Swig Module for ArUco Python wrapper
 
 // needed
 %include <std_string.i>
+%include "pyabc.i"
+%include "std_vector.i"
 
 %{
 	#define SWIG_FILE_WITH_INIT
@@ -37,8 +39,13 @@ ArUco stuff
 %include "aruco/exports.h"
 %include "aruco/cameraparameters.h"
 %include "aruco/marker.h"
+// Board is std::vector< aruco::Marker >, template definition 
+// needed for std::vector -> Python List conversion
+%template(MarkerVec) std::vector< aruco::Marker >;
 %include "aruco/board.h"
 %include "aruco/cvdrawingutils.h"
+
+
 
 
 // rename detect function because of polymorphism problems
@@ -74,11 +81,27 @@ class MarkerCandidate : public aruco::Marker {
 %}
 
 %include "aruco/markerdetector.h"
+// add detect function that returns the detected markers
+%extend aruco::MarkerDetector {
+
+	public:
+		std::vector< aruco::Marker > detect(const cv::Mat &input,
+										aruco::CameraParameters camParams,
+										float markerSizeMeters = -1,
+										bool setYPerperdicular = false) throw(cv::Exception)
+		{
+			std::vector< aruco::Marker > markers;
+			$self->detect(input, markers, camParams, markerSizeMeters, setYPerperdicular);
+	        return markers;
+		};
+}
+
+
 
 %{
-// SWIG thinks that Inner is a global class, so we need to trick the C++
-// compiler into understanding this so called global type.
-typedef aruco::MarkerDetector::MarkerCandidate MarkerCandidate;
+	// SWIG thinks that Inner is a global class, so we need to trick the C++
+	// compiler into understanding this so called global type.
+	typedef aruco::MarkerDetector::MarkerCandidate MarkerCandidate;
 %}
 
 %{

@@ -18,7 +18,8 @@ if __name__ == '__main__':
     detector = aruco.BoardDetector()
     detector.setParams(boardconfig, camparam)
     # set minimum marker size for detection
-    detector.getMarkerDetector().setMinMaxSize(0.01)
+    markerdetector = detector.getMarkerDetector()
+    markerdetector.setMinMaxSize(0.01)
     
     # load video
     cap = cv2.VideoCapture("example.mp4")
@@ -35,10 +36,12 @@ if __name__ == '__main__':
             # get board and draw it    
             board = detector.getDetectedBoard()
             board.draw(frame, np.array([255, 255, 255]), 2)
+
+            print "detected ids: ", ", ".join(str(m.id) for m in board)
             
         # show frame
         cv2.imshow("frame", frame)
-        cv2.waitKey(10)
+        cv2.waitKey(100)
         
         # read next frame
         ret, frame = cap.read()
