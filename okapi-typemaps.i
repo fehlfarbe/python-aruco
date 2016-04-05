@@ -102,7 +102,15 @@ import_array();
             return NULL;
         }
         
-		return new cv::Scalar(255, 255, 255);
+        // creates 4-element integer array ToDo: diff. convert data types
+        int size = array_size(array, 0);
+        int step = array->strides[0];
+        int data[4] = {0, 0, 0, 0};
+        for(size_t i=0, j=0; i<size*step; i+=step,j++){
+        	data[j] = (unsigned char)array_data(array)[i];
+        }
+
+		return new cv::Scalar(data[0], data[1], data[2], data[3]);
 	}
 
     cv::Mat* array_to_mat(PyObject* input)

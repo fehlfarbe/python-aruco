@@ -1,5 +1,6 @@
 # python-aruco
-[SWIG](http://www.swig.org/) generated Python wrappers for ArUco library
+[SWIG](http://www.swig.org/) generated Python wrappers for ArUco library.
+Works with OpenCV Python module cv2 resp. numpy array data types.
 
 Tested on Linux Mint 14.1 x86_64, OpenCV 3.1.0, ArUco 1.3.0, Python 2.7.6 and NumPy 1.10.4
 

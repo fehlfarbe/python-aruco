@@ -44,7 +44,6 @@ ArUco stuff
 // rename detect function because of polymorphism problems
 %rename("detect_mat") aruco::BoardDetector::detect(const cv::Mat&);
 
-
 // some stuff to support nested class MarkerCandidate in boarddetector.h
 
 // Suppress SWIG warning
