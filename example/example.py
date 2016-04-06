@@ -32,6 +32,8 @@ if __name__ == '__main__':
     while ret:
         likelihood = detector.detect_mat(frame)
         
+        markers = markerdetector.detect(frame, camparam)
+        
         if likelihood > 0.1:
             # get board and draw it    
             board = detector.getDetectedBoard()

@@ -94,6 +94,8 @@ import_array();
     }
 %#endif
 
+	
+
 	cv::Scalar* array_to_scalar(PyObject* input)
 	{
 		PyArrayObject* array = obj_to_array_no_conversion(input, NPY_NOTYPE);
@@ -188,6 +190,18 @@ import_array();
             flags |= NPY_C_CONTIGUOUS;
         PyObject* array = PyArray_New(&PyArray_Type, ndims, dims, type, 
                                       strides, mat.data, 0, flags, NULL);
+        return array;
+    }
+    
+    PyObject* point2f_to_array(cv::Point2f* point)
+    {
+        npy_intp dims = 2;
+        npy_intp strides[1] = { 1 };
+        int flags = NPY_WRITEABLE;
+        float *data = new float[2];
+        data[0] = point->x;
+        data[1] = point->y;
+        PyObject* array = PyArray_SimpleNewFromData(1, &dims, NPY_FLOAT, data);
         return array;
     }
 
@@ -533,18 +547,17 @@ import_array();
         SWIG_fail;
 }
 
+///////////////////////////////////////
+/// return cv::Point2f *
+///////////////////////////////////////
 
-/*
-%typemap(freearg,
-         fragment="OKAPI_Fragments")
-   cv::Scalar
+%typemap(out,
+         fragment="OKAPI_Fragments") 
+cv::Point2f
 {
-    if ($1 != NULL)
-        delete $1;
+    PyObject* array = point2f_to_array(&$1);
+    if (array == NULL)
+        SWIG_fail;
+
+    $result = array;
 }
-%typemap(argout,
-         fragment="OKAPI_Fragments")
-   cv::Scalar
-{
-}
-*/
