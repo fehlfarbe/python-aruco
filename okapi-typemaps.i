@@ -114,6 +114,25 @@ import_array();
 
 		return new cv::Scalar(data[0], data[1], data[2], data[3]);
 	}
+	
+	cv::Size* array_to_size(PyObject* input)
+    {
+        PyArrayObject* array = obj_to_array_no_conversion(input, NPY_NOTYPE);
+        if (array == NULL) {
+            // error message is set by obj_to_array_no_conversion
+            return NULL;
+        }
+        
+        // creates 4-element integer array ToDo: diff. convert data types
+        int size = array_size(array, 0);
+        int step = array->strides[0];
+        int data[4] = {0, 0, 0, 0};
+        for(size_t i=0, j=0; i<size*step; i+=step,j++){
+            data[j] = (unsigned char)array_data(array)[i];
+        }
+
+        return new cv::Size(data[0], data[1]);
+    }
 
     cv::Mat* array_to_mat(PyObject* input)
     {
@@ -543,6 +562,27 @@ import_array();
    cv::Scalar
 {
     $1 = *array_to_scalar($input);
+    if (&$1 == NULL)
+        SWIG_fail;
+}
+
+///////////////////////////////////////
+/// const cv::Size
+///////////////////////////////////////
+
+%typecheck(SWIG_TYPECHECK_POINTER,
+        fragment="OKAPI_Fragments")
+   cv::Size
+{
+    $1 = is_array($input) || PySequence_Check($input);
+}
+
+
+%typemap(in, numinputs=1,
+         fragment="OKAPI_Fragments")
+   cv::Size
+{
+    $1 = *array_to_size($input);
     if (&$1 == NULL)
         SWIG_fail;
 }

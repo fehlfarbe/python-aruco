@@ -17,7 +17,7 @@ Installation
 Test
 ----
 
-open a prompt in `test/` and run `python test.py`
+open a prompt in `example/` and run `python example.py`
 
 
 Problems
