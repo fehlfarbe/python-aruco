@@ -3,6 +3,7 @@ Created on 05.04.2016
 
 @author: fehlfarbe
 '''
+import sys
 import cv2
 import numpy as np
 import aruco
@@ -22,12 +23,12 @@ if __name__ == '__main__':
     markerdetector.setMinMaxSize(0.01)
     
     # load video
-    cap = cv2.VideoCapture("example.mp4")
+    cap = cv2.VideoCapture('example.mp4')
     ret, frame = cap.read()
     
     if not ret:
         print "can't open video!"
-        exit(-1)
+        sys.exit(-1)
     
     while ret:
         likelihood = detector.detect_mat(frame)
@@ -39,6 +40,11 @@ if __name__ == '__main__':
             board = detector.getDetectedBoard()
             board.draw(frame, np.array([255, 255, 255]), 2)
 
+            for marker in board:
+                print "cornerpoints for marker %d:" % marker.id
+                for i, point in enumerate(marker):
+                    print i, point
+
             print "detected ids: ", ", ".join(str(m.id) for m in board)
             
         # show frame
@@ -47,4 +53,3 @@ if __name__ == '__main__':
         
         # read next frame
         ret, frame = cap.read()
-        

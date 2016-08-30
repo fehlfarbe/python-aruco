@@ -11,7 +11,7 @@ sourcefiles = ['aruco_wrap.cxx', 'aruco/ar_omp.cpp', 'aruco/arucofidmarkers.cpp'
 aruco_module = Extension('_aruco',
                            sources=sourcefiles,
                            language="c++",
-                            include_dirs = ["/usr/include/opencv"],
+                            include_dirs = ["/usr/local/include/opencv2"],
                             libraries = ["opencv_core", "opencv_imgproc", "opencv_calib3d", "opencv_highgui", "aruco"],
                             library_dirs = ["/usr/local/lib"])
 
