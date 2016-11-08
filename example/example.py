@@ -21,13 +21,13 @@ if __name__ == '__main__':
     # set minimum marker size for detection
     markerdetector = detector.getMarkerDetector()
     markerdetector.setMinMaxSize(0.01)
-    
+
     # load video
     cap = cv2.VideoCapture('example.mp4')
     ret, frame = cap.read()
     
     if not ret:
-        print "can't open video!"
+        print("can't open video!")
         sys.exit(-1)
     
     while ret:
@@ -41,11 +41,16 @@ if __name__ == '__main__':
             board.draw(frame, np.array([255, 255, 255]), 2)
 
             for marker in board:
-                print "cornerpoints for marker %d:" % marker.id
+                print("cornerpoints for marker {:d}:".format(marker.id))
                 for i, point in enumerate(marker):
-                    print i, point
+                    print("\t{:d} {}".format(i, str(point)))
+                # calculate marker extrinsics for marker size of 3.5cm
+                marker.calculateExtrinsics(0.035, camparam)
+                print("Marker extrinsics:")
+                print(marker.Tvec)
+                print(marker.Rvec)
 
-            print "detected ids: ", ", ".join(str(m.id) for m in board)
+            print("detected ids: {}".format(", ".join(str(m.id) for m in board)))
             
         # show frame
         cv2.imshow("frame", frame)
