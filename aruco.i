@@ -16,6 +16,11 @@ Swig Module for ArUco Python wrapper
 	#define SWIG_FILE_WITH_INIT
 %}
 
+namespace std {
+    // for  vector<int> to Python list conversion
+    %template(VectorInt) vector<int>;
+};
+
 // NumPy <--> OpenCV typemaps
 %include "okapi-typemaps.i"
 
@@ -77,6 +82,16 @@ class VectorIterator(object):
         return VectorIterator(self)
    }
 }
+
+%extend aruco::BoardConfiguration {
+	public:
+        vector<int> getIdList() {
+            vector<int> list;
+            $self->getIdList(list);
+            return list;
+        }
+}
+
 
 // Board is std::vector< aruco::Marker >, template definition 
 // needed for std::vector -> Python List conversion

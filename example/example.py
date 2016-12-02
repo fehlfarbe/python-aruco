@@ -14,7 +14,7 @@ if __name__ == '__main__':
     boardconfig = aruco.BoardConfiguration("chessboardinfo_small_meters.yml")
     camparam = aruco.CameraParameters()
     camparam.readFromXMLFile("dfk72_6mm_param2.yml")
-    
+
     # create detector and set parameters
     detector = aruco.BoardDetector()
     detector.setParams(boardconfig, camparam)
@@ -51,7 +51,8 @@ if __name__ == '__main__':
                 print(marker.Rvec)
 
             print("detected ids: {}".format(", ".join(str(m.id) for m in board)))
-            
+
+
         # show frame
         cv2.imshow("frame", frame)
         cv2.waitKey(100)
