@@ -9,7 +9,7 @@ aruco_module = Extension('_aruco',
                            sources=sourcefiles,
                            language="c++",
                             extra_compile_args=["-std=c++11", "-Wall", "-fopenmp"],
-                            include_dirs = ["/usr/local/include/opencv2", "/usr/include/eigen3/"],
+                            include_dirs = ["/usr/local/include/opencv2", "/usr/include/eigen3/", "."],
                             libraries = ["opencv_core", "opencv_imgproc", "opencv_calib3d", "opencv_highgui", "aruco"],
                             library_dirs = ["/usr/local/lib"])
 

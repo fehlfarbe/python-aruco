@@ -1,0 +1,199 @@
+diff -Naurp aruco/cvdrawingutils.h aruco_mod/cvdrawingutils.h
+--- aruco/cvdrawingutils.h	2017-02-03 12:30:06.000000000 +0100
++++ aruco_mod/cvdrawingutils.h	2017-03-13 22:25:33.590398000 +0100
+@@ -35,12 +35,12 @@ namespace aruco {
+ class ARUCO_EXPORTS CvDrawingUtils {
+   public:
+ 
+-    static void draw3dAxis(cv::Mat &Image, const CameraParameters &CP, const cv::Mat &Rvec,const cv::Mat &Tvec,float axis_size );
++    static void draw3dAxis(cv::Mat &Image, const aruco::CameraParameters &CP, const cv::Mat &Rvec,const cv::Mat &Tvec,float axis_size );
+ 
+ 
+-    static void draw3dAxis(cv::Mat &Image, Marker &m, const CameraParameters &CP);
++    static void draw3dAxis(cv::Mat &Image, aruco::Marker &m, const CameraParameters &CP);
+ 
+-    static void draw3dCube(cv::Mat &Image, Marker &m, const CameraParameters &CP, bool setYperpendicular = false);
++    static void draw3dCube(cv::Mat &Image, aruco::Marker &m, const CameraParameters &CP, bool setYperpendicular = false);
+ 
+ //    static void draw3dAxis(cv::Mat &Image, MarkerMap &m, const CameraParameters &CP);
+ //    static void draw3dCube(cv::Mat &Image, MarkerMap &m, const CameraParameters &CP, bool setYperpendicular = false);
+diff -Naurp aruco/dictionary_based.h aruco_mod/dictionary_based.h
+--- aruco/dictionary_based.h	2017-02-03 12:30:06.000000000 +0100
++++ aruco_mod/dictionary_based.h	2017-03-13 22:26:05.526397000 +0100
+@@ -29,17 +29,17 @@ or implied, of Rafael Muñoz Salinas.
+ #ifndef ArucoDictionaryBasedMarkerDetector_H
+ #define ArucoDictionaryBasedMarkerDetector_H
+ #include <opencv2/core/core.hpp>
+-#include "../markerlabeler.h"
+-#include "../dictionary.h"
++#include "markerlabeler.h"
++#include "dictionary.h"
+ namespace aruco {
+ /**Labeler using a dictionary
+  */
+-class   DictionaryBased :public MarkerLabeler {
++class   DictionaryBased :public aruco::MarkerLabeler {
+ public:
+ 
+     virtual ~DictionaryBased(){}
+     //first, dictionary, second the maximum correction rate [0,1]. If 0,no correction, if 1, maximum allowed correction
+-    void setParams(const Dictionary &dic,float max_correction_rate);
++    void setParams(const aruco::Dictionary &dic,float max_correction_rate);
+ 
+     //main virtual class to o detection
+     bool detect(const cv::Mat &in, int & marker_id,int &nRotations) ;
+diff -Naurp aruco/markerdetector.h aruco_mod/markerdetector.h
+--- aruco/markerdetector.h	2017-02-03 12:30:06.000000000 +0100
++++ aruco_mod/markerdetector.h	2017-03-13 22:33:33.938378000 +0100
+@@ -116,7 +116,7 @@ public:
+      * @return vector with the detected markers
+      */
+     std::vector<aruco::Marker> detect(const cv::Mat &input) throw(cv::Exception);
+-    std::vector<aruco::Marker> detect(const cv::Mat &input,const CameraParameters &camParams, float markerSizeMeters , bool setYPerperdicular = false) throw(cv::Exception);
++    std::vector<aruco::Marker> detect(const cv::Mat &input,const aruco::CameraParameters &camParams, float markerSizeMeters , bool setYPerperdicular = false) throw(cv::Exception);
+ 
+  /**Detects the markers in the image passed
+      *
+@@ -128,7 +128,7 @@ public:
+      * @param markerSizeMeters size of the marker sides expressed in meters
+      * @param setYPerperdicular If set the Y axis will be perpendicular to the surface. Otherwise, it will be the Z axis
+      */
+-    void detect(const cv::Mat &input, std::vector< Marker > &detectedMarkers, CameraParameters camParams, float markerSizeMeters = -1,
++    void detect(const cv::Mat &input, std::vector< aruco::Marker > &detectedMarkers, aruco::CameraParameters camParams, float markerSizeMeters = -1,
+                 bool setYPerperdicular = false) throw(cv::Exception);
+ 
+ 
+@@ -144,7 +144,7 @@ public:
+      * @param markerSizeMeters size of the marker sides expressed in meters
+      * @param setYPerperdicular If set the Y axis will be perpendicular to the surface. Otherwise, it will be the Z axis
+      */
+-    void detect(const cv::Mat &input, std::vector< Marker > &detectedMarkers, cv::Mat camMatrix = cv::Mat(), cv::Mat distCoeff = cv::Mat(),
++    void detect(const cv::Mat &input, std::vector< aruco::Marker > &detectedMarkers, cv::Mat camMatrix = cv::Mat(), cv::Mat distCoeff = cv::Mat(),
+                 float markerSizeMeters = -1, bool setYPerperdicular = false) throw(cv::Exception);
+ 
+     /**Sets operating params
+@@ -301,19 +301,19 @@ public:
+      * @brief setMakerLabeler sets the labeler employed to analyze the squares and extract the inner binary code
+      * @param detector
+      */
+-    void setMarkerLabeler(cv::Ptr<MarkerLabeler> detector)throw(cv::Exception);
+-    cv::Ptr<MarkerLabeler>     getMarkerLabeler()throw(cv::Exception){ return markerIdDetector;}
++    void setMarkerLabeler(cv::Ptr<aruco::MarkerLabeler> detector)throw(cv::Exception);
++    cv::Ptr<aruco::MarkerLabeler>     getMarkerLabeler()throw(cv::Exception){ return markerIdDetector;}
+     // Represent a candidate to be a maker
+-    class MarkerCandidate : public Marker {
++    class MarkerCandidate : public aruco::Marker {
+       public:
+         MarkerCandidate() {}
+-        MarkerCandidate(const Marker &M) : Marker(M) {}
+-        MarkerCandidate(const MarkerCandidate &M) : Marker(M) {
++        MarkerCandidate(const aruco::Marker &M) : aruco::Marker(M) {}
++        MarkerCandidate(const MarkerCandidate &M) : aruco::Marker(M) {
+             contour = M.contour;
+             idx = M.idx;
+         }
+         MarkerCandidate &operator=(const MarkerCandidate &M) {
+-            (*(Marker *)this) = (*(Marker *)&M);
++            (*(Marker *)this) = (*(aruco::Marker *)&M);
+             contour = M.contour;
+             idx = M.idx;
+             return *this;
+@@ -374,7 +374,7 @@ public:
+     // Images
+     cv::Mat grey, thres;
+     // pointer to the function that analizes a rectangular region so as to detect its internal marker
+-    cv::Ptr<MarkerLabeler> markerIdDetector;
++    cv::Ptr<aruco::MarkerLabeler> markerIdDetector;
+ 
+     /**
+      */
+@@ -411,7 +411,7 @@ public:
+     void drawApproxCurve(cv::Mat &in, std::vector< cv::Point > &approxCurve, cv::Scalar color);
+     void drawContour(cv::Mat &in, std::vector< cv::Point > &contour, cv::Scalar);
+     void drawAllContours(cv::Mat input, std::vector< std::vector< cv::Point > > &contours);
+-    void draw(cv::Mat out, const std::vector< Marker > &markers);
++    void draw(cv::Mat out, const std::vector< aruco::Marker > &markers);
+     // method to refine corner detection in case the internal border after threshold is found
+     // This was tested in the context of chessboard methods
+     void findCornerMaxima(vector< cv::Point2f > &Corners, const cv::Mat &grey, int wsize);
+diff -Naurp aruco/marker.h aruco_mod/marker.h
+--- aruco/marker.h	2017-02-03 12:30:06.000000000 +0100
++++ aruco_mod/marker.h	2017-03-13 22:31:30.754384000 +0100
+@@ -76,7 +76,7 @@ class ARUCO_EXPORTS Marker : public std:
+      * @param CP parmeters of the camera
+      * @param setYPerpendicular If set the Y axis will be perpendicular to the surface. Otherwise, it will be the Z axis
+      */
+-    void calculateExtrinsics(float markerSize, const CameraParameters &CP, bool setYPerpendicular = true) throw(cv::Exception);
++    void calculateExtrinsics(float markerSize, const aruco::CameraParameters &CP, bool setYPerpendicular = true) throw(cv::Exception);
+     /**Calculates the extrinsics (Rvec and Tvec) of the marker with respect to the camera
+      * @param markerSize size of the marker side expressed in meters
+      * @param CameraMatrix matrix with camera parameters (fx,fy,cx,cy)
+diff -Naurp aruco/markerlabeler.h aruco_mod/markerlabeler.h
+--- aruco/markerlabeler.h	2017-02-03 12:30:06.000000000 +0100
++++ aruco_mod/markerlabeler.h	2017-03-13 22:24:34.062401000 +0100
+@@ -50,7 +50,7 @@ public:
+      *
+      * If you want correction capabilities and not sure how much, use 0.5 in this parameter
+      */
+-    static cv::Ptr<MarkerLabeler> create(Dictionary::DICT_TYPES dict_type,float error_correction_rate=0)throw (cv::Exception);
++    static cv::Ptr<MarkerLabeler> create(aruco::Dictionary::DICT_TYPES dict_type,float error_correction_rate=0)throw (cv::Exception);
+ 
+ 
+     /** Factory function that returns the desired detector
+diff -Naurp aruco/markermap.h aruco_mod/markermap.h
+--- aruco/markermap.h	2017-02-03 12:30:06.000000000 +0100
++++ aruco_mod/markermap.h	2017-03-13 22:28:01.350392000 +0100
+@@ -40,7 +40,7 @@ namespace aruco {
+ struct ARUCO_EXPORTS Marker3DInfo : public vector< cv::Point3f > {
+     Marker3DInfo() {}
+     Marker3DInfo(int _id) { id = _id; }
+-    bool operator==(const Marker3DInfo &MI) {return id==MI.id;}
++    bool operator==(const aruco::Marker3DInfo &MI) {return id==MI.id;}
+     int id; // maker id
+ 
+     //returns the distance of the marker side
+@@ -68,7 +68,7 @@ public:
+ */
+ 
+ 
+-class ARUCO_EXPORTS MarkerMap : public vector< Marker3DInfo > {
++class ARUCO_EXPORTS MarkerMap : public vector< aruco::Marker3DInfo > {
+ 
+ 
+ public:
+diff -Naurp aruco/posetracker.h aruco_mod/posetracker.h
+--- aruco/posetracker.h	2017-02-03 12:30:06.000000000 +0100
++++ aruco_mod/posetracker.h	2017-03-13 22:29:37.926388000 +0100
+@@ -64,7 +64,7 @@ class ARUCO_EXPORTS MarkerPoseTracker{
+      * @param minErrorRatio see explanation above. If you want to be conservative, use minErrorRatio=4.
+      * @return true if the pose is estimated and false otherwise. If not estimated, the parameters m.Rvec and m.Tvec and not set.
+      */
+-    bool estimatePose(  Marker &m,const  CameraParameters &cam_params,float markerSize,float minErrorRatio=4);
++    bool estimatePose(  Marker &m, const aruco::CameraParameters &cam_params,float markerSize,float minErrorRatio=4);
+ 
+     //returns the 4x4 transform matrix. Returns an empty matrix if last call to estimatePose returned false
+     cv::Mat getRTMatrix()const;
+@@ -89,12 +89,12 @@ public:
+     //If the msconf has data expressed in meters, then the markerSize parameter is not required. If it is in pixels, the markersize will be used to
+     //transform to meters
+     //Throws exception if wrong configuraiton
+-    void setParams(const  CameraParameters &cam_params,const MarkerMap &msconf, float markerSize=-1)throw(cv::Exception);
++    void setParams(const aruco::CameraParameters &cam_params,const aruco::MarkerMap &msconf, float markerSize=-1)throw(cv::Exception);
+     //indicates if the call to setParams has been successfull and this object is ready to call estimatePose
+     bool isValid()const{return _isValid;}
+     //estimates camera pose wrt the markermap
+     //returns true if pose has been obtained and false otherwise
+-    bool estimatePose(const  vector<Marker> &v_m);
++    bool estimatePose(const  vector<aruco::Marker> &v_m);
+ 
+     //returns the 4x4 transform matrix. Returns an empty matrix if last call to estimatePose returned false
+     cv::Mat getRTMatrix()const;
+@@ -106,7 +106,7 @@ private:
+ 
+     cv::Mat _rvec,_tvec;//current poses
+     aruco::CameraParameters _cam_params;
+-    MarkerMap _msconf;
++    aruco::MarkerMap _msconf;
+     std::map<int,Marker3DInfo> _map_mm;
+     bool _isValid;
+ };
