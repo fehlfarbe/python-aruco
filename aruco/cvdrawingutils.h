@@ -34,13 +34,16 @@ namespace aruco {
  */
 class ARUCO_EXPORTS CvDrawingUtils {
   public:
-    static void draw3dAxis(cv::Mat &Image, Marker &m, const CameraParameters &CP);
 
-    static void draw3dCube(cv::Mat &Image, Marker &m, const CameraParameters &CP, bool setYperpendicular = false);
+    static void draw3dAxis(cv::Mat &Image, const aruco::CameraParameters &CP, const cv::Mat &Rvec,const cv::Mat &Tvec,float axis_size );
 
-    static void draw3dAxis(cv::Mat &Image, Board &m, const CameraParameters &CP);
 
-    static void draw3dCube(cv::Mat &Image, Board &m, const CameraParameters &CP, bool setYperpendicular = false);
+    static void draw3dAxis(cv::Mat &Image, aruco::Marker &m, const CameraParameters &CP);
+
+    static void draw3dCube(cv::Mat &Image, aruco::Marker &m, const CameraParameters &CP, bool setYperpendicular = false);
+
+//    static void draw3dAxis(cv::Mat &Image, MarkerMap &m, const CameraParameters &CP);
+//    static void draw3dCube(cv::Mat &Image, MarkerMap &m, const CameraParameters &CP, bool setYperpendicular = false);
 };
 };
 

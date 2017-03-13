@@ -1,6 +1,6 @@
 /**
 
-Copyright 2011 Rafael Muñoz Salinas. All rights reserved.
+Copyright 2016 Rafael Muñoz Salinas. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are
 permitted provided that the following conditions are met:
@@ -49,7 +49,7 @@ done). As a conclusion, a marker contains 10 bits of real information wich allow
 
 \section BOARDS BOARDS
 
-Aruco allows the possibility to employ board. Boards are markers composed by an array of markers arranged in a known order. The advantages of using boards
+Aruco allows the possibility to employ board. MarkerMaps are markers composed by an array of markers arranged in a known order. The advantages of using boards
 instead of simple markers are:
  - More robusteness. The misdetection of several markers of the board is not a problem as long as a minimum set of them are detected.
  - More precision. Since there are a larger number of corners, camera pose estimation becomes more precise.
@@ -79,12 +79,12 @@ The library main classes are:
    - aruco::Marker: which represent a marker detected in the image
    - aruco::MarkerDetector: that is in charge of deteting the markers in a image Detection is done by simple calling the member funcion
 ArMarkerDetector::detect(). Additionally, the classes contain members to create the required matrices for rendering using OpenGL. See aruco_test_gl for details
-   - aruco::BoardConfiguration: A board is an array of markers in a known order. BoardConfiguracion is the class that defines a board by indicating the id of
+   - aruco::MarkerMap: A board is an array of markers in a known order. MarkerMapConfiguracion is the class that defines a board by indicating the id of
 its markers. In addition, it has informacion about the distance between the markers so that extrinsica camera computations can be done.
-   - aruco::Board: This class defines a board detected in a image. The board has the extrinsic camera parameters as public atributes. In addition, it has a
+   - aruco::MarkerMap: This class defines a board detected in a image. The board has the extrinsic camera parameters as public atributes. In addition, it has a
 method that allows obtain the matrix for getting its position in OpenGL (see aruco_test_board_gl for details).
-   - aruco::BoardDetector : This is the class in charge of detecting a board in a image. You must pass to it the set of markers detected by ArMarkerDetector and
-the BoardConfiguracion of the board you want to detect. This class will do the rest for you, even calculating the camera extrinsics.
+   - aruco::MarkerMapDetector : This is the class in charge of detecting a board in a image. You must pass to it the set of markers detected by ArMarkerDetector and
+the MarkerMapConfiguracion of the board you want to detect. This class will do the rest for you, even calculating the camera extrinsics.
 
 
 \section COMPILING COMPILING THE LIBRARY:
@@ -147,5 +147,5 @@ information on how to run the examples.
 */
 
 #include "markerdetector.h"
-#include "boarddetector.h"
+#include "posetracker.h"
 #include "cvdrawingutils.h"

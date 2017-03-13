@@ -71,10 +71,8 @@ class ARUCO_EXPORTS CameraParameters {
     /**Assign operator
     */
     CameraParameters &operator=(const CameraParameters &CI);
-    /**Reads the camera parameters from a file generated using saveToFile.
-     */
-    void readFromFile(string path) throw(cv::Exception);
-    /**Saves this to a file
+
+     /**Saves this to a file
      */
     void saveToFile(string path, bool inXML = true) throw(cv::Exception);
 

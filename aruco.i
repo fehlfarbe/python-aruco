@@ -33,20 +33,42 @@ ArUco stuff
 
 %{
 	#define SWIG_FILE_WITH_INIT
-	#include "aruco/exports.h"
-	#include "aruco/cameraparameters.h"
-	#include "aruco/marker.h"
-	#include "aruco/board.h"
-	#include "aruco/cvdrawingutils.h"
+	#include <aruco/exports.h>
+	//#include <aruco/ar_omp.h>
+	#include <aruco/aruco.h>
+	#include <aruco/cameraparameters.h>
+	#include <aruco/checkrectcontour.h>
+	#include <aruco/cvdrawingutils.h>
+	#include <aruco/dictionary_based.h>
+	#include <aruco/dictionary.h>
+	//#include <aruco/ippe.h>
+	#include <aruco/levmarq.h>
+	#include <aruco/markerdetector.h>
+	#include <aruco/marker.h>
+	#include <aruco/markerlabeler.h>
+	#include <aruco/markermap.h>
+	#include <aruco/posetracker.h>
 %}
 
-%include "aruco/exports.h"
-%include "aruco/cameraparameters.h"
+%include <aruco/exports.h>
+//%include <aruco/ar_omp.h>
+%include <aruco/aruco.h>
+%include <aruco/cameraparameters.h>
+%include <aruco/checkrectcontour.h>
+%include <aruco/cvdrawingutils.h>
+%include <aruco/dictionary_based.h>
+%include <aruco/dictionary.h>
+//%include <aruco/ippe.h>
+%include <aruco/levmarq.h>
+%include <aruco/markerdetector.h>
+
+
 // Marker is std::vector< cv::Point2f >, template definition 
 // needed for std::vector -> Python List conversion
 %template(Point2fVec) std::vector< cv::Point2f >;
-%include "aruco/marker.h"
+%template(MarkerVec) std::vector< aruco::Marker, std::allocator< aruco::Marker > >;
 
+%include "aruco/marker.h"
 /***
  Workaround:
  std::vector<Point2f>.at() --> Point2f conversion doesn't work
@@ -83,6 +105,21 @@ class VectorIterator(object):
    }
 }
 
+
+
+%include <aruco/markerlabeler.h>
+%include <aruco/markermap.h>
+%include <aruco/posetracker.h>
+
+
+
+
+/***************************************************************
+    OLD STUFF
+**************************************************************/
+
+/*
+
 %extend aruco::BoardConfiguration {
 	public:
         vector<int> getIdList() {
@@ -91,24 +128,25 @@ class VectorIterator(object):
             return list;
         }
 }
-
+*/
 
 // Board is std::vector< aruco::Marker >, template definition 
 // needed for std::vector -> Python List conversion
+/*
 %template(MarkerVec) std::vector< aruco::Marker >;
 %include "aruco/board.h"
 %include "aruco/cvdrawingutils.h"
-
+*/
 
 // rename detect function because of polymorphism problems
-%rename("detect_mat") aruco::BoardDetector::detect(const cv::Mat&);
+//%rename("detect_mat") aruco::BoardDetector::detect(const cv::Mat&);
 
 // some stuff to support nested class MarkerCandidate in boarddetector.h
 
 // Suppress SWIG warning
-#pragma SWIG nowarn=SWIGWARN_PARSE_NESTED_CLASS
+//#pragma SWIG nowarn=SWIGWARN_PARSE_NESTED_CLASS
 // nested class in markerdetector
-
+/*
 class MarkerCandidate : public aruco::Marker {
       public:
         MarkerCandidate() {}
@@ -133,7 +171,9 @@ class MarkerCandidate : public aruco::Marker {
 %}
 
 %include "aruco/markerdetector.h"
+*/
 // add detect function that returns the detected markers
+/*
 %extend aruco::MarkerDetector {
 
 	public:
@@ -161,3 +201,4 @@ class MarkerCandidate : public aruco::Marker {
 %}
 
 %include "aruco/boarddetector.h"
+*/

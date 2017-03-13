@@ -27,10 +27,11 @@ or implied, of Rafael Muñoz Salinas.
 ********************************/
 #ifndef _Aruco_Marker_H
 #define _Aruco_Marker_H
+#include "exports.h"
 #include <vector>
 #include <iostream>
+#include <cstdint>
 #include <opencv2/core/core.hpp>
-#include "exports.h"
 #include "cameraparameters.h"
 using namespace std;
 namespace aruco {
@@ -52,6 +53,9 @@ class ARUCO_EXPORTS Marker : public std::vector< cv::Point2f > {
     Marker();
     /**
      */
+    Marker(int id);
+    /**
+     */
     Marker(const Marker &M);
     /**
      */
@@ -65,14 +69,14 @@ class ARUCO_EXPORTS Marker : public std::vector< cv::Point2f > {
 
     /**Draws this marker in the input image
      */
-    void draw(cv::Mat &in, cv::Scalar color, int lineWidth = 1, bool writeId = true) const;
+    void draw(cv::Mat &in, cv::Scalar color, int lineWidth = -1, bool writeId = true) const;
 
     /**Calculates the extrinsics (Rvec and Tvec) of the marker with respect to the camera
      * @param markerSize size of the marker side expressed in meters
      * @param CP parmeters of the camera
      * @param setYPerpendicular If set the Y axis will be perpendicular to the surface. Otherwise, it will be the Z axis
      */
-    void calculateExtrinsics(float markerSize, const CameraParameters &CP, bool setYPerpendicular = true) throw(cv::Exception);
+    void calculateExtrinsics(float markerSize, const aruco::CameraParameters &CP, bool setYPerpendicular = true) throw(cv::Exception);
     /**Calculates the extrinsics (Rvec and Tvec) of the marker with respect to the camera
      * @param markerSize size of the marker side expressed in meters
      * @param CameraMatrix matrix with camera parameters (fx,fy,cx,cy)
@@ -107,8 +111,9 @@ class ARUCO_EXPORTS Marker : public std::vector< cv::Point2f > {
     /**Returns the area
      */
     float getArea() const;
-    /**
+    /**compares ids
      */
+    bool operator==(const Marker &m)const{return m.id==id;}
     /**
      */
     friend bool operator<(const Marker &M1, const Marker &M2) { return M1.id < M2.id; }
@@ -129,6 +134,13 @@ class ARUCO_EXPORTS Marker : public std::vector< cv::Point2f > {
     }
 
 
+    //saves to a binary stream
+    void toStream(ostream &str)const;
+    //reads from a binary stream
+    void fromStream(istream &str);
+
+    //returns the 3d points of a marker wrt its center
+    static vector<cv::Point3f> get3DPoints(float msize);
   private:
     void rotateXAxis(cv::Mat &rotation);
 };
