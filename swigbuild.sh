@@ -2,9 +2,11 @@
 
 if [ $1 == python3 ]
 then
-    PYTHON_VERSION="python -py3"
+    SWIG_PYTHON="python -py3"
+    PYTHON_INTERPRETER="python3"
 else
-    PYTHON_VERSION="python"
+    SWIG_PYTHON="python"
+    PYTHON_INTERPRETER="python"
 fi
 
 # clean
@@ -19,4 +21,4 @@ cp -r /usr/local/include/aruco .
 patch -p0 < namespaces.patch
 
 # creates wrapper and builds shared library
-swig3.0 -c++ -${PYTHON_VERSION} aruco.i && python setup.py build_ext --inplace
+swig3.0 -c++ -${SWIG_PYTHON} aruco.i && ${PYTHON_INTERPRETER} setup.py build_ext --inplace
