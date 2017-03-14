@@ -76,6 +76,28 @@ ArUco stuff
  to get corner points of the Marker object and added VectorIterator to
  support for-loops
 ***/
+
+%#if PY_VERSION_HEX >= 0x03000000
+%pythoncode %{
+class VectorIterator(object):
+
+    def __init__(self, pointerToVector):
+        self.pointerToVector = pointerToVector
+        self.index = -1
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        self.index += 1
+        if self.index < len(self.pointerToVector):
+            return self.pointerToVector[self.index]
+        else:
+            raise StopIteration
+%}
+
+%#else
+
 %pythoncode %{
 class VectorIterator(object):
 
@@ -90,6 +112,8 @@ class VectorIterator(object):
         else:
             raise StopIteration
 %}
+%#endif
+
 
 %extend aruco::Marker {
 	public:
