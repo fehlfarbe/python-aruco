@@ -12,7 +12,7 @@ Installation Python2
 also install `libeigen` headers for ArUco 2.0: `sudo apt-get install libeigen3-dev`
 3. Install swig3: `sudo apt-get install swig3.0` for Debian/Ubuntu like systems
 4. Install NumPy `sudo pip install numpy` (maybe you already need it for OpenCV Python support) or install via system packet manager
-5. run `swigbuild.sh`: it compiles the shared library (_aruco.so) and generates Python wrappers (aruco.py)
+5. run `./swigbuild.sh`: it compiles the shared library (_aruco.so) and generates Python wrappers (aruco.py)
 6. run `sudo python setup.py install` to install the library globally
 
 Installation Python3 (experimental)
@@ -24,20 +24,16 @@ Tested on Ubuntu 14.04, OpenCV3.3, Python3.4, Aruco 2.0.19
 also install `libeigen` headers for ArUco 2.0: `sudo apt-get install libeigen3-dev`. Note that the instructions are wrong on the readme, the recommended commands needed are: `cd aruco; mkdir build; cd build; cmake ..; make -j4; sudo checkinstall`. Choose 2 and choose "aruco" and the package will be installed as Aruco for easy uninstall or sharing the deb installer file.
 3. Install swig3: `sudo apt-get install swig3.0` for Debian/Ubuntu like systems. On 14.04 and other older systems you will need to go to "Software Sources" and check backports in the Updates tab, and reload before installing.
 4. Install NumPy `sudo pip3 install numpy` (maybe you already need it for OpenCV Python support) or install via system package manager.
-5. run `swigbuild.sh python3`: it compiles the shared library (_aruco.so) and generates Python3 wrappers (aruco.py)
+5. run `./swigbuild.sh python3`: it compiles the shared library (_aruco.so) and generates Python3 wrappers (aruco.py)
 6. run `sudo python3 setup.py install` to install the library globally
 
 Test
 ----
 
-open a prompt in `example/` and run:
+open a prompt in `example/` and run: `python ./example.py` or `python3 ./example.py` for Python3 (depends on your default Python interpreter)
 
-`LD_LIBRARY_PATH=/usr/local/lib/`
-
-`export LD_LIBRARY_PATH=$LD_LIBRARY_PATH;`
-
-`python3 ./example.py`
-
+If the Python doesn't find some shared objects, add the library location to LD_LIBRARY_PATH:
+`export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH`
 
 Problems
 --------
