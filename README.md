@@ -18,18 +18,25 @@ also install `libeigen` headers for ArUco 2.0: `sudo apt-get install libeigen3-d
 Installation Python3 (experimental)
 -----------------------------------
 
-1. Install / compile [OpenCV](http://opencv.org/) >= 2.4.9 with Python3 support
-2. download, compile and install ArUco: http://www.uco.es/investiga/grupos/ava/node/26,
-also install `libeigen` headers for ArUco 2.0: `sudo apt-get install libeigen3-dev`
-3. Install swig3: `sudo apt-get install swig3.0` for Debian/Ubuntu like systems
-4. Install NumPy `sudo pip3 install numpy` (maybe you already need it for OpenCV Python support) or install via system packet manager
+Tested on Ubuntu 14.04, OpenCV3.3, Python3.4, Aruco 2.0.19
+1. Install / compile [OpenCV](http://opencv.org/) >= 2.4.9 with Python3 support. [Install-OpenCV script helps to install the latest version.](https://github.com/jayrambhia/Install-OpenCV/)
+2. download, compile and install ArUco: http://www.uco.es/investiga/grupos/ava/node/26:
+also install `libeigen` headers for ArUco 2.0: `sudo apt-get install libeigen3-dev`. Note that the instructions are wrong on the readme, the recommended commands needed are: `cd aruco; mkdir build; cd build; cmake ..; make -j4; sudo checkinstall`. Choose 2 and choose "aruco" and the package will be installed as Aruco for easy uninstall or sharing the deb installer file.
+3. Install swig3: `sudo apt-get install swig3.0` for Debian/Ubuntu like systems. On 14.04 and other older systems you will need to go to "Software Sources" and check backports in the Updates tab, and reload before installing.
+4. Install NumPy `sudo pip3 install numpy` (maybe you already need it for OpenCV Python support) or install via system package manager.
 5. run `swigbuild.sh python3`: it compiles the shared library (_aruco.so) and generates Python3 wrappers (aruco.py)
 6. run `sudo python3 setup.py install` to install the library globally
 
 Test
 ----
 
-open a prompt in `example/` and run `python example.py`
+open a prompt in `example/` and run:
+
+`LD_LIBRARY_PATH=/usr/local/lib/`
+
+`export LD_LIBRARY_PATH=$LD_LIBRARY_PATH;`
+
+`python3 ./example.py`
 
 
 Problems
