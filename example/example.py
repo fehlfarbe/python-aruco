@@ -44,7 +44,7 @@ if __name__ == '__main__':
 
             # calculate marker extrinsics for marker size of 3.5cm
             marker.calculateExtrinsics(0.035, camparam)
-            print("Marker extrinsics:\n{:s}\n{:s}".format(marker.Tvec, marker.Rvec))
+            print("Marker extrinsics:\n{}\n{}".format(marker.Tvec, marker.Rvec))
 
             print("detected ids: {}".format(", ".join(str(m.id) for m in markers)))
 

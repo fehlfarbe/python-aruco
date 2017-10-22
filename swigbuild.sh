@@ -1,9 +1,12 @@
 #!/bin/bash
 
-if [ $1 == python3 ]
+if [ $# -gt 0 ]
 then
-    SWIG_PYTHON="python -py3"
-    PYTHON_INTERPRETER="python3"
+    if [ $1 == python3 ]
+    then
+        SWIG_PYTHON="python -py3"
+        PYTHON_INTERPRETER="python3"
+    fi
 else
     SWIG_PYTHON="python"
     PYTHON_INTERPRETER="python"
@@ -12,7 +15,7 @@ fi
 # clean
 rm aruco.py
 rm aruco_wrap.*
-rm _aruco.so
+rm _aruco*.so
 rm -r aruco/
 
 # copy aruco source code
