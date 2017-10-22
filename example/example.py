@@ -38,18 +38,13 @@ if __name__ == '__main__':
         for marker in markers:
             # print marker ID and point positions
             print("Marker: {:d}".format(marker.id))
-            #for i, point in enumerate(marker): VectorIterator is not a iterator type? Python3 iteration breaks.
-            i = 0
-            for i in range(len(marker)):
-                point = marker[i]
+            for i, point in enumerate(marker):
                 print("\t{:d} {}".format(i, str(point)))
-                i += 1
             marker.draw(frame, np.array([255, 255, 255]), 2)
 
             # calculate marker extrinsics for marker size of 3.5cm
             marker.calculateExtrinsics(0.035, camparam)
-            print("Marker extrinsics:\n%s\n%s" % (marker.Tvec, marker.Rvec))
-
+            print("Marker extrinsics:\n{}\n{}".format(marker.Tvec, marker.Rvec))
             print("detected ids: {}".format(", ".join(str(m.id) for m in markers)))
 
         # show frame

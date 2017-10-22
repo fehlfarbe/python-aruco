@@ -77,7 +77,6 @@ ArUco stuff
  support for-loops
 ***/
 
-%#if PY_VERSION_HEX >= 0x03000000
 %pythoncode %{
 class VectorIterator(object):
 
@@ -94,16 +93,6 @@ class VectorIterator(object):
             return self.pointerToVector[self.index]
         else:
             raise StopIteration
-%}
-
-%#else
-
-%pythoncode %{
-class VectorIterator(object):
-
-    def __init__(self, pointerToVector):
-        self.pointerToVector = pointerToVector
-        self.index = -1
 
     def next(self):
         self.index += 1
@@ -112,8 +101,6 @@ class VectorIterator(object):
         else:
             raise StopIteration
 %}
-%#endif
-
 
 %extend aruco::Marker {
 	public:
