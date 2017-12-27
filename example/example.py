@@ -1,8 +1,4 @@
-'''
-Created on 05.04.2016
-
-@author: fehlfarbe
-'''
+import os
 import sys
 import cv2
 import numpy as np
@@ -13,19 +9,20 @@ if __name__ == '__main__':
     # load board and camera parameters
     #boardconfig = aruco.BoardConfiguration("chessboardinfo_small_meters.yml")
     camparam = aruco.CameraParameters()
-    camparam.readFromXMLFile("dfk72_6mm_param2.yml")
+    camparam.readFromXMLFile(os.path.join(os.path.dirname(__file__), "dfk72_6mm_param2.yml"))
 
-    # create detector and set parameters
+    # create detector and get parameters
     detector = aruco.MarkerDetector()
-    params = detector.getParams()
+    params = detector.getParameters()
 
-    #detector.setParams(camparam)
-    # set minimum marker size for detection
-    #markerdetector = detector.getMarkerDetector()
-    #markerdetector.setMinMaxSize(0.01)
+    # print detector parameters
+    print("detector params:")
+    for val in dir(params):
+        if not val.startswith("__"):
+            print("\t{} : {}".format(val, params.__getattribute__(val)))
 
     # load video
-    cap = cv2.VideoCapture('example.mp4')
+    cap = cv2.VideoCapture(os.path.join(os.path.dirname(__file__), "example.mp4"))
     ret, frame = cap.read()
     
     if not ret:
@@ -44,7 +41,7 @@ if __name__ == '__main__':
 
             # calculate marker extrinsics for marker size of 3.5cm
             marker.calculateExtrinsics(0.035, camparam)
-            print("Marker extrinsics:\n{}\n{}".format(marker.Tvec, marker.Rvec))
+            # print("Marker extrinsics:\n{}\n{}".format(marker.Tvec, marker.Rvec))
             print("detected ids: {}".format(", ".join(str(m.id) for m in markers)))
 
         # show frame

@@ -18,4 +18,4 @@ rm aruco_wrap.* &> /dev/null
 rm _aruco*.so &> /dev/null
 
 # creates wrapper and builds shared library
-swig3.0 -c++ -${SWIG_PYTHON} -I. aruco.i && ${PYTHON_INTERPRETER} setup.py build_ext --inplace
+swig -c++ -${SWIG_PYTHON} -I. -I/usr/local/include aruco.i && ${PYTHON_INTERPRETER} setup.py build_ext --inplace

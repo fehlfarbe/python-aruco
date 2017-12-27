@@ -24,6 +24,8 @@ namespace std {
 
 // NumPy <--> OpenCV typemaps
 %include "okapi-typemaps.i"
+//%include <opencv.i>
+//%cv_instantiate_all_defaults
 
 /************************************
 
@@ -41,7 +43,7 @@ ArUco stuff
 	#include <aruco/debug.h>
 	#include <aruco/markerlabelers/dictionary_based.h>
 	#include <aruco/dictionary.h>
-	#include <aruco/ippe.h>
+	//#include <aruco/ippe.h>
 	#include <aruco/levmarq.h>
 	#include <aruco/markerdetector.h>
 	#include <aruco/marker.h>
@@ -62,7 +64,7 @@ ArUco stuff
 %include <aruco/cvdrawingutils.h>
 %include <aruco/debug.h>
 %include <aruco/dictionary.h>
-%include <aruco/ippe.h>
+//%include <aruco/ippe.h>
 %include <aruco/levmarq.h>
 
 // Marker is std::vector< cv::Point2f >, template definition
@@ -72,22 +74,6 @@ ArUco stuff
 %template(VectorMarker3DInfo) std::vector< aruco::Marker3DInfo >;
 
 %include <aruco/marker.h>
-
-
-%include <aruco/markerdetector.h>
-%include <aruco/markerlabeler.h>
-%include <aruco/markermap.h>
-%include <aruco/posetracker.h>
-%include <aruco/markerlabelers/dictionary_based.h>
-%include <aruco/markerlabelers/svmmarkers.h>
-%include <aruco/timers.h>
-
-
-
-
-
-
-//%include "aruco/marker.h"
 /***
  Workaround:
  std::vector<Point2f>.at() --> Point2f conversion doesn't work
@@ -96,7 +82,6 @@ ArUco stuff
  support for-loops
 ***/
 
-/*
 %pythoncode %{
 class VectorIterator(object):
 
@@ -137,12 +122,13 @@ class VectorIterator(object):
 }
 
 
-
+%include <aruco/markerdetector.h>
 %include <aruco/markerlabeler.h>
 %include <aruco/markermap.h>
 %include <aruco/posetracker.h>
-
-*/
+%include <aruco/markerlabelers/dictionary_based.h>
+%include <aruco/markerlabelers/svmmarkers.h>
+%include <aruco/timers.h>
 
 
 /***************************************************************
