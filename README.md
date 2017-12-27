@@ -4,6 +4,12 @@ Works with OpenCV Python module cv2 resp. numpy array data types.
 
 Tested on Linux Mint 18.2 x86_64, OpenCV 3.3.1, ArUco 3.0.4, Python 2.7.6 and NumPy 1.10.4
 
+Installation via pip
+--------------------
+1. Install / compile [OpenCV](http://opencv.org/) >= 3.3.1 with Python2 support
+2. download, compile and install ArUco 3 : http://www.uco.es/investiga/grupos/ava/node/26,
+3. run `sudo -H pip install aruco`
+
 Installation Python2
 --------------------
 

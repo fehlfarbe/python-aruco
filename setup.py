@@ -3,8 +3,8 @@
 
 from distutils.core import setup, Extension
 
-sourcefiles = ['aruco_wrap.cxx']
 
+sourcefiles = ['aruco_wrap.cxx']
 aruco_module = Extension('_aruco',
                          sources=sourcefiles,
                          language="c++",
@@ -14,9 +14,13 @@ aruco_module = Extension('_aruco',
                          library_dirs=["/usr/local/lib"])
 
 setup(name='aruco',
-      version='3.0',
+      version='3.0.4',
       author="""ArUco: Rafael Muñoz Salinas, Python wrappers: Marcus Degenkolbe""",
+      author_email='marcus@degenkolbe.eu',
       description="""ArUco Python wrappers""",
+      url='https://github.com/fehlfarbe/python-aruco',
+      keywords='aruco wrapper',
+      install_requires=['numpy'],
       ext_modules=[aruco_module],
       py_modules=["aruco"],
       )

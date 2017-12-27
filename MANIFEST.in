@@ -1,0 +1,3 @@
+recursive-include aruco *.h
+include aruco_wrap.cxx
+include aruco_wrap.h
