@@ -13,15 +13,9 @@ else
 fi
 
 # clean
-rm aruco.py
-rm aruco_wrap.*
-rm _aruco*.so
-rm -r aruco/
-
-# copy aruco source code
-cp -r /usr/local/include/aruco .
-# patch it
-patch -p0 < namespaces.patch
+rm aruco.py &> /dev/null
+rm aruco_wrap.* &> /dev/null
+rm _aruco*.so &> /dev/null
 
 # creates wrapper and builds shared library
-swig3.0 -c++ -${SWIG_PYTHON} aruco.i && ${PYTHON_INTERPRETER} setup.py build_ext --inplace
+swig3.0 -c++ -${SWIG_PYTHON} -I. aruco.i && ${PYTHON_INTERPRETER} setup.py build_ext --inplace

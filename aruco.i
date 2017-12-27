@@ -14,6 +14,7 @@ Swig Module for ArUco Python wrapper
 
 %{
 	#define SWIG_FILE_WITH_INIT
+	using namespace std;
 %}
 
 namespace std {
@@ -33,42 +34,60 @@ ArUco stuff
 
 %{
 	#define SWIG_FILE_WITH_INIT
-	#include <aruco/exports.h>
-	//#include <aruco/ar_omp.h>
 	#include <aruco/aruco.h>
+	#include <aruco/aruco_export.h>
 	#include <aruco/cameraparameters.h>
-	#include <aruco/checkrectcontour.h>
 	#include <aruco/cvdrawingutils.h>
-	#include <aruco/dictionary_based.h>
+	#include <aruco/debug.h>
+	#include <aruco/markerlabelers/dictionary_based.h>
 	#include <aruco/dictionary.h>
-	//#include <aruco/ippe.h>
+	#include <aruco/ippe.h>
 	#include <aruco/levmarq.h>
 	#include <aruco/markerdetector.h>
 	#include <aruco/marker.h>
 	#include <aruco/markerlabeler.h>
 	#include <aruco/markermap.h>
 	#include <aruco/posetracker.h>
+	#include <aruco/markerlabelers/svmmarkers.h>
+	#include <aruco/timers.h>
+
+	using namespace aruco;
 %}
 
-%include <aruco/exports.h>
-//%include <aruco/ar_omp.h>
+
+
 %include <aruco/aruco.h>
+%include <aruco/aruco_export.h>
 %include <aruco/cameraparameters.h>
-%include <aruco/checkrectcontour.h>
 %include <aruco/cvdrawingutils.h>
-%include <aruco/dictionary_based.h>
+%include <aruco/debug.h>
 %include <aruco/dictionary.h>
-//%include <aruco/ippe.h>
+%include <aruco/ippe.h>
 %include <aruco/levmarq.h>
-%include <aruco/markerdetector.h>
 
-
-// Marker is std::vector< cv::Point2f >, template definition 
+// Marker is std::vector< cv::Point2f >, template definition
 // needed for std::vector -> Python List conversion
 %template(Point2fVec) std::vector< cv::Point2f >;
 %template(MarkerVec) std::vector< aruco::Marker, std::allocator< aruco::Marker > >;
+%template(VectorMarker3DInfo) std::vector< aruco::Marker3DInfo >;
 
-%include "aruco/marker.h"
+%include <aruco/marker.h>
+
+
+%include <aruco/markerdetector.h>
+%include <aruco/markerlabeler.h>
+%include <aruco/markermap.h>
+%include <aruco/posetracker.h>
+%include <aruco/markerlabelers/dictionary_based.h>
+%include <aruco/markerlabelers/svmmarkers.h>
+%include <aruco/timers.h>
+
+
+
+
+
+
+//%include "aruco/marker.h"
 /***
  Workaround:
  std::vector<Point2f>.at() --> Point2f conversion doesn't work
@@ -77,6 +96,7 @@ ArUco stuff
  support for-loops
 ***/
 
+/*
 %pythoncode %{
 class VectorIterator(object):
 
@@ -122,7 +142,7 @@ class VectorIterator(object):
 %include <aruco/markermap.h>
 %include <aruco/posetracker.h>
 
-
+*/
 
 
 /***************************************************************
@@ -141,7 +161,7 @@ class VectorIterator(object):
 }
 */
 
-// Board is std::vector< aruco::Marker >, template definition 
+// Board is std::vector< aruco::Marker >, template definition
 // needed for std::vector -> Python List conversion
 /*
 %template(MarkerVec) std::vector< aruco::Marker >;

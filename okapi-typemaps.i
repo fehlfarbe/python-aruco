@@ -79,7 +79,7 @@ import_array();
     void delete_mat(void *ptr)
     {
         // printf("deleting underlying mat at %p\n", ptr);
-        cv::Mat *m = static_cast<cv::Mat*>(ptr);
+        cv::Mat *m = static_cast< cv::Mat* >(ptr);
         assert (m != NULL);
         delete m;
     }
@@ -88,7 +88,7 @@ import_array();
     void delete_mat_capsule(PyObject *obj)
     {
         // printf("deleting underlying mat at %p\n", ptr);
-        cv::Mat *m = static_cast<cv::Mat*>(PyCapsule_GetPointer(obj, NULL));
+        cv::Mat *m = static_cast< cv::Mat* >(PyCapsule_GetPointer(obj, NULL));
         assert (m != NULL);
         delete m;
     }
@@ -105,8 +105,8 @@ import_array();
         }
         
         // creates 4-element integer array ToDo: diff. convert data types
-        int size = array_size(array, 0);
-        int step = array->strides[0];
+        size_t size = array_size(array, 0);
+        size_t step = array->strides[0];
         int data[4] = {0, 0, 0, 0};
         for(size_t i=0, j=0; i<size*step; i+=step,j++){
         	data[j] = (unsigned char)array_data(array)[i];
@@ -124,8 +124,8 @@ import_array();
         }
         
         // creates 4-element integer array ToDo: diff. convert data types
-        int size = array_size(array, 0);
-        int step = array->strides[0];
+        size_t size = array_size(array, 0);
+        size_t step = array->strides[0];
         int data[4] = {0, 0, 0, 0};
         for(size_t i=0, j=0; i<size*step; i+=step,j++){
             data[j] = (unsigned char)array_data(array)[i];
@@ -201,7 +201,7 @@ import_array();
         }
 
         npy_intp dims[3]    = { mat.rows, mat.cols, mat.channels() };
-        npy_intp strides[3] = { mat.step, mat.elemSize(), mat.elemSize1()};
+        npy_intp strides[3] = { (npy_intp)mat.step, (npy_intp)mat.elemSize(), (npy_intp)mat.elemSize1()};
         int ndims = (mat.channels() > 1) ? 3 : 2; 
         int type = mat_type_to_numpy_type(mat.type());
         int flags = NPY_WRITEABLE;
@@ -257,11 +257,6 @@ import_array();
 {
 }
 
-
-
-
-
-
 %typecheck(SWIG_TYPECHECK_POINTER,
         fragment="OKAPI_Fragments")
    cv::Mat const &
@@ -276,6 +271,7 @@ import_array();
     if ($1 == NULL)
         SWIG_fail;
 }
+
 ///////////////////////////////////////
 /// cv::Mat
 ///////////////////////////////////////
@@ -462,7 +458,7 @@ import_array();
     }
 
     Py_ssize_t length = PySequence_Size($input);
-    $1 = new std::vector<cv::Mat>(length);
+    $1 = new std::vector< cv::Mat >(length);
     for (Py_ssize_t ii = 0; ii < length; ++ii) {
         cv::Mat *tmp = array_to_mat(PySequence_GetItem($input, ii));
         if (tmp == NULL) {
