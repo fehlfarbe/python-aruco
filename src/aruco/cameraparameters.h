@@ -29,7 +29,7 @@ or implied, of Rafael Muñoz Salinas.
 #define _Aruco_CameraParameters_H
 
 #include "aruco_export.h"
-#include <opencv2/core.hpp>
+#include <opencv2/core/core.hpp>
 #include <string>
 #include <stdexcept>
 
@@ -43,7 +43,7 @@ namespace aruco
     public:
         // 3x3 matrix (fx 0 cx, 0 fy cy, 0 0 1)
         cv::Mat CameraMatrix;
-        // 4x1 matrix (k1,k2,p1,p2)
+        //  distortion matrix
         cv::Mat Distorsion;
         // size of the image
         cv::Size CamSize;
@@ -90,11 +90,12 @@ namespace aruco
          */
         void resize(cv::Size size);
 
-        /**Returns the location of the camera in the reference system given by the rotation and translation vectors
-         * passed
+        /**Returns the location of the camera in the reference system of the marker.
+         *
+         * Rvec and Tvec are the transform from the marker to the camera as calculated in other parts of the library
          * NOT TESTED
         */
-        static cv::Point3f getCameraLocation(cv::Mat Rvec, cv::Mat Tvec);
+        static cv::Point3f getCameraLocation(const cv::Mat &Rvec,const cv::Mat  &Tvec);
 
         /**Given the intrinsic camera parameters returns the GL_PROJECTION matrix for opengl.
         * PLease NOTE that when using OpenGL, it is assumed no camera distorsion! So, if it is not true, you should have
@@ -129,6 +130,10 @@ namespace aruco
          */
         static cv::Mat getRTMatrix(const cv::Mat& R_, const cv::Mat& T_, int forceType);
 
+
+        /**Makes this invalid
+         */
+        void clear();
 
         ARUCO_EXPORT friend std::ostream &operator<<(std::ostream &str,const CameraParameters&cp);
         ARUCO_EXPORT friend std::istream &operator>>(std::istream &str,CameraParameters&cp);

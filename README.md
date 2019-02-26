@@ -2,19 +2,17 @@
 [SWIG](http://www.swig.org/) generated Python wrappers for ArUco library.
 Works with OpenCV Python module cv2 resp. numpy array data types.
 
-Tested on Linux Mint 18.2 x86_64, OpenCV 3.3.1, ArUco 3.0.4, Python 2.7.6 and NumPy 1.10.4
+Tested on Linux Mint 19 x86_64, OpenCV 3.4.5, ArUco 3.0.13 Python 2.7.15 and NumPy 1.13.3
 
 Installation via pip
 --------------------
 1. Install / compile [OpenCV](http://opencv.org/) >= 3.3.1 with Python2 support
-2. download, compile and install ArUco 3 : http://www.uco.es/investiga/grupos/ava/node/26,
-3. run `sudo -H pip install aruco`
+2. run `sudo -H pip install aruco`
 
 Installation Python2
 --------------------
 
 1. Install / compile [OpenCV](http://opencv.org/) >= 2.4.9 with Python2 support
-2. download, compile and install ArUco: http://www.uco.es/investiga/grupos/ava/node/26,
 3. Install swig3: `sudo apt-get install swig3.0` for Debian/Ubuntu like systems
 4. Install NumPy `sudo pip install numpy` (maybe you already need it for OpenCV Python support) or install via system packet manager
 5. run `./swigbuild.sh`: it compiles the shared library (_aruco.so) and generates Python wrappers (aruco.py)
@@ -23,9 +21,7 @@ Installation Python2
 Installation Python3 (experimental)
 -----------------------------------
 
-Tested on Ubuntu 16.04, OpenCV 3.3.1, Python3.5, Aruco 3.0.4
 1. Install / compile [OpenCV](http://opencv.org/) >= 2.4.9 with Python3 support. [Install-OpenCV script helps to install the latest version.](https://github.com/jayrambhia/Install-OpenCV/)
-2. download, compile and install ArUco: http://www.uco.es/investiga/grupos/ava/node/26:
 3. Install swig3: `sudo apt-get install swig3.0` for Debian/Ubuntu like systems. On 14.04 and other older systems you will need to go to "Software Sources" and check backports in the Updates tab, and reload before installing.
 4. Install NumPy `sudo pip3 install numpy` (maybe you already need it for OpenCV Python support) or install via system package manager.
 5. run `./swigbuild.sh python3`: it compiles the shared library (_aruco.so) and generates Python3 wrappers (aruco.py)

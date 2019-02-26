@@ -35,7 +35,7 @@ or implied, of Rafael Muñoz Salinas.
 #include "markermap.h"
 
 #include <map>
-#include <opencv2/core.hpp>
+#include <opencv2/core/core.hpp>
 
 namespace aruco
 {
@@ -77,7 +77,7 @@ namespace aruco
          * @return true if the pose is estimated and false otherwise. If not estimated, the parameters m.Rvec and m.Tvec
          * and not set.
          */
-        bool estimatePose(Marker& m, const CameraParameters& cam_params, float markerSize, float minErrorRatio = 4 /*tau_e in paper*/);
+        bool estimatePose(Marker& m, const CameraParameters& cam_params, float markerSize, float minErrorRatio = 10 /*tau_e in paper*/);
 
         // returns the 4x4 transform matrix. Returns an empty matrix if last call to estimatePose returned false
         cv::Mat getRTMatrix() const;
@@ -140,6 +140,12 @@ namespace aruco
         {
             return _tvec;
         }
+        //prevents from big jumps. If the difference between current and previous positions are greater than the value indicated
+        //assumes no good tracking and the pose will be set as null
+        void setMaxTrackingDifference(float maxTranslation,float maxAngle){
+            _maxTranslation=maxTranslation;
+            _maxAngle=maxAngle;
+        }
 
     private:
         cv::Mat _rvec, _tvec;  // current poses
@@ -150,6 +156,7 @@ namespace aruco
         cv::Mat relocalization(const std::vector<Marker>& v_m);
         float aruco_minerrratio_valid;/*tau_e in paper*/
         std::map<uint32_t,cv::Mat> marker_m2g;//for each marker, the transform from the global ref system to the marker ref system
+        float _maxTranslation=-1,_maxAngle=-1;
     };
 };
 

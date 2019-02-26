@@ -23,8 +23,8 @@ mkdir py2 &> /dev/null
 mkdir py3 &> /dev/null
 
 # creates wrapper for py2 and py3
-swig -c++ -python -I./src/include -outdir py2 -I/usr/local/include aruco.i
-swig -c++ -python -py3 -I./src/include -outdir py3 -I/usr/local/include aruco.i
+swig -c++ -python -I./src/include -outdir py2 -Isrc aruco.i
+swig -c++ -python -py3 -I./src/include -outdir py3 -Isrc aruco.i
 
 # builds shared library
 ${PYTHON_INTERPRETER} setup.py build_ext --inplace

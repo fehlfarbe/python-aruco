@@ -31,7 +31,7 @@ or implied, of Rafael Muñoz Salinas.
 
 #include "aruco_export.h"
 
-#include <opencv2/core.hpp>
+#include <opencv2/core/core.hpp>
 
 #include <cstdint>
 #include <iostream>
@@ -55,6 +55,8 @@ or implied, of Rafael Muñoz Salinas.
         cv::Mat Rvec, Tvec;
         //additional info about the dictionary
         std::string dict_info;
+        //points of the contour
+        vector<cv::Point> contourPoints;
 
         /**
          */

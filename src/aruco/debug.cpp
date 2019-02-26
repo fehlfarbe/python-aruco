@@ -26,30 +26,42 @@ authors and should not be interpreted as representing official policies, either 
 or implied, of Rafael Muñoz Salinas.
 */
 
-#ifndef _ArUco_DrawUtils_H_
-#define _ArUco_DrawUtils_H_
-
-#include "aruco.h"
-#include "aruco_export.h"
-
-namespace aruco
-{
-    /**\brief A set of functions to draw in opencv images
-     */
-    class ARUCO_EXPORT CvDrawingUtils
-    {
-    public:
-        static void draw3dAxis(cv::Mat& Image, const CameraParameters& CP, const cv::Mat& Rvec, const cv::Mat& Tvec,
-                               float axis_size);
-
-        static void draw3dAxis(cv::Mat& Image, Marker& m, const CameraParameters& CP);
-
-        static void draw3dCube(cv::Mat& Image, Marker& m, const CameraParameters& CP, bool setYperpendicular = false);
-
-        //    static void draw3dAxis(cv::Mat &Image, MarkerMap &m, const CameraParameters &CP);
-        //    static void draw3dCube(cv::Mat &Image, MarkerMap &m, const CameraParameters &CP, bool setYperpendicular =
-        //    false);
-    };
+#include "debug.h"
+#include <fstream>
+ namespace aruco{
+int Debug::level=2;
+std::map<std::string,std::string> Debug::strings;
+void Debug::addString(std::string &label, std::string &data){
+    strings.insert(make_pair(label,data));
 }
 
-#endif
+std::string Debug::getString(std::string &str){
+    auto it=strings.find(str);
+    if (it==strings.end())return "";
+    else return it->second;
+}
+
+
+bool Debug::isInited=false;
+
+void Debug::setLevel ( int l ) {
+    level=l;
+    isInited=false;
+    init();
+}
+int Debug::getLevel() {
+    init();
+    return level;
+}
+void Debug::init() {
+    if ( !isInited ) {
+        isInited=true;
+        if ( level>=1 ) {
+        }
+    }
+
+}
+
+
+}
+

@@ -32,7 +32,7 @@ or implied, of Rafael Muñoz Salinas.
 #include "aruco_export.h"
 #include "marker.h"
 
-#include <opencv2/core.hpp>
+#include <opencv2/core/core.hpp>
 
 #include <string>
 #include <vector>
@@ -131,7 +131,7 @@ or implied, of Rafael Muñoz Salinas.
         }
         /**converts the passed board into meters
          */
-        MarkerMap convertToMeters(float markerSize);
+        MarkerMap convertToMeters(float markerSize) const;
         // simple way of knowing which elements detected in an image are from this markermap
         // returns the indices of the elements in the vector 'markers' that belong to this set
         // Example: The set has the elements with ids 10,21,31,41,92
