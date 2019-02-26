@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import platform
-from distutils.core import setup, Extension
+from setuptools import setup, Extension
 import shutil
 import sys
 import glob
@@ -12,6 +12,10 @@ if sys.version_info[0] < 3:
 else:
     shutil.copy("./py3/aruco.py", ".")
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+with open("LICENSE", "r") as fh:
+    license = fh.read()
 
 sourcefiles = ['aruco_wrap.cxx']
 sourcefiles.extend(glob.glob("src/aruco/*.cpp"))
@@ -36,9 +40,12 @@ setup(name='aruco',
       author="""ArUco: Rafael Muñoz Salinas, Python wrappers: Marcus Degenkolbe""",
       author_email='marcus@degenkolbe.eu',
       description="""ArUco Python wrappers""",
+      long_description=long_description,
+      long_description_content_type="text/markdown",
+      license=license,
       url='https://github.com/fehlfarbe/python-aruco',
       keywords='aruco wrapper',
-      install_requires=['numpy'],
+      install_requires=['numpy', 'opencv-contrib-python'],
       ext_modules=[aruco_module],
       py_modules=["aruco"],
       )
