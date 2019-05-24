@@ -194,6 +194,8 @@ namespace aruco
         static std::vector<std::string> getDicTypes();
 
     private:
+        //obfuscate start
+
         void insert(uint64_t code, int id)
         {
             _code_id.insert(std::make_pair(code, id));
@@ -208,6 +210,8 @@ namespace aruco
 
         DICT_TYPES _type;
         std::string _name;
+        //obfuscate end
+
     };
 }
 

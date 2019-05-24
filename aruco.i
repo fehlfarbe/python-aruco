@@ -35,13 +35,14 @@ ArUco stuff
 
 
 %{
+/*
 	#define SWIG_FILE_WITH_INIT
 	#include <aruco/aruco.h>
 	#include <aruco/aruco_export.h>
 	#include <aruco/cameraparameters.h>
 	#include <aruco/cvdrawingutils.h>
 	#include <aruco/debug.h>
-	#include <aruco/markerlabelers/dictionary_based.h>
+	//#include <aruco/markerlabelers/dictionary_based.h>
 	#include <aruco/dictionary.h>
 	//#include <aruco/ippe.h>
 	#include <aruco/levmarq.h>
@@ -52,7 +53,30 @@ ArUco stuff
 	#include <aruco/posetracker.h>
 	#include <aruco/markerlabelers/svmmarkers.h>
 	#include <aruco/timers.h>
-
+*/
+    #include<aruco/timers.h>
+    #include<aruco/cameraparameters.h>
+    #include<aruco/aruco_cvversioning.h>
+    #include<aruco/markerdetector_impl.h>
+    #include<aruco/cvdrawingutils.h>
+    #include<aruco/fractaldetector.h>
+    #include<aruco/aruco.h>
+    #include<aruco/dictionary_based.h>
+    #include<aruco/picoflann.h>
+    #include<aruco/markerdetector.h>
+    #include<aruco/posetracker.h>
+    #include<aruco/marker.h>
+    #include<aruco/ippe.h>
+    #include<aruco/aruco_export.h>
+    #include<aruco/fractallabelers/fractalposetracker.h>
+    #include<aruco/fractallabelers/fractallabeler.h>
+    #include<aruco/fractallabelers/fractalmarkerset.h>
+    #include<aruco/fractallabelers/fractalmarker.h>
+    #include<aruco/debug.h>
+    #include<aruco/dictionary.h>
+    #include<aruco/markerlabeler.h>
+    #include<aruco/levmarq.h>
+    #include<aruco/markermap.h>
 	using namespace aruco;
 %}
 
@@ -124,10 +148,13 @@ class VectorIterator(object):
 
 %include <aruco/markerdetector.h>
 %include <aruco/markerlabeler.h>
+%include <aruco/fractaldetector.h>
 %include <aruco/markermap.h>
 %include <aruco/posetracker.h>
-%include <aruco/markerlabelers/dictionary_based.h>
-%include <aruco/markerlabelers/svmmarkers.h>
+%include <aruco/fractallabelers/fractalposetracker.h>
+%include <aruco/fractallabelers/fractallabeler.h>
+%include <aruco/fractallabelers/fractalmarkerset.h>
+%include <aruco/fractallabelers/fractalmarker.h>
 %include <aruco/timers.h>
 
 

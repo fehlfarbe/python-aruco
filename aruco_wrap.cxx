@@ -3451,64 +3451,83 @@ namespace Swig {
 
 /* -------- TYPES TABLE (BEGIN) -------- */
 
-#define SWIGTYPE_p_Marker swig_types[0]
-#define SWIGTYPE_p_allocator_type swig_types[1]
-#define SWIGTYPE_p_aruco__CameraParameters swig_types[2]
-#define SWIGTYPE_p_aruco__CvDrawingUtils swig_types[3]
-#define SWIGTYPE_p_aruco__Debug swig_types[4]
-#define SWIGTYPE_p_aruco__Dictionary swig_types[5]
-#define SWIGTYPE_p_aruco__DictionaryBased swig_types[6]
-#define SWIGTYPE_p_aruco__Marker swig_types[7]
-#define SWIGTYPE_p_aruco__Marker3DInfo swig_types[8]
-#define SWIGTYPE_p_aruco__MarkerDetector swig_types[9]
-#define SWIGTYPE_p_aruco__MarkerDetector__Params swig_types[10]
-#define SWIGTYPE_p_aruco__MarkerLabeler swig_types[11]
-#define SWIGTYPE_p_aruco__MarkerMap swig_types[12]
-#define SWIGTYPE_p_aruco__MarkerMapPoseTracker swig_types[13]
-#define SWIGTYPE_p_aruco__MarkerPoseTracker swig_types[14]
-#define SWIGTYPE_p_aruco__SVMMarkers swig_types[15]
-#define SWIGTYPE_p_aruco__ScopeTimer swig_types[16]
-#define SWIGTYPE_p_aruco__ScopedTimerEvents swig_types[17]
-#define SWIGTYPE_p_aruco__Timer swig_types[18]
-#define SWIGTYPE_p_char swig_types[19]
-#define SWIGTYPE_p_cv__Point2f swig_types[20]
-#define SWIGTYPE_p_cv__Point3f swig_types[21]
-#define SWIGTYPE_p_cv__PtrT_aruco__MarkerLabeler_t swig_types[22]
-#define SWIGTYPE_p_cv__Size swig_types[23]
-#define SWIGTYPE_p_difference_type swig_types[24]
-#define SWIGTYPE_p_double swig_types[25]
-#define SWIGTYPE_p_int swig_types[26]
-#define SWIGTYPE_p_p_PyObject swig_types[27]
-#define SWIGTYPE_p_size_type swig_types[28]
-#define SWIGTYPE_p_std__allocatorT_aruco__Marker3DInfo_t swig_types[29]
-#define SWIGTYPE_p_std__allocatorT_aruco__Marker_t swig_types[30]
-#define SWIGTYPE_p_std__allocatorT_cv__Point2f_t swig_types[31]
-#define SWIGTYPE_p_std__allocatorT_int_t swig_types[32]
-#define SWIGTYPE_p_std__chrono__high_resolution_clock__time_point swig_types[33]
-#define SWIGTYPE_p_std__invalid_argument swig_types[34]
-#define SWIGTYPE_p_std__istream swig_types[35]
-#define SWIGTYPE_p_std__mapT_uint64_t_uint16_t_t swig_types[36]
-#define SWIGTYPE_p_std__ostream swig_types[37]
-#define SWIGTYPE_p_std__pairT_cv__Mat_cv__Mat_t swig_types[38]
-#define SWIGTYPE_p_std__string swig_types[39]
-#define SWIGTYPE_p_std__vectorT_aruco__Marker3DInfo_std__allocatorT_aruco__Marker3DInfo_t_t swig_types[40]
-#define SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t swig_types[41]
-#define SWIGTYPE_p_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t swig_types[42]
-#define SWIGTYPE_p_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t swig_types[43]
-#define SWIGTYPE_p_std__vectorT_int_std__allocatorT_int_t_t swig_types[44]
-#define SWIGTYPE_p_std__vectorT_std__chrono__high_resolution_clock__time_point_std__allocatorT_std__chrono__high_resolution_clock__time_point_t_t swig_types[45]
-#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[46]
-#define SWIGTYPE_p_std__vectorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_std__allocatorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_t_t swig_types[47]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[48]
-#define SWIGTYPE_p_uint32_t swig_types[49]
-#define SWIGTYPE_p_uint64_t swig_types[50]
-#define SWIGTYPE_p_value_type swig_types[51]
-#define SWIGTYPE_p_vectorT_aruco__Marker_t swig_types[52]
-#define SWIGTYPE_p_vectorT_cv__Point3f_t swig_types[53]
-#define SWIGTYPE_p_vectorT_cv__Point_t swig_types[54]
-#define SWIGTYPE_p_vectorT_int_t swig_types[55]
-static swig_type_info *swig_types[57];
-static swig_module_info swig_module = {swig_types, 56, 0, 0, 0, 0};
+#define SWIGTYPE_p_FractalMarker swig_types[0]
+#define SWIGTYPE_p_FractalMarkerSet swig_types[1]
+#define SWIGTYPE_p_FractalMarkerSet__CONF_TYPES swig_types[2]
+#define SWIGTYPE_p_Marker swig_types[3]
+#define SWIGTYPE_p_allocator_type swig_types[4]
+#define SWIGTYPE_p_aruco__CameraParameters swig_types[5]
+#define SWIGTYPE_p_aruco__CvDrawingUtils swig_types[6]
+#define SWIGTYPE_p_aruco__Debug swig_types[7]
+#define SWIGTYPE_p_aruco__Dictionary swig_types[8]
+#define SWIGTYPE_p_aruco__FractalDetector swig_types[9]
+#define SWIGTYPE_p_aruco__FractalMarker swig_types[10]
+#define SWIGTYPE_p_aruco__FractalMarkerLabeler swig_types[11]
+#define SWIGTYPE_p_aruco__FractalMarkerSet swig_types[12]
+#define SWIGTYPE_p_aruco__FractalPoseTracker swig_types[13]
+#define SWIGTYPE_p_aruco__Marker swig_types[14]
+#define SWIGTYPE_p_aruco__Marker3DInfo swig_types[15]
+#define SWIGTYPE_p_aruco__MarkerDetector swig_types[16]
+#define SWIGTYPE_p_aruco__MarkerDetector__Params swig_types[17]
+#define SWIGTYPE_p_aruco__MarkerLabeler swig_types[18]
+#define SWIGTYPE_p_aruco__MarkerMap swig_types[19]
+#define SWIGTYPE_p_aruco__MarkerMapPoseTracker swig_types[20]
+#define SWIGTYPE_p_aruco__MarkerPoseTracker swig_types[21]
+#define SWIGTYPE_p_aruco__PicoFlann_KeyPointAdapter swig_types[22]
+#define SWIGTYPE_p_aruco__ScopeTimer swig_types[23]
+#define SWIGTYPE_p_aruco__ScopedTimerEvents swig_types[24]
+#define SWIGTYPE_p_aruco__Timer swig_types[25]
+#define SWIGTYPE_p_char swig_types[26]
+#define SWIGTYPE_p_cv__FileStorage swig_types[27]
+#define SWIGTYPE_p_cv__KeyPoint swig_types[28]
+#define SWIGTYPE_p_cv__Point2f swig_types[29]
+#define SWIGTYPE_p_cv__Point3f swig_types[30]
+#define SWIGTYPE_p_cv__PtrT_aruco__FractalMarkerLabeler_t swig_types[31]
+#define SWIGTYPE_p_cv__PtrT_aruco__MarkerDetector_t swig_types[32]
+#define SWIGTYPE_p_cv__PtrT_aruco__MarkerLabeler_t swig_types[33]
+#define SWIGTYPE_p_cv__Size swig_types[34]
+#define SWIGTYPE_p_difference_type swig_types[35]
+#define SWIGTYPE_p_double swig_types[36]
+#define SWIGTYPE_p_float swig_types[37]
+#define SWIGTYPE_p_int swig_types[38]
+#define SWIGTYPE_p_p_PyObject swig_types[39]
+#define SWIGTYPE_p_size_type swig_types[40]
+#define SWIGTYPE_p_std__allocatorT_aruco__Marker3DInfo_t swig_types[41]
+#define SWIGTYPE_p_std__allocatorT_aruco__Marker_t swig_types[42]
+#define SWIGTYPE_p_std__allocatorT_cv__Point2f_t swig_types[43]
+#define SWIGTYPE_p_std__allocatorT_int_t swig_types[44]
+#define SWIGTYPE_p_std__chrono__high_resolution_clock__time_point swig_types[45]
+#define SWIGTYPE_p_std__invalid_argument swig_types[46]
+#define SWIGTYPE_p_std__istream swig_types[47]
+#define SWIGTYPE_p_std__mapT_int_FractalMarker_t swig_types[48]
+#define SWIGTYPE_p_std__mapT_int_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t_t swig_types[49]
+#define SWIGTYPE_p_std__mapT_int_std__vectorT_int_std__allocatorT_int_t_t_t swig_types[50]
+#define SWIGTYPE_p_std__mapT_uint64_t_uint16_t_t swig_types[51]
+#define SWIGTYPE_p_std__ostream swig_types[52]
+#define SWIGTYPE_p_std__pairT_cv__Mat_cv__Mat_t swig_types[53]
+#define SWIGTYPE_p_std__string swig_types[54]
+#define SWIGTYPE_p_std__vectorT_aruco__Marker3DInfo_std__allocatorT_aruco__Marker3DInfo_t_t swig_types[55]
+#define SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t swig_types[56]
+#define SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t swig_types[57]
+#define SWIGTYPE_p_std__vectorT_cv__Mat_std__allocatorT_cv__Mat_t_t swig_types[58]
+#define SWIGTYPE_p_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t swig_types[59]
+#define SWIGTYPE_p_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t swig_types[60]
+#define SWIGTYPE_p_std__vectorT_int_std__allocatorT_int_t_t swig_types[61]
+#define SWIGTYPE_p_std__vectorT_std__chrono__high_resolution_clock__time_point_std__allocatorT_std__chrono__high_resolution_clock__time_point_t_t swig_types[62]
+#define SWIGTYPE_p_std__vectorT_std__pairT_int_int_t_std__allocatorT_std__pairT_int_int_t_t_t swig_types[63]
+#define SWIGTYPE_p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t swig_types[64]
+#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[65]
+#define SWIGTYPE_p_std__vectorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_std__allocatorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_t_t swig_types[66]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[67]
+#define SWIGTYPE_p_uint32_t swig_types[68]
+#define SWIGTYPE_p_uint64_t swig_types[69]
+#define SWIGTYPE_p_value_type swig_types[70]
+#define SWIGTYPE_p_vectorT_aruco__Marker_t swig_types[71]
+#define SWIGTYPE_p_vectorT_cv__Point3f_t swig_types[72]
+#define SWIGTYPE_p_vectorT_cv__Point_t swig_types[73]
+#define SWIGTYPE_p_vectorT_int_t swig_types[74]
+static swig_type_info *swig_types[76];
+static swig_module_info swig_module = {swig_types, 75, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -5462,13 +5481,14 @@ SWIGINTERN void std_vector_Sl_int_Sg__insert__SWIG_1(std::vector< int > *self,st
 #include <numpy/arrayobject.h>
 
 
+/*
 	#define SWIG_FILE_WITH_INIT
 	#include <aruco/aruco.h>
 	#include <aruco/aruco_export.h>
 	#include <aruco/cameraparameters.h>
 	#include <aruco/cvdrawingutils.h>
 	#include <aruco/debug.h>
-	#include <aruco/markerlabelers/dictionary_based.h>
+	//#include <aruco/markerlabelers/dictionary_based.h>
 	#include <aruco/dictionary.h>
 	//#include <aruco/ippe.h>
 	#include <aruco/levmarq.h>
@@ -5479,7 +5499,30 @@ SWIGINTERN void std_vector_Sl_int_Sg__insert__SWIG_1(std::vector< int > *self,st
 	#include <aruco/posetracker.h>
 	#include <aruco/markerlabelers/svmmarkers.h>
 	#include <aruco/timers.h>
-
+*/
+    #include<aruco/timers.h>
+    #include<aruco/cameraparameters.h>
+    #include<aruco/aruco_cvversioning.h>
+    #include<aruco/markerdetector_impl.h>
+    #include<aruco/cvdrawingutils.h>
+    #include<aruco/fractaldetector.h>
+    #include<aruco/aruco.h>
+    #include<aruco/dictionary_based.h>
+    #include<aruco/picoflann.h>
+    #include<aruco/markerdetector.h>
+    #include<aruco/posetracker.h>
+    #include<aruco/marker.h>
+    #include<aruco/ippe.h>
+    #include<aruco/aruco_export.h>
+    #include<aruco/fractallabelers/fractalposetracker.h>
+    #include<aruco/fractallabelers/fractallabeler.h>
+    #include<aruco/fractallabelers/fractalmarkerset.h>
+    #include<aruco/fractallabelers/fractalmarker.h>
+    #include<aruco/debug.h>
+    #include<aruco/dictionary.h>
+    #include<aruco/markerlabeler.h>
+    #include<aruco/levmarq.h>
+    #include<aruco/markermap.h>
 	using namespace aruco;
 
 
@@ -20374,6 +20417,28 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_Marker_getRadius(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::Marker *arg1 = (aruco::Marker *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:Marker_getRadius",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__Marker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Marker_getRadius" "', argument " "1"" of type '" "aruco::Marker const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::Marker * >(argp1);
+  result = (float)((aruco::Marker const *)arg1)->getRadius();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_Marker___eq__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   aruco::Marker *arg1 = (aruco::Marker *) 0 ;
@@ -20589,6 +20654,45 @@ fail:
     "    aruco::Marker::get3DPoints(float)\n"
     "    aruco::Marker::get3DPoints() const\n");
   return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_Marker_getTransformMatrix(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::Marker *arg1 = (aruco::Marker *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cv::Mat result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:Marker_getTransformMatrix",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__Marker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Marker_getTransformMatrix" "', argument " "1"" of type '" "aruco::Marker const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::Marker * >(argp1);
+  result = ((aruco::Marker const *)arg1)->getTransformMatrix();
+  {
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
+  }
+  return resultobj;
+fail:
+  return NULL;
 }
 
 
@@ -21250,669 +21354,16 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_MarkerDetector_detect__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  aruco::MarkerDetector *arg1 = (aruco::MarkerDetector *) 0 ;
-  cv::Mat *arg2 = 0 ;
-  std::vector< aruco::Marker,std::allocator< aruco::Marker > > *arg3 = 0 ;
-  aruco::CameraParameters arg4 ;
-  float arg5 ;
-  bool arg6 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  void *argp4 ;
-  int res4 = 0 ;
-  float val5 ;
-  int ecode5 = 0 ;
-  bool val6 ;
-  int ecode6 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  PyObject * obj3 = 0 ;
-  PyObject * obj4 = 0 ;
-  PyObject * obj5 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OOOOOO:MarkerDetector_detect",&obj0,&obj1,&obj2,&obj3,&obj4,&obj5)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__MarkerDetector, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "MarkerDetector_detect" "', argument " "1"" of type '" "aruco::MarkerDetector *""'"); 
-  }
-  arg1 = reinterpret_cast< aruco::MarkerDetector * >(argp1);
-  {
-    arg2 = array_to_mat(obj1);
-    if (arg2 == NULL)
-    SWIG_fail;
-  }
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t,  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  arg3 = reinterpret_cast< std::vector< aruco::Marker,std::allocator< aruco::Marker > > * >(argp3);
-  {
-    res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_aruco__CameraParameters,  0  | 0);
-    if (!SWIG_IsOK(res4)) {
-      SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "MarkerDetector_detect" "', argument " "4"" of type '" "aruco::CameraParameters""'"); 
-    }  
-    if (!argp4) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MarkerDetector_detect" "', argument " "4"" of type '" "aruco::CameraParameters""'");
-    } else {
-      aruco::CameraParameters * temp = reinterpret_cast< aruco::CameraParameters * >(argp4);
-      arg4 = *temp;
-      if (SWIG_IsNewObj(res4)) delete temp;
-    }
-  }
-  ecode5 = SWIG_AsVal_float(obj4, &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "MarkerDetector_detect" "', argument " "5"" of type '" "float""'");
-  } 
-  arg5 = static_cast< float >(val5);
-  ecode6 = SWIG_AsVal_bool(obj5, &val6);
-  if (!SWIG_IsOK(ecode6)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "MarkerDetector_detect" "', argument " "6"" of type '" "bool""'");
-  } 
-  arg6 = static_cast< bool >(val6);
-  (arg1)->detect((cv::Mat const &)*arg2,*arg3,arg4,arg5,arg6);
-  resultobj = SWIG_Py_Void();
-  {
-    
-  }
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  return resultobj;
-fail:
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_MarkerDetector_detect__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  aruco::MarkerDetector *arg1 = (aruco::MarkerDetector *) 0 ;
-  cv::Mat *arg2 = 0 ;
-  std::vector< aruco::Marker,std::allocator< aruco::Marker > > *arg3 = 0 ;
-  aruco::CameraParameters arg4 ;
-  float arg5 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  void *argp4 ;
-  int res4 = 0 ;
-  float val5 ;
-  int ecode5 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  PyObject * obj3 = 0 ;
-  PyObject * obj4 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OOOOO:MarkerDetector_detect",&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__MarkerDetector, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "MarkerDetector_detect" "', argument " "1"" of type '" "aruco::MarkerDetector *""'"); 
-  }
-  arg1 = reinterpret_cast< aruco::MarkerDetector * >(argp1);
-  {
-    arg2 = array_to_mat(obj1);
-    if (arg2 == NULL)
-    SWIG_fail;
-  }
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t,  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  arg3 = reinterpret_cast< std::vector< aruco::Marker,std::allocator< aruco::Marker > > * >(argp3);
-  {
-    res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_aruco__CameraParameters,  0  | 0);
-    if (!SWIG_IsOK(res4)) {
-      SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "MarkerDetector_detect" "', argument " "4"" of type '" "aruco::CameraParameters""'"); 
-    }  
-    if (!argp4) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MarkerDetector_detect" "', argument " "4"" of type '" "aruco::CameraParameters""'");
-    } else {
-      aruco::CameraParameters * temp = reinterpret_cast< aruco::CameraParameters * >(argp4);
-      arg4 = *temp;
-      if (SWIG_IsNewObj(res4)) delete temp;
-    }
-  }
-  ecode5 = SWIG_AsVal_float(obj4, &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "MarkerDetector_detect" "', argument " "5"" of type '" "float""'");
-  } 
-  arg5 = static_cast< float >(val5);
-  (arg1)->detect((cv::Mat const &)*arg2,*arg3,arg4,arg5);
-  resultobj = SWIG_Py_Void();
-  {
-    
-  }
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  return resultobj;
-fail:
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_MarkerDetector_detect__SWIG_5(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  aruco::MarkerDetector *arg1 = (aruco::MarkerDetector *) 0 ;
-  cv::Mat *arg2 = 0 ;
-  std::vector< aruco::Marker,std::allocator< aruco::Marker > > *arg3 = 0 ;
-  aruco::CameraParameters arg4 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  void *argp4 ;
-  int res4 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  PyObject * obj3 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OOOO:MarkerDetector_detect",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__MarkerDetector, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "MarkerDetector_detect" "', argument " "1"" of type '" "aruco::MarkerDetector *""'"); 
-  }
-  arg1 = reinterpret_cast< aruco::MarkerDetector * >(argp1);
-  {
-    arg2 = array_to_mat(obj1);
-    if (arg2 == NULL)
-    SWIG_fail;
-  }
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t,  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  arg3 = reinterpret_cast< std::vector< aruco::Marker,std::allocator< aruco::Marker > > * >(argp3);
-  {
-    res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_aruco__CameraParameters,  0  | 0);
-    if (!SWIG_IsOK(res4)) {
-      SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "MarkerDetector_detect" "', argument " "4"" of type '" "aruco::CameraParameters""'"); 
-    }  
-    if (!argp4) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MarkerDetector_detect" "', argument " "4"" of type '" "aruco::CameraParameters""'");
-    } else {
-      aruco::CameraParameters * temp = reinterpret_cast< aruco::CameraParameters * >(argp4);
-      arg4 = *temp;
-      if (SWIG_IsNewObj(res4)) delete temp;
-    }
-  }
-  (arg1)->detect((cv::Mat const &)*arg2,*arg3,arg4);
-  resultobj = SWIG_Py_Void();
-  {
-    
-  }
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  return resultobj;
-fail:
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_MarkerDetector_detect__SWIG_6(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  aruco::MarkerDetector *arg1 = (aruco::MarkerDetector *) 0 ;
-  cv::Mat *arg2 = 0 ;
-  std::vector< aruco::Marker,std::allocator< aruco::Marker > > *arg3 = 0 ;
-  cv::Mat arg4 ;
-  cv::Mat arg5 ;
-  float arg6 ;
-  bool arg7 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  cv::Mat *mat4 ;
-  cv::Mat *mat5 ;
-  float val6 ;
-  int ecode6 = 0 ;
-  bool val7 ;
-  int ecode7 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  PyObject * obj3 = 0 ;
-  PyObject * obj4 = 0 ;
-  PyObject * obj5 = 0 ;
-  PyObject * obj6 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OOOOOOO:MarkerDetector_detect",&obj0,&obj1,&obj2,&obj3,&obj4,&obj5,&obj6)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__MarkerDetector, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "MarkerDetector_detect" "', argument " "1"" of type '" "aruco::MarkerDetector *""'"); 
-  }
-  arg1 = reinterpret_cast< aruco::MarkerDetector * >(argp1);
-  {
-    arg2 = array_to_mat(obj1);
-    if (arg2 == NULL)
-    SWIG_fail;
-  }
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t,  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  arg3 = reinterpret_cast< std::vector< aruco::Marker,std::allocator< aruco::Marker > > * >(argp3);
-  {
-    mat4 = array_to_mat(obj3);
-    if (mat4 == NULL)
-    SWIG_fail;
-    arg4 = *mat4;
-  }
-  {
-    mat5 = array_to_mat(obj4);
-    if (mat5 == NULL)
-    SWIG_fail;
-    arg5 = *mat5;
-  }
-  ecode6 = SWIG_AsVal_float(obj5, &val6);
-  if (!SWIG_IsOK(ecode6)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "MarkerDetector_detect" "', argument " "6"" of type '" "float""'");
-  } 
-  arg6 = static_cast< float >(val6);
-  ecode7 = SWIG_AsVal_bool(obj6, &val7);
-  if (!SWIG_IsOK(ecode7)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "MarkerDetector_detect" "', argument " "7"" of type '" "bool""'");
-  } 
-  arg7 = static_cast< bool >(val7);
-  (arg1)->detect((cv::Mat const &)*arg2,*arg3,arg4,arg5,arg6,arg7);
-  resultobj = SWIG_Py_Void();
-  {
-    
-  }
-  {
-    
-  }
-  {
-    
-  }
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  {
-    if (mat4 != NULL)
-    delete mat4;
-  }
-  {
-    if (mat5 != NULL)
-    delete mat5;
-  }
-  return resultobj;
-fail:
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  {
-    if (mat4 != NULL)
-    delete mat4;
-  }
-  {
-    if (mat5 != NULL)
-    delete mat5;
-  }
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_MarkerDetector_detect__SWIG_7(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  aruco::MarkerDetector *arg1 = (aruco::MarkerDetector *) 0 ;
-  cv::Mat *arg2 = 0 ;
-  std::vector< aruco::Marker,std::allocator< aruco::Marker > > *arg3 = 0 ;
-  cv::Mat arg4 ;
-  cv::Mat arg5 ;
-  float arg6 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  cv::Mat *mat4 ;
-  cv::Mat *mat5 ;
-  float val6 ;
-  int ecode6 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  PyObject * obj3 = 0 ;
-  PyObject * obj4 = 0 ;
-  PyObject * obj5 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OOOOOO:MarkerDetector_detect",&obj0,&obj1,&obj2,&obj3,&obj4,&obj5)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__MarkerDetector, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "MarkerDetector_detect" "', argument " "1"" of type '" "aruco::MarkerDetector *""'"); 
-  }
-  arg1 = reinterpret_cast< aruco::MarkerDetector * >(argp1);
-  {
-    arg2 = array_to_mat(obj1);
-    if (arg2 == NULL)
-    SWIG_fail;
-  }
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t,  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  arg3 = reinterpret_cast< std::vector< aruco::Marker,std::allocator< aruco::Marker > > * >(argp3);
-  {
-    mat4 = array_to_mat(obj3);
-    if (mat4 == NULL)
-    SWIG_fail;
-    arg4 = *mat4;
-  }
-  {
-    mat5 = array_to_mat(obj4);
-    if (mat5 == NULL)
-    SWIG_fail;
-    arg5 = *mat5;
-  }
-  ecode6 = SWIG_AsVal_float(obj5, &val6);
-  if (!SWIG_IsOK(ecode6)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "MarkerDetector_detect" "', argument " "6"" of type '" "float""'");
-  } 
-  arg6 = static_cast< float >(val6);
-  (arg1)->detect((cv::Mat const &)*arg2,*arg3,arg4,arg5,arg6);
-  resultobj = SWIG_Py_Void();
-  {
-    
-  }
-  {
-    
-  }
-  {
-    
-  }
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  {
-    if (mat4 != NULL)
-    delete mat4;
-  }
-  {
-    if (mat5 != NULL)
-    delete mat5;
-  }
-  return resultobj;
-fail:
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  {
-    if (mat4 != NULL)
-    delete mat4;
-  }
-  {
-    if (mat5 != NULL)
-    delete mat5;
-  }
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_MarkerDetector_detect__SWIG_8(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  aruco::MarkerDetector *arg1 = (aruco::MarkerDetector *) 0 ;
-  cv::Mat *arg2 = 0 ;
-  std::vector< aruco::Marker,std::allocator< aruco::Marker > > *arg3 = 0 ;
-  cv::Mat arg4 ;
-  cv::Mat arg5 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  cv::Mat *mat4 ;
-  cv::Mat *mat5 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  PyObject * obj3 = 0 ;
-  PyObject * obj4 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OOOOO:MarkerDetector_detect",&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__MarkerDetector, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "MarkerDetector_detect" "', argument " "1"" of type '" "aruco::MarkerDetector *""'"); 
-  }
-  arg1 = reinterpret_cast< aruco::MarkerDetector * >(argp1);
-  {
-    arg2 = array_to_mat(obj1);
-    if (arg2 == NULL)
-    SWIG_fail;
-  }
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t,  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  arg3 = reinterpret_cast< std::vector< aruco::Marker,std::allocator< aruco::Marker > > * >(argp3);
-  {
-    mat4 = array_to_mat(obj3);
-    if (mat4 == NULL)
-    SWIG_fail;
-    arg4 = *mat4;
-  }
-  {
-    mat5 = array_to_mat(obj4);
-    if (mat5 == NULL)
-    SWIG_fail;
-    arg5 = *mat5;
-  }
-  (arg1)->detect((cv::Mat const &)*arg2,*arg3,arg4,arg5);
-  resultobj = SWIG_Py_Void();
-  {
-    
-  }
-  {
-    
-  }
-  {
-    
-  }
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  {
-    if (mat4 != NULL)
-    delete mat4;
-  }
-  {
-    if (mat5 != NULL)
-    delete mat5;
-  }
-  return resultobj;
-fail:
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  {
-    if (mat4 != NULL)
-    delete mat4;
-  }
-  {
-    if (mat5 != NULL)
-    delete mat5;
-  }
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_MarkerDetector_detect__SWIG_9(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  aruco::MarkerDetector *arg1 = (aruco::MarkerDetector *) 0 ;
-  cv::Mat *arg2 = 0 ;
-  std::vector< aruco::Marker,std::allocator< aruco::Marker > > *arg3 = 0 ;
-  cv::Mat arg4 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  cv::Mat *mat4 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  PyObject * obj3 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OOOO:MarkerDetector_detect",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__MarkerDetector, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "MarkerDetector_detect" "', argument " "1"" of type '" "aruco::MarkerDetector *""'"); 
-  }
-  arg1 = reinterpret_cast< aruco::MarkerDetector * >(argp1);
-  {
-    arg2 = array_to_mat(obj1);
-    if (arg2 == NULL)
-    SWIG_fail;
-  }
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t,  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  arg3 = reinterpret_cast< std::vector< aruco::Marker,std::allocator< aruco::Marker > > * >(argp3);
-  {
-    mat4 = array_to_mat(obj3);
-    if (mat4 == NULL)
-    SWIG_fail;
-    arg4 = *mat4;
-  }
-  (arg1)->detect((cv::Mat const &)*arg2,*arg3,arg4);
-  resultobj = SWIG_Py_Void();
-  {
-    
-  }
-  {
-    
-  }
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  {
-    if (mat4 != NULL)
-    delete mat4;
-  }
-  return resultobj;
-fail:
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  {
-    if (mat4 != NULL)
-    delete mat4;
-  }
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_MarkerDetector_detect__SWIG_10(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  aruco::MarkerDetector *arg1 = (aruco::MarkerDetector *) 0 ;
-  cv::Mat *arg2 = 0 ;
-  std::vector< aruco::Marker,std::allocator< aruco::Marker > > *arg3 = 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OOO:MarkerDetector_detect",&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__MarkerDetector, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "MarkerDetector_detect" "', argument " "1"" of type '" "aruco::MarkerDetector *""'"); 
-  }
-  arg1 = reinterpret_cast< aruco::MarkerDetector * >(argp1);
-  {
-    arg2 = array_to_mat(obj1);
-    if (arg2 == NULL)
-    SWIG_fail;
-  }
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t,  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MarkerDetector_detect" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > &""'"); 
-  }
-  arg3 = reinterpret_cast< std::vector< aruco::Marker,std::allocator< aruco::Marker > > * >(argp3);
-  (arg1)->detect((cv::Mat const &)*arg2,*arg3);
-  resultobj = SWIG_Py_Void();
-  {
-    
-  }
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  return resultobj;
-fail:
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  return NULL;
-}
-
-
 SWIGINTERN PyObject *_wrap_MarkerDetector_detect(PyObject *self, PyObject *args) {
   Py_ssize_t argc;
-  PyObject *argv[8] = {
+  PyObject *argv[6] = {
     0
   };
   Py_ssize_t ii;
   
   if (!PyTuple_Check(args)) SWIG_fail;
   argc = args ? PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 7) && (ii < argc); ii++) {
+  for (ii = 0; (ii < 5) && (ii < argc); ii++) {
     argv[ii] = PyTuple_GET_ITEM(args,ii);
   }
   if (argc == 2) {
@@ -21926,72 +21377,6 @@ SWIGINTERN PyObject *_wrap_MarkerDetector_detect(PyObject *self, PyObject *args)
       }
       if (_v) {
         return _wrap_MarkerDetector_detect__SWIG_0(self, args);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__MarkerDetector, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        _v = true;//is_array(argv[1]) || PySequence_Check(argv[1]);
-      }
-      if (_v) {
-        void *vptr = 0;
-        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          return _wrap_MarkerDetector_detect__SWIG_10(self, args);
-        }
-      }
-    }
-  }
-  if (argc == 4) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__MarkerDetector, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        _v = true;//is_array(argv[1]) || PySequence_Check(argv[1]);
-      }
-      if (_v) {
-        void *vptr = 0;
-        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          int res = SWIG_ConvertPtr(argv[3], 0, SWIGTYPE_p_aruco__CameraParameters, 0);
-          _v = SWIG_CheckState(res);
-          if (_v) {
-            return _wrap_MarkerDetector_detect__SWIG_5(self, args);
-          }
-        }
-      }
-    }
-  }
-  if (argc == 4) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__MarkerDetector, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        _v = true;//is_array(argv[1]) || PySequence_Check(argv[1]);
-      }
-      if (_v) {
-        void *vptr = 0;
-        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          {
-            _v = is_array(argv[3]) || PySequence_Check(argv[3]);
-          }
-          if (_v) {
-            return _wrap_MarkerDetector_detect__SWIG_9(self, args);
-          }
-        }
       }
     }
   }
@@ -22029,64 +21414,6 @@ SWIGINTERN PyObject *_wrap_MarkerDetector_detect(PyObject *self, PyObject *args)
         _v = true;//is_array(argv[1]) || PySequence_Check(argv[1]);
       }
       if (_v) {
-        void *vptr = 0;
-        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          {
-            _v = is_array(argv[3]) || PySequence_Check(argv[3]);
-          }
-          if (_v) {
-            {
-              _v = is_array(argv[4]) || PySequence_Check(argv[4]);
-            }
-            if (_v) {
-              return _wrap_MarkerDetector_detect__SWIG_8(self, args);
-            }
-          }
-        }
-      }
-    }
-  }
-  if (argc == 5) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__MarkerDetector, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        _v = true;//is_array(argv[1]) || PySequence_Check(argv[1]);
-      }
-      if (_v) {
-        void *vptr = 0;
-        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          int res = SWIG_ConvertPtr(argv[3], 0, SWIGTYPE_p_aruco__CameraParameters, 0);
-          _v = SWIG_CheckState(res);
-          if (_v) {
-            {
-              int res = SWIG_AsVal_float(argv[4], NULL);
-              _v = SWIG_CheckState(res);
-            }
-            if (_v) {
-              return _wrap_MarkerDetector_detect__SWIG_4(self, args);
-            }
-          }
-        }
-      }
-    }
-  }
-  if (argc == 5) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__MarkerDetector, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        _v = true;//is_array(argv[1]) || PySequence_Check(argv[1]);
-      }
-      if (_v) {
         int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_aruco__CameraParameters, 0);
         _v = SWIG_CheckState(res);
         if (_v) {
@@ -22107,132 +21434,13 @@ SWIGINTERN PyObject *_wrap_MarkerDetector_detect(PyObject *self, PyObject *args)
       }
     }
   }
-  if (argc == 6) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__MarkerDetector, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        _v = true;//is_array(argv[1]) || PySequence_Check(argv[1]);
-      }
-      if (_v) {
-        void *vptr = 0;
-        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          {
-            _v = is_array(argv[3]) || PySequence_Check(argv[3]);
-          }
-          if (_v) {
-            {
-              _v = is_array(argv[4]) || PySequence_Check(argv[4]);
-            }
-            if (_v) {
-              {
-                int res = SWIG_AsVal_float(argv[5], NULL);
-                _v = SWIG_CheckState(res);
-              }
-              if (_v) {
-                return _wrap_MarkerDetector_detect__SWIG_7(self, args);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  if (argc == 6) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__MarkerDetector, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        _v = true;//is_array(argv[1]) || PySequence_Check(argv[1]);
-      }
-      if (_v) {
-        void *vptr = 0;
-        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          int res = SWIG_ConvertPtr(argv[3], 0, SWIGTYPE_p_aruco__CameraParameters, 0);
-          _v = SWIG_CheckState(res);
-          if (_v) {
-            {
-              int res = SWIG_AsVal_float(argv[4], NULL);
-              _v = SWIG_CheckState(res);
-            }
-            if (_v) {
-              {
-                int res = SWIG_AsVal_bool(argv[5], NULL);
-                _v = SWIG_CheckState(res);
-              }
-              if (_v) {
-                return _wrap_MarkerDetector_detect__SWIG_3(self, args);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  if (argc == 7) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__MarkerDetector, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        _v = true;//is_array(argv[1]) || PySequence_Check(argv[1]);
-      }
-      if (_v) {
-        void *vptr = 0;
-        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          {
-            _v = is_array(argv[3]) || PySequence_Check(argv[3]);
-          }
-          if (_v) {
-            {
-              _v = is_array(argv[4]) || PySequence_Check(argv[4]);
-            }
-            if (_v) {
-              {
-                int res = SWIG_AsVal_float(argv[5], NULL);
-                _v = SWIG_CheckState(res);
-              }
-              if (_v) {
-                {
-                  int res = SWIG_AsVal_bool(argv[6], NULL);
-                  _v = SWIG_CheckState(res);
-                }
-                if (_v) {
-                  return _wrap_MarkerDetector_detect__SWIG_6(self, args);
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
   
 fail:
   SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'MarkerDetector_detect'.\n"
     "  Possible C/C++ prototypes are:\n"
     "    aruco::MarkerDetector::detect(cv::Mat const &)\n"
     "    aruco::MarkerDetector::detect(cv::Mat const &,aruco::CameraParameters const &,float,bool)\n"
-    "    aruco::MarkerDetector::detect(cv::Mat const &,aruco::CameraParameters const &,float)\n"
-    "    aruco::MarkerDetector::detect(cv::Mat const &,std::vector< aruco::Marker,std::allocator< aruco::Marker > > &,aruco::CameraParameters,float,bool)\n"
-    "    aruco::MarkerDetector::detect(cv::Mat const &,std::vector< aruco::Marker,std::allocator< aruco::Marker > > &,aruco::CameraParameters,float)\n"
-    "    aruco::MarkerDetector::detect(cv::Mat const &,std::vector< aruco::Marker,std::allocator< aruco::Marker > > &,aruco::CameraParameters)\n"
-    "    aruco::MarkerDetector::detect(cv::Mat const &,std::vector< aruco::Marker,std::allocator< aruco::Marker > > &,cv::Mat,cv::Mat,float,bool)\n"
-    "    aruco::MarkerDetector::detect(cv::Mat const &,std::vector< aruco::Marker,std::allocator< aruco::Marker > > &,cv::Mat,cv::Mat,float)\n"
-    "    aruco::MarkerDetector::detect(cv::Mat const &,std::vector< aruco::Marker,std::allocator< aruco::Marker > > &,cv::Mat,cv::Mat)\n"
-    "    aruco::MarkerDetector::detect(cv::Mat const &,std::vector< aruco::Marker,std::allocator< aruco::Marker > > &,cv::Mat)\n"
-    "    aruco::MarkerDetector::detect(cv::Mat const &,std::vector< aruco::Marker,std::allocator< aruco::Marker > > &)\n");
+    "    aruco::MarkerDetector::detect(cv::Mat const &,aruco::CameraParameters const &,float)\n");
   return 0;
 }
 
@@ -22694,28 +21902,6 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_MarkerDetector_getNhresholdedImages(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  aruco::MarkerDetector *arg1 = (aruco::MarkerDetector *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  size_t result;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:MarkerDetector_getNhresholdedImages",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__MarkerDetector, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "MarkerDetector_getNhresholdedImages" "', argument " "1"" of type '" "aruco::MarkerDetector const *""'"); 
-  }
-  arg1 = reinterpret_cast< aruco::MarkerDetector * >(argp1);
-  result = ((aruco::MarkerDetector const *)arg1)->getNhresholdedImages();
-  resultobj = SWIG_From_size_t(static_cast< size_t >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
 SWIGINTERN PyObject *_wrap_MarkerDetector_setMarkerLabeler(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   aruco::MarkerDetector *arg1 = (aruco::MarkerDetector *) 0 ;
@@ -22782,7 +21968,7 @@ SWIGINTERN PyObject *_wrap_MarkerDetector_getCandidates(PyObject *SWIGUNUSEDPARM
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  SwigValueWrapper< std::vector< std::vector< cv::Point2f,std::allocator< cv::Point2f > >,std::allocator< std::vector< cv::Point2f,std::allocator< cv::Point2f > > > > > result;
+  std::vector< aruco::MarkerCandidate,std::allocator< aruco::MarkerCandidate > > result;
   
   if (!PyArg_ParseTuple(args,(char *)"O:MarkerDetector_getCandidates",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__MarkerDetector, 0 |  0 );
@@ -22791,109 +21977,71 @@ SWIGINTERN PyObject *_wrap_MarkerDetector_getCandidates(PyObject *SWIGUNUSEDPARM
   }
   arg1 = reinterpret_cast< aruco::MarkerDetector * >(argp1);
   result = ((aruco::MarkerDetector const *)arg1)->getCandidates();
-  resultobj = SWIG_NewPointerObj((new std::vector< std::vector< cv::Point2f,std::allocator< cv::Point2f > >,std::allocator< std::vector< cv::Point2f,std::allocator< cv::Point2f > > > >(static_cast< const std::vector< std::vector< cv::Point2f,std::allocator< cv::Point2f > >,std::allocator< std::vector< cv::Point2f,std::allocator< cv::Point2f > > > >& >(result))), SWIGTYPE_p_std__vectorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_std__allocatorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_t_t, SWIG_POINTER_OWN |  0 );
+  resultobj = swig::from(static_cast< std::vector< aruco::Marker,std::allocator< aruco::Marker > > >(result));
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_MarkerDetector_warp(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_MarkerDetector_getImagePyramid(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   aruco::MarkerDetector *arg1 = (aruco::MarkerDetector *) 0 ;
-  cv::Mat *arg2 = 0 ;
-  cv::Mat *arg3 = 0 ;
-  cv::Size arg4 ;
-  std::vector< cv::Point2f,std::allocator< cv::Point2f > > arg5 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  uchar *data_ptr2 ;
-  uchar *data_ptr3 ;
+  PyObject * obj0 = 0 ;
+  SwigValueWrapper< std::vector< cv::Mat,std::allocator< cv::Mat > > > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:MarkerDetector_getImagePyramid",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__MarkerDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "MarkerDetector_getImagePyramid" "', argument " "1"" of type '" "aruco::MarkerDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::MarkerDetector * >(argp1);
+  result = (arg1)->getImagePyramid();
+  resultobj = SWIG_NewPointerObj((new std::vector< cv::Mat,std::allocator< cv::Mat > >(static_cast< const std::vector< cv::Mat,std::allocator< cv::Mat > >& >(result))), SWIGTYPE_p_std__vectorT_cv__Mat_std__allocatorT_cv__Mat_t_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_MarkerDetector_cornerUpsample(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::MarkerDetector *arg1 = (aruco::MarkerDetector *) 0 ;
+  std::vector< std::vector< cv::Point2f,std::allocator< cv::Point2f > >,std::allocator< std::vector< cv::Point2f,std::allocator< cv::Point2f > > > > *arg2 = 0 ;
+  cv::Size arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
-  PyObject * obj3 = 0 ;
-  PyObject * obj4 = 0 ;
-  bool result;
   
-  if (!PyArg_ParseTuple(args,(char *)"OOOOO:MarkerDetector_warp",&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OOO:MarkerDetector_cornerUpsample",&obj0,&obj1,&obj2)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__MarkerDetector, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "MarkerDetector_warp" "', argument " "1"" of type '" "aruco::MarkerDetector *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "MarkerDetector_cornerUpsample" "', argument " "1"" of type '" "aruco::MarkerDetector *""'"); 
   }
   arg1 = reinterpret_cast< aruco::MarkerDetector * >(argp1);
-  {
-    arg2 = array_to_mat(obj1);
-    if (arg2 == NULL)
-    SWIG_fail;
-    // save dataptr to check whether it changed
-    data_ptr2 = arg2->data;
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__vectorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_std__allocatorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_t_t,  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "MarkerDetector_cornerUpsample" "', argument " "2"" of type '" "std::vector< std::vector< cv::Point2f,std::allocator< cv::Point2f > >,std::allocator< std::vector< cv::Point2f,std::allocator< cv::Point2f > > > > &""'"); 
   }
-  {
-    arg3 = array_to_mat(obj2);
-    if (arg3 == NULL)
-    SWIG_fail;
-    // save dataptr to check whether it changed
-    data_ptr3 = arg3->data;
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MarkerDetector_cornerUpsample" "', argument " "2"" of type '" "std::vector< std::vector< cv::Point2f,std::allocator< cv::Point2f > >,std::allocator< std::vector< cv::Point2f,std::allocator< cv::Point2f > > > > &""'"); 
   }
+  arg2 = reinterpret_cast< std::vector< std::vector< cv::Point2f,std::allocator< cv::Point2f > >,std::allocator< std::vector< cv::Point2f,std::allocator< cv::Point2f > > > > * >(argp2);
   {
-    arg4 = *array_to_size(obj3);
-    if (&arg4 == NULL)
+    arg3 = *array_to_size(obj2);
+    if (&arg3 == NULL)
     SWIG_fail;
   }
-  {
-    std::vector< cv::Point2f,std::allocator< cv::Point2f > > *ptr = (std::vector< cv::Point2f,std::allocator< cv::Point2f > > *)0;
-    int res = swig::asptr(obj4, &ptr);
-    if (!SWIG_IsOK(res) || !ptr) {
-      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "MarkerDetector_warp" "', argument " "5"" of type '" "std::vector< cv::Point2f,std::allocator< cv::Point2f > >""'"); 
-    }
-    arg5 = *ptr;
-    if (SWIG_IsNewObj(res)) delete ptr;
-  }
-  result = (bool)(arg1)->warp(*arg2,*arg3,arg4,arg5);
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  {
-    // check if the underlying data changed
-    if (data_ptr2 != arg2->data) {
-      // TODO don't fail if we can reallocate the underlying memory
-      // (not always possible due to the way NumPy does reference counting)
-      PyErr_Format(PyExc_RuntimeError,
-        "Underlying data changed. Please make sure that the "
-        "input data is of correct size and type: %d %d %d",
-        arg2->rows, arg2->cols, arg2->type());
-      SWIG_fail;
-    }
-  }
-  {
-    // check if the underlying data changed
-    if (data_ptr3 != arg3->data) {
-      // TODO don't fail if we can reallocate the underlying memory
-      // (not always possible due to the way NumPy does reference counting)
-      PyErr_Format(PyExc_RuntimeError,
-        "Underlying data changed. Please make sure that the "
-        "input data is of correct size and type: %d %d %d",
-        arg3->rows, arg3->cols, arg3->type());
-      SWIG_fail;
-    }
-  }
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  {
-    if (arg3 != NULL)
-    delete arg3;
-  }
+  (arg1)->cornerUpsample(*arg2,arg3);
+  resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
-  {
-    if (arg3 != NULL)
-    delete arg3;
-  }
   return NULL;
 }
 
@@ -23353,6 +22501,839 @@ SWIGINTERN PyObject *MarkerLabeler_swigregister(PyObject *SWIGUNUSEDPARM(self), 
   PyObject *obj;
   if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
   SWIG_TypeNewClientData(SWIGTYPE_p_aruco__MarkerLabeler, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_FractalDetector(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_FractalDetector")) SWIG_fail;
+  result = (aruco::FractalDetector *)new aruco::FractalDetector();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_aruco__FractalDetector, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_setConfiguration__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalDetector_setConfiguration",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_setConfiguration" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "FractalDetector_setConfiguration" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  (arg1)->setConfiguration(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_setConfiguration__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  std::string arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalDetector_setConfiguration",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_setConfiguration" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    int res = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "FractalDetector_setConfiguration" "', argument " "2"" of type '" "std::string""'"); 
+    }
+    arg2 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  (arg1)->setConfiguration(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_setConfiguration(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[3] = {
+    0
+  };
+  Py_ssize_t ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalDetector, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_FractalDetector_setConfiguration__SWIG_0(self, args);
+      }
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalDetector, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_AsPtr_std_string(argv[1], (std::string**)(0));
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_FractalDetector_setConfiguration__SWIG_1(self, args);
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'FractalDetector_setConfiguration'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    aruco::FractalDetector::setConfiguration(int)\n"
+    "    aruco::FractalDetector::setConfiguration(std::string)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_setParams(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  aruco::CameraParameters *arg2 = 0 ;
+  float arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  float val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:FractalDetector_setParams",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_setParams" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_aruco__CameraParameters,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalDetector_setParams" "', argument " "2"" of type '" "aruco::CameraParameters const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalDetector_setParams" "', argument " "2"" of type '" "aruco::CameraParameters const &""'"); 
+  }
+  arg2 = reinterpret_cast< aruco::CameraParameters * >(argp2);
+  ecode3 = SWIG_AsVal_float(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "FractalDetector_setParams" "', argument " "3"" of type '" "float""'");
+  } 
+  arg3 = static_cast< float >(val3);
+  (arg1)->setParams((aruco::CameraParameters const &)*arg2,arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_getConfiguration(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FractalMarkerSet result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalDetector_getConfiguration",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_getConfiguration" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  result = (arg1)->getConfiguration();
+  resultobj = SWIG_NewPointerObj((new FractalMarkerSet(static_cast< const FractalMarkerSet& >(result))), SWIGTYPE_p_FractalMarkerSet, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_detect(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  cv::Mat *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalDetector_detect",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_detect" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  {
+    arg2 = array_to_mat(obj1);
+    if (arg2 == NULL)
+    SWIG_fail;
+  }
+  result = (bool)(arg1)->detect((cv::Mat const &)*arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  {
+    
+  }
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return resultobj;
+fail:
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_poseEstimation(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalDetector_poseEstimation",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_poseEstimation" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  result = (bool)(arg1)->poseEstimation();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_getRvec(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cv::Mat result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalDetector_getRvec",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_getRvec" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  result = (arg1)->getRvec();
+  {
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_getTvec(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cv::Mat result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalDetector_getTvec",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_getTvec" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  result = (arg1)->getTvec();
+  {
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_drawMarkers(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  cv::Mat *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uchar *data_ptr2 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalDetector_drawMarkers",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_drawMarkers" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  {
+    arg2 = array_to_mat(obj1);
+    if (arg2 == NULL)
+    SWIG_fail;
+    // save dataptr to check whether it changed
+    data_ptr2 = arg2->data;
+  }
+  (arg1)->drawMarkers(*arg2);
+  resultobj = SWIG_Py_Void();
+  {
+    // check if the underlying data changed
+    if (data_ptr2 != arg2->data) {
+      // TODO don't fail if we can reallocate the underlying memory
+      // (not always possible due to the way NumPy does reference counting)
+      PyErr_Format(PyExc_RuntimeError,
+        "Underlying data changed. Please make sure that the "
+        "input data is of correct size and type: %d %d %d",
+        arg2->rows, arg2->cols, arg2->type());
+      SWIG_fail;
+    }
+  }
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return resultobj;
+fail:
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_draw2d(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  cv::Mat *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uchar *data_ptr2 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalDetector_draw2d",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_draw2d" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  {
+    arg2 = array_to_mat(obj1);
+    if (arg2 == NULL)
+    SWIG_fail;
+    // save dataptr to check whether it changed
+    data_ptr2 = arg2->data;
+  }
+  (arg1)->draw2d(*arg2);
+  resultobj = SWIG_Py_Void();
+  {
+    // check if the underlying data changed
+    if (data_ptr2 != arg2->data) {
+      // TODO don't fail if we can reallocate the underlying memory
+      // (not always possible due to the way NumPy does reference counting)
+      PyErr_Format(PyExc_RuntimeError,
+        "Underlying data changed. Please make sure that the "
+        "input data is of correct size and type: %d %d %d",
+        arg2->rows, arg2->cols, arg2->type());
+      SWIG_fail;
+    }
+  }
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return resultobj;
+fail:
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_draw3d__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  cv::Mat *arg2 = 0 ;
+  bool arg3 ;
+  bool arg4 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uchar *data_ptr2 ;
+  bool val3 ;
+  int ecode3 = 0 ;
+  bool val4 ;
+  int ecode4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:FractalDetector_draw3d",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_draw3d" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  {
+    arg2 = array_to_mat(obj1);
+    if (arg2 == NULL)
+    SWIG_fail;
+    // save dataptr to check whether it changed
+    data_ptr2 = arg2->data;
+  }
+  ecode3 = SWIG_AsVal_bool(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "FractalDetector_draw3d" "', argument " "3"" of type '" "bool""'");
+  } 
+  arg3 = static_cast< bool >(val3);
+  ecode4 = SWIG_AsVal_bool(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "FractalDetector_draw3d" "', argument " "4"" of type '" "bool""'");
+  } 
+  arg4 = static_cast< bool >(val4);
+  (arg1)->draw3d(*arg2,arg3,arg4);
+  resultobj = SWIG_Py_Void();
+  {
+    // check if the underlying data changed
+    if (data_ptr2 != arg2->data) {
+      // TODO don't fail if we can reallocate the underlying memory
+      // (not always possible due to the way NumPy does reference counting)
+      PyErr_Format(PyExc_RuntimeError,
+        "Underlying data changed. Please make sure that the "
+        "input data is of correct size and type: %d %d %d",
+        arg2->rows, arg2->cols, arg2->type());
+      SWIG_fail;
+    }
+  }
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return resultobj;
+fail:
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_draw3d__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  cv::Mat *arg2 = 0 ;
+  bool arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uchar *data_ptr2 ;
+  bool val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:FractalDetector_draw3d",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_draw3d" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  {
+    arg2 = array_to_mat(obj1);
+    if (arg2 == NULL)
+    SWIG_fail;
+    // save dataptr to check whether it changed
+    data_ptr2 = arg2->data;
+  }
+  ecode3 = SWIG_AsVal_bool(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "FractalDetector_draw3d" "', argument " "3"" of type '" "bool""'");
+  } 
+  arg3 = static_cast< bool >(val3);
+  (arg1)->draw3d(*arg2,arg3);
+  resultobj = SWIG_Py_Void();
+  {
+    // check if the underlying data changed
+    if (data_ptr2 != arg2->data) {
+      // TODO don't fail if we can reallocate the underlying memory
+      // (not always possible due to the way NumPy does reference counting)
+      PyErr_Format(PyExc_RuntimeError,
+        "Underlying data changed. Please make sure that the "
+        "input data is of correct size and type: %d %d %d",
+        arg2->rows, arg2->cols, arg2->type());
+      SWIG_fail;
+    }
+  }
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return resultobj;
+fail:
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_draw3d__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  cv::Mat *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uchar *data_ptr2 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalDetector_draw3d",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_draw3d" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  {
+    arg2 = array_to_mat(obj1);
+    if (arg2 == NULL)
+    SWIG_fail;
+    // save dataptr to check whether it changed
+    data_ptr2 = arg2->data;
+  }
+  (arg1)->draw3d(*arg2);
+  resultobj = SWIG_Py_Void();
+  {
+    // check if the underlying data changed
+    if (data_ptr2 != arg2->data) {
+      // TODO don't fail if we can reallocate the underlying memory
+      // (not always possible due to the way NumPy does reference counting)
+      PyErr_Format(PyExc_RuntimeError,
+        "Underlying data changed. Please make sure that the "
+        "input data is of correct size and type: %d %d %d",
+        arg2->rows, arg2->cols, arg2->type());
+      SWIG_fail;
+    }
+  }
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return resultobj;
+fail:
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_draw3d(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[5] = {
+    0
+  };
+  Py_ssize_t ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 4) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalDetector, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        _v = is_array(argv[1]) || PySequence_Check(argv[1]);
+      }
+      if (_v) {
+        return _wrap_FractalDetector_draw3d__SWIG_2(self, args);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalDetector, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        _v = is_array(argv[1]) || PySequence_Check(argv[1]);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_bool(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_FractalDetector_draw3d__SWIG_1(self, args);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalDetector, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        _v = is_array(argv[1]) || PySequence_Check(argv[1]);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_bool(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          {
+            int res = SWIG_AsVal_bool(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            return _wrap_FractalDetector_draw3d__SWIG_0(self, args);
+          }
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'FractalDetector_draw3d'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    aruco::FractalDetector::draw3d(cv::Mat &,bool,bool)\n"
+    "    aruco::FractalDetector::draw3d(cv::Mat &,bool)\n"
+    "    aruco::FractalDetector::draw3d(cv::Mat &)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_draw3dCube(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  cv::Mat *arg2 = 0 ;
+  FractalMarker arg3 ;
+  aruco::CameraParameters *arg4 = 0 ;
+  int arg5 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uchar *data_ptr2 ;
+  void *argp3 ;
+  int res3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  int val5 ;
+  int ecode5 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOOO:FractalDetector_draw3dCube",&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_draw3dCube" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  {
+    arg2 = array_to_mat(obj1);
+    if (arg2 == NULL)
+    SWIG_fail;
+    // save dataptr to check whether it changed
+    data_ptr2 = arg2->data;
+  }
+  {
+    res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_FractalMarker,  0  | 0);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "FractalDetector_draw3dCube" "', argument " "3"" of type '" "FractalMarker""'"); 
+    }  
+    if (!argp3) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalDetector_draw3dCube" "', argument " "3"" of type '" "FractalMarker""'");
+    } else {
+      FractalMarker * temp = reinterpret_cast< FractalMarker * >(argp3);
+      arg3 = *temp;
+      if (SWIG_IsNewObj(res3)) delete temp;
+    }
+  }
+  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_aruco__CameraParameters,  0  | 0);
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "FractalDetector_draw3dCube" "', argument " "4"" of type '" "aruco::CameraParameters const &""'"); 
+  }
+  if (!argp4) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalDetector_draw3dCube" "', argument " "4"" of type '" "aruco::CameraParameters const &""'"); 
+  }
+  arg4 = reinterpret_cast< aruco::CameraParameters * >(argp4);
+  ecode5 = SWIG_AsVal_int(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "FractalDetector_draw3dCube" "', argument " "5"" of type '" "int""'");
+  } 
+  arg5 = static_cast< int >(val5);
+  (arg1)->draw3dCube(*arg2,arg3,(aruco::CameraParameters const &)*arg4,arg5);
+  resultobj = SWIG_Py_Void();
+  {
+    // check if the underlying data changed
+    if (data_ptr2 != arg2->data) {
+      // TODO don't fail if we can reallocate the underlying memory
+      // (not always possible due to the way NumPy does reference counting)
+      PyErr_Format(PyExc_RuntimeError,
+        "Underlying data changed. Please make sure that the "
+        "input data is of correct size and type: %d %d %d",
+        arg2->rows, arg2->cols, arg2->type());
+      SWIG_fail;
+    }
+  }
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return resultobj;
+fail:
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalDetector_getMarkers(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< aruco::Marker,std::allocator< aruco::Marker > > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalDetector_getMarkers",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalDetector_getMarkers" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  result = (arg1)->getMarkers();
+  resultobj = swig::from(static_cast< std::vector< aruco::Marker,std::allocator< aruco::Marker > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_FractalDetector(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalDetector *arg1 = (aruco::FractalDetector *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_FractalDetector",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalDetector, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_FractalDetector" "', argument " "1"" of type '" "aruco::FractalDetector *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalDetector * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *FractalDetector_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_aruco__FractalDetector, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
 
@@ -25414,19 +25395,178 @@ SWIGINTERN PyObject *MarkerMapPoseTracker_swigregister(PyObject *SWIGUNUSEDPARM(
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *_wrap_delete_DictionaryBased(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_PicoFlann_KeyPointAdapter___call____SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  aruco::DictionaryBased *arg1 = (aruco::DictionaryBased *) 0 ;
+  aruco::PicoFlann_KeyPointAdapter *arg1 = (aruco::PicoFlann_KeyPointAdapter *) 0 ;
+  cv::KeyPoint *arg2 = 0 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:PicoFlann_KeyPointAdapter___call__",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__PicoFlann_KeyPointAdapter, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "PicoFlann_KeyPointAdapter___call__" "', argument " "1"" of type '" "aruco::PicoFlann_KeyPointAdapter const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::PicoFlann_KeyPointAdapter * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cv__KeyPoint,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "PicoFlann_KeyPointAdapter___call__" "', argument " "2"" of type '" "cv::KeyPoint const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "PicoFlann_KeyPointAdapter___call__" "', argument " "2"" of type '" "cv::KeyPoint const &""'"); 
+  }
+  arg2 = reinterpret_cast< cv::KeyPoint * >(argp2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "PicoFlann_KeyPointAdapter___call__" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  result = (float)((aruco::PicoFlann_KeyPointAdapter const *)arg1)->operator ()((cv::KeyPoint const &)*arg2,arg3);
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_PicoFlann_KeyPointAdapter___call____SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::PicoFlann_KeyPointAdapter *arg1 = (aruco::PicoFlann_KeyPointAdapter *) 0 ;
+  cv::Point2f *arg2 = 0 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:PicoFlann_KeyPointAdapter___call__",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__PicoFlann_KeyPointAdapter, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "PicoFlann_KeyPointAdapter___call__" "', argument " "1"" of type '" "aruco::PicoFlann_KeyPointAdapter const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::PicoFlann_KeyPointAdapter * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cv__Point2f,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "PicoFlann_KeyPointAdapter___call__" "', argument " "2"" of type '" "cv::Point2f const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "PicoFlann_KeyPointAdapter___call__" "', argument " "2"" of type '" "cv::Point2f const &""'"); 
+  }
+  arg2 = reinterpret_cast< cv::Point2f * >(argp2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "PicoFlann_KeyPointAdapter___call__" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  result = (float)((aruco::PicoFlann_KeyPointAdapter const *)arg1)->operator ()((cv::Point2f const &)*arg2,arg3);
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_PicoFlann_KeyPointAdapter___call__(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[4] = {
+    0
+  };
+  Py_ssize_t ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__PicoFlann_KeyPointAdapter, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_cv__KeyPoint, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_PicoFlann_KeyPointAdapter___call____SWIG_0(self, args);
+        }
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__PicoFlann_KeyPointAdapter, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_cv__Point2f, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_PicoFlann_KeyPointAdapter___call____SWIG_1(self, args);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'PicoFlann_KeyPointAdapter___call__'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    aruco::PicoFlann_KeyPointAdapter::operator ()(cv::KeyPoint const &,int) const\n"
+    "    aruco::PicoFlann_KeyPointAdapter::operator ()(cv::Point2f const &,int) const\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_PicoFlann_KeyPointAdapter(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::PicoFlann_KeyPointAdapter *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_PicoFlann_KeyPointAdapter")) SWIG_fail;
+  result = (aruco::PicoFlann_KeyPointAdapter *)new aruco::PicoFlann_KeyPointAdapter();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_aruco__PicoFlann_KeyPointAdapter, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_PicoFlann_KeyPointAdapter(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::PicoFlann_KeyPointAdapter *arg1 = (aruco::PicoFlann_KeyPointAdapter *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:delete_DictionaryBased",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__DictionaryBased, SWIG_POINTER_DISOWN |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_PicoFlann_KeyPointAdapter",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__PicoFlann_KeyPointAdapter, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_DictionaryBased" "', argument " "1"" of type '" "aruco::DictionaryBased *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_PicoFlann_KeyPointAdapter" "', argument " "1"" of type '" "aruco::PicoFlann_KeyPointAdapter *""'"); 
   }
-  arg1 = reinterpret_cast< aruco::DictionaryBased * >(argp1);
+  arg1 = reinterpret_cast< aruco::PicoFlann_KeyPointAdapter * >(argp1);
   delete arg1;
   resultobj = SWIG_Py_Void();
   return resultobj;
@@ -25435,14 +25575,1831 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_DictionaryBased_setParams(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *PicoFlann_KeyPointAdapter_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_aruco__PicoFlann_KeyPointAdapter, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_FractalPoseTracker(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  aruco::DictionaryBased *arg1 = (aruco::DictionaryBased *) 0 ;
-  aruco::Dictionary *arg2 = 0 ;
-  float arg3 ;
+  aruco::FractalPoseTracker *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_FractalPoseTracker")) SWIG_fail;
+  result = (aruco::FractalPoseTracker *)new aruco::FractalPoseTracker();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_aruco__FractalPoseTracker, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_setParams(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  aruco::CameraParameters *arg2 = 0 ;
+  FractalMarkerSet *arg3 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:FractalPoseTracker_setParams",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_setParams" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_aruco__CameraParameters,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalPoseTracker_setParams" "', argument " "2"" of type '" "aruco::CameraParameters const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_setParams" "', argument " "2"" of type '" "aruco::CameraParameters const &""'"); 
+  }
+  arg2 = reinterpret_cast< aruco::CameraParameters * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_FractalMarkerSet,  0  | 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "FractalPoseTracker_setParams" "', argument " "3"" of type '" "FractalMarkerSet const &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_setParams" "', argument " "3"" of type '" "FractalMarkerSet const &""'"); 
+  }
+  arg3 = reinterpret_cast< FractalMarkerSet * >(argp3);
+  (arg1)->setParams((aruco::CameraParameters const &)*arg2,(FractalMarkerSet const &)*arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_fractalInnerPose__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  cv::Ptr< aruco::MarkerDetector > arg2 ;
+  std::vector< aruco::Marker,std::allocator< aruco::Marker > > *arg3 = 0 ;
+  bool arg4 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  int res3 = SWIG_OLDOBJ ;
+  bool val4 ;
+  int ecode4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:FractalPoseTracker_fractalInnerPose",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_fractalInnerPose" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cv__PtrT_aruco__MarkerDetector_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalPoseTracker_fractalInnerPose" "', argument " "2"" of type '" "cv::Ptr< aruco::MarkerDetector > const""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractalInnerPose" "', argument " "2"" of type '" "cv::Ptr< aruco::MarkerDetector > const""'");
+    } else {
+      cv::Ptr< aruco::MarkerDetector > * temp = reinterpret_cast< cv::Ptr< aruco::MarkerDetector > * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  {
+    std::vector< aruco::Marker,std::allocator< aruco::Marker > > *ptr = (std::vector< aruco::Marker,std::allocator< aruco::Marker > > *)0;
+    res3 = swig::asptr(obj2, &ptr);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "FractalPoseTracker_fractalInnerPose" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractalInnerPose" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > const &""'"); 
+    }
+    arg3 = ptr;
+  }
+  ecode4 = SWIG_AsVal_bool(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "FractalPoseTracker_fractalInnerPose" "', argument " "4"" of type '" "bool""'");
+  } 
+  arg4 = static_cast< bool >(val4);
+  result = (bool)(arg1)->fractalInnerPose(arg2,(std::vector< aruco::Marker,std::allocator< aruco::Marker > > const &)*arg3,arg4);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  if (SWIG_IsNewObj(res3)) delete arg3;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res3)) delete arg3;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_fractalInnerPose__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  cv::Ptr< aruco::MarkerDetector > arg2 ;
+  std::vector< aruco::Marker,std::allocator< aruco::Marker > > *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  int res3 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:FractalPoseTracker_fractalInnerPose",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_fractalInnerPose" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cv__PtrT_aruco__MarkerDetector_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalPoseTracker_fractalInnerPose" "', argument " "2"" of type '" "cv::Ptr< aruco::MarkerDetector > const""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractalInnerPose" "', argument " "2"" of type '" "cv::Ptr< aruco::MarkerDetector > const""'");
+    } else {
+      cv::Ptr< aruco::MarkerDetector > * temp = reinterpret_cast< cv::Ptr< aruco::MarkerDetector > * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  {
+    std::vector< aruco::Marker,std::allocator< aruco::Marker > > *ptr = (std::vector< aruco::Marker,std::allocator< aruco::Marker > > *)0;
+    res3 = swig::asptr(obj2, &ptr);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "FractalPoseTracker_fractalInnerPose" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractalInnerPose" "', argument " "3"" of type '" "std::vector< aruco::Marker,std::allocator< aruco::Marker > > const &""'"); 
+    }
+    arg3 = ptr;
+  }
+  result = (bool)(arg1)->fractalInnerPose(arg2,(std::vector< aruco::Marker,std::allocator< aruco::Marker > > const &)*arg3);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  if (SWIG_IsNewObj(res3)) delete arg3;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res3)) delete arg3;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_fractalInnerPose(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[5] = {
+    0
+  };
+  Py_ssize_t ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 4) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalPoseTracker, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_cv__PtrT_aruco__MarkerDetector_t, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        int res = swig::asptr(argv[2], (std::vector< aruco::Marker,std::allocator< aruco::Marker > >**)(0));
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_FractalPoseTracker_fractalInnerPose__SWIG_1(self, args);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalPoseTracker, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_cv__PtrT_aruco__MarkerDetector_t, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        int res = swig::asptr(argv[2], (std::vector< aruco::Marker,std::allocator< aruco::Marker > >**)(0));
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          {
+            int res = SWIG_AsVal_bool(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            return _wrap_FractalPoseTracker_fractalInnerPose__SWIG_0(self, args);
+          }
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'FractalPoseTracker_fractalInnerPose'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    aruco::FractalPoseTracker::fractalInnerPose(cv::Ptr< aruco::MarkerDetector > const,std::vector< aruco::Marker,std::allocator< aruco::Marker > > const &,bool)\n"
+    "    aruco::FractalPoseTracker::fractalInnerPose(cv::Ptr< aruco::MarkerDetector > const,std::vector< aruco::Marker,std::allocator< aruco::Marker > > const &)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_ROI(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  SwigValueWrapper< std::vector< cv::Mat,std::allocator< cv::Mat > > > arg2 ;
+  cv::Mat *arg3 = 0 ;
+  std::vector< cv::Point2f,std::allocator< cv::Point2f > > *arg4 = 0 ;
+  cv::Point2f *arg5 = 0 ;
+  float *arg6 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  uchar *data_ptr3 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  void *argp5 = 0 ;
+  int res5 = 0 ;
+  void *argp6 = 0 ;
+  int res6 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  PyObject * obj5 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOOOO:FractalPoseTracker_ROI",&obj0,&obj1,&obj2,&obj3,&obj4,&obj5)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_ROI" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__vectorT_cv__Mat_std__allocatorT_cv__Mat_t_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalPoseTracker_ROI" "', argument " "2"" of type '" "std::vector< cv::Mat,std::allocator< cv::Mat > > const""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_ROI" "', argument " "2"" of type '" "std::vector< cv::Mat,std::allocator< cv::Mat > > const""'");
+    } else {
+      std::vector< cv::Mat,std::allocator< cv::Mat > > * temp = reinterpret_cast< std::vector< cv::Mat,std::allocator< cv::Mat > > * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  {
+    arg3 = array_to_mat(obj2);
+    if (arg3 == NULL)
+    SWIG_fail;
+    // save dataptr to check whether it changed
+    data_ptr3 = arg3->data;
+  }
+  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t,  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "FractalPoseTracker_ROI" "', argument " "4"" of type '" "std::vector< cv::Point2f,std::allocator< cv::Point2f > > &""'"); 
+  }
+  if (!argp4) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_ROI" "', argument " "4"" of type '" "std::vector< cv::Point2f,std::allocator< cv::Point2f > > &""'"); 
+  }
+  arg4 = reinterpret_cast< std::vector< cv::Point2f,std::allocator< cv::Point2f > > * >(argp4);
+  res5 = SWIG_ConvertPtr(obj4, &argp5, SWIGTYPE_p_cv__Point2f,  0 );
+  if (!SWIG_IsOK(res5)) {
+    SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "FractalPoseTracker_ROI" "', argument " "5"" of type '" "cv::Point2f &""'"); 
+  }
+  if (!argp5) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_ROI" "', argument " "5"" of type '" "cv::Point2f &""'"); 
+  }
+  arg5 = reinterpret_cast< cv::Point2f * >(argp5);
+  res6 = SWIG_ConvertPtr(obj5, &argp6, SWIGTYPE_p_float,  0 );
+  if (!SWIG_IsOK(res6)) {
+    SWIG_exception_fail(SWIG_ArgError(res6), "in method '" "FractalPoseTracker_ROI" "', argument " "6"" of type '" "float &""'"); 
+  }
+  if (!argp6) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_ROI" "', argument " "6"" of type '" "float &""'"); 
+  }
+  arg6 = reinterpret_cast< float * >(argp6);
+  (arg1)->ROI(arg2,*arg3,*arg4,*arg5,*arg6);
+  resultobj = SWIG_Py_Void();
+  {
+    // check if the underlying data changed
+    if (data_ptr3 != arg3->data) {
+      // TODO don't fail if we can reallocate the underlying memory
+      // (not always possible due to the way NumPy does reference counting)
+      PyErr_Format(PyExc_RuntimeError,
+        "Underlying data changed. Please make sure that the "
+        "input data is of correct size and type: %d %d %d",
+        arg3->rows, arg3->cols, arg3->type());
+      SWIG_fail;
+    }
+  }
+  {
+    if (arg3 != NULL)
+    delete arg3;
+  }
+  return resultobj;
+fail:
+  {
+    if (arg3 != NULL)
+    delete arg3;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_assignClass__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  cv::Mat *arg2 = 0 ;
+  std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > *arg3 = 0 ;
+  bool arg4 ;
+  int arg5 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  bool val4 ;
+  int ecode4 = 0 ;
+  int val5 ;
+  int ecode5 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOOO:FractalPoseTracker_assignClass",&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_assignClass" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  {
+    arg2 = array_to_mat(obj1);
+    if (arg2 == NULL)
+    SWIG_fail;
+  }
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t,  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "FractalPoseTracker_assignClass" "', argument " "3"" of type '" "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_assignClass" "', argument " "3"" of type '" "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > &""'"); 
+  }
+  arg3 = reinterpret_cast< std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > * >(argp3);
+  ecode4 = SWIG_AsVal_bool(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "FractalPoseTracker_assignClass" "', argument " "4"" of type '" "bool""'");
+  } 
+  arg4 = static_cast< bool >(val4);
+  ecode5 = SWIG_AsVal_int(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "FractalPoseTracker_assignClass" "', argument " "5"" of type '" "int""'");
+  } 
+  arg5 = static_cast< int >(val5);
+  (arg1)->assignClass((cv::Mat const &)*arg2,*arg3,arg4,arg5);
+  resultobj = SWIG_Py_Void();
+  {
+    
+  }
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return resultobj;
+fail:
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_assignClass__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  cv::Mat *arg2 = 0 ;
+  std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > *arg3 = 0 ;
+  bool arg4 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  bool val4 ;
+  int ecode4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:FractalPoseTracker_assignClass",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_assignClass" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  {
+    arg2 = array_to_mat(obj1);
+    if (arg2 == NULL)
+    SWIG_fail;
+  }
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t,  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "FractalPoseTracker_assignClass" "', argument " "3"" of type '" "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_assignClass" "', argument " "3"" of type '" "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > &""'"); 
+  }
+  arg3 = reinterpret_cast< std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > * >(argp3);
+  ecode4 = SWIG_AsVal_bool(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "FractalPoseTracker_assignClass" "', argument " "4"" of type '" "bool""'");
+  } 
+  arg4 = static_cast< bool >(val4);
+  (arg1)->assignClass((cv::Mat const &)*arg2,*arg3,arg4);
+  resultobj = SWIG_Py_Void();
+  {
+    
+  }
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return resultobj;
+fail:
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_assignClass__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  cv::Mat *arg2 = 0 ;
+  std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:FractalPoseTracker_assignClass",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_assignClass" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  {
+    arg2 = array_to_mat(obj1);
+    if (arg2 == NULL)
+    SWIG_fail;
+  }
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t,  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "FractalPoseTracker_assignClass" "', argument " "3"" of type '" "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_assignClass" "', argument " "3"" of type '" "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > &""'"); 
+  }
+  arg3 = reinterpret_cast< std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > * >(argp3);
+  (arg1)->assignClass((cv::Mat const &)*arg2,*arg3);
+  resultobj = SWIG_Py_Void();
+  {
+    
+  }
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return resultobj;
+fail:
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_assignClass(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[6] = {
+    0
+  };
+  Py_ssize_t ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 5) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalPoseTracker, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        _v = true;//is_array(argv[1]) || PySequence_Check(argv[1]);
+      }
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_FractalPoseTracker_assignClass__SWIG_2(self, args);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalPoseTracker, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        _v = true;//is_array(argv[1]) || PySequence_Check(argv[1]);
+      }
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          {
+            int res = SWIG_AsVal_bool(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            return _wrap_FractalPoseTracker_assignClass__SWIG_1(self, args);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 5) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalPoseTracker, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        _v = true;//is_array(argv[1]) || PySequence_Check(argv[1]);
+      }
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          {
+            int res = SWIG_AsVal_bool(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            {
+              int res = SWIG_AsVal_int(argv[4], NULL);
+              _v = SWIG_CheckState(res);
+            }
+            if (_v) {
+              return _wrap_FractalPoseTracker_assignClass__SWIG_0(self, args);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'FractalPoseTracker_assignClass'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    aruco::FractalPoseTracker::assignClass(cv::Mat const &,std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > &,bool,int)\n"
+    "    aruco::FractalPoseTracker::assignClass(cv::Mat const &,std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > &,bool)\n"
+    "    aruco::FractalPoseTracker::assignClass(cv::Mat const &,std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > &)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_fractal_solve_ransac__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  int arg2 ;
+  SwigValueWrapper< std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > > > arg3 ;
+  SwigValueWrapper< std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > > arg4 ;
+  uint32_t arg5 ;
+  float arg6 ;
+  float arg7 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  void *argp3 ;
+  int res3 = 0 ;
+  void *argp4 ;
+  int res4 = 0 ;
+  void *argp5 ;
+  int res5 = 0 ;
+  float val6 ;
+  int ecode6 = 0 ;
+  float val7 ;
+  int ecode7 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  PyObject * obj5 = 0 ;
+  PyObject * obj6 = 0 ;
+  cv::Mat result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOOOOO:FractalPoseTracker_fractal_solve_ransac",&obj0,&obj1,&obj2,&obj3,&obj4,&obj5,&obj6)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t,  0  | 0);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "3"" of type '" "std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > >""'"); 
+    }  
+    if (!argp3) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "3"" of type '" "std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > >""'");
+    } else {
+      std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > > * temp = reinterpret_cast< std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > > * >(argp3);
+      arg3 = *temp;
+      if (SWIG_IsNewObj(res3)) delete temp;
+    }
+  }
+  {
+    res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t,  0  | 0);
+    if (!SWIG_IsOK(res4)) {
+      SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "4"" of type '" "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > >""'"); 
+    }  
+    if (!argp4) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "4"" of type '" "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > >""'");
+    } else {
+      std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > * temp = reinterpret_cast< std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > * >(argp4);
+      arg4 = *temp;
+      if (SWIG_IsNewObj(res4)) delete temp;
+    }
+  }
+  {
+    res5 = SWIG_ConvertPtr(obj4, &argp5, SWIGTYPE_p_uint32_t,  0  | 0);
+    if (!SWIG_IsOK(res5)) {
+      SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "5"" of type '" "uint32_t""'"); 
+    }  
+    if (!argp5) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "5"" of type '" "uint32_t""'");
+    } else {
+      uint32_t * temp = reinterpret_cast< uint32_t * >(argp5);
+      arg5 = *temp;
+      if (SWIG_IsNewObj(res5)) delete temp;
+    }
+  }
+  ecode6 = SWIG_AsVal_float(obj5, &val6);
+  if (!SWIG_IsOK(ecode6)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "6"" of type '" "float""'");
+  } 
+  arg6 = static_cast< float >(val6);
+  ecode7 = SWIG_AsVal_float(obj6, &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "7"" of type '" "float""'");
+  } 
+  arg7 = static_cast< float >(val7);
+  result = (arg1)->fractal_solve_ransac(arg2,arg3,arg4,arg5,arg6,arg7);
+  {
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_fractal_solve_ransac__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  int arg2 ;
+  SwigValueWrapper< std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > > > arg3 ;
+  SwigValueWrapper< std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > > arg4 ;
+  uint32_t arg5 ;
+  float arg6 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  void *argp3 ;
+  int res3 = 0 ;
+  void *argp4 ;
+  int res4 = 0 ;
+  void *argp5 ;
+  int res5 = 0 ;
+  float val6 ;
+  int ecode6 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  PyObject * obj5 = 0 ;
+  cv::Mat result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOOOO:FractalPoseTracker_fractal_solve_ransac",&obj0,&obj1,&obj2,&obj3,&obj4,&obj5)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t,  0  | 0);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "3"" of type '" "std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > >""'"); 
+    }  
+    if (!argp3) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "3"" of type '" "std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > >""'");
+    } else {
+      std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > > * temp = reinterpret_cast< std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > > * >(argp3);
+      arg3 = *temp;
+      if (SWIG_IsNewObj(res3)) delete temp;
+    }
+  }
+  {
+    res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t,  0  | 0);
+    if (!SWIG_IsOK(res4)) {
+      SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "4"" of type '" "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > >""'"); 
+    }  
+    if (!argp4) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "4"" of type '" "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > >""'");
+    } else {
+      std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > * temp = reinterpret_cast< std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > * >(argp4);
+      arg4 = *temp;
+      if (SWIG_IsNewObj(res4)) delete temp;
+    }
+  }
+  {
+    res5 = SWIG_ConvertPtr(obj4, &argp5, SWIGTYPE_p_uint32_t,  0  | 0);
+    if (!SWIG_IsOK(res5)) {
+      SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "5"" of type '" "uint32_t""'"); 
+    }  
+    if (!argp5) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "5"" of type '" "uint32_t""'");
+    } else {
+      uint32_t * temp = reinterpret_cast< uint32_t * >(argp5);
+      arg5 = *temp;
+      if (SWIG_IsNewObj(res5)) delete temp;
+    }
+  }
+  ecode6 = SWIG_AsVal_float(obj5, &val6);
+  if (!SWIG_IsOK(ecode6)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "6"" of type '" "float""'");
+  } 
+  arg6 = static_cast< float >(val6);
+  result = (arg1)->fractal_solve_ransac(arg2,arg3,arg4,arg5,arg6);
+  {
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_fractal_solve_ransac__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  int arg2 ;
+  SwigValueWrapper< std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > > > arg3 ;
+  SwigValueWrapper< std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > > arg4 ;
+  uint32_t arg5 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  void *argp3 ;
+  int res3 = 0 ;
+  void *argp4 ;
+  int res4 = 0 ;
+  void *argp5 ;
+  int res5 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  cv::Mat result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOOO:FractalPoseTracker_fractal_solve_ransac",&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t,  0  | 0);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "3"" of type '" "std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > >""'"); 
+    }  
+    if (!argp3) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "3"" of type '" "std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > >""'");
+    } else {
+      std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > > * temp = reinterpret_cast< std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > > * >(argp3);
+      arg3 = *temp;
+      if (SWIG_IsNewObj(res3)) delete temp;
+    }
+  }
+  {
+    res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t,  0  | 0);
+    if (!SWIG_IsOK(res4)) {
+      SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "4"" of type '" "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > >""'"); 
+    }  
+    if (!argp4) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "4"" of type '" "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > >""'");
+    } else {
+      std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > * temp = reinterpret_cast< std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > * >(argp4);
+      arg4 = *temp;
+      if (SWIG_IsNewObj(res4)) delete temp;
+    }
+  }
+  {
+    res5 = SWIG_ConvertPtr(obj4, &argp5, SWIGTYPE_p_uint32_t,  0  | 0);
+    if (!SWIG_IsOK(res5)) {
+      SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "5"" of type '" "uint32_t""'"); 
+    }  
+    if (!argp5) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "5"" of type '" "uint32_t""'");
+    } else {
+      uint32_t * temp = reinterpret_cast< uint32_t * >(argp5);
+      arg5 = *temp;
+      if (SWIG_IsNewObj(res5)) delete temp;
+    }
+  }
+  result = (arg1)->fractal_solve_ransac(arg2,arg3,arg4,arg5);
+  {
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_fractal_solve_ransac__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  int arg2 ;
+  SwigValueWrapper< std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > > > arg3 ;
+  SwigValueWrapper< std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > > arg4 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  void *argp3 ;
+  int res3 = 0 ;
+  void *argp4 ;
+  int res4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  cv::Mat result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:FractalPoseTracker_fractal_solve_ransac",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t,  0  | 0);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "3"" of type '" "std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > >""'"); 
+    }  
+    if (!argp3) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "3"" of type '" "std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > >""'");
+    } else {
+      std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > > * temp = reinterpret_cast< std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > > * >(argp3);
+      arg3 = *temp;
+      if (SWIG_IsNewObj(res3)) delete temp;
+    }
+  }
+  {
+    res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t,  0  | 0);
+    if (!SWIG_IsOK(res4)) {
+      SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "4"" of type '" "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > >""'"); 
+    }  
+    if (!argp4) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractal_solve_ransac" "', argument " "4"" of type '" "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > >""'");
+    } else {
+      std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > * temp = reinterpret_cast< std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > * >(argp4);
+      arg4 = *temp;
+      if (SWIG_IsNewObj(res4)) delete temp;
+    }
+  }
+  result = (arg1)->fractal_solve_ransac(arg2,arg3,arg4);
+  {
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_fractal_solve_ransac(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[8] = {
+    0
+  };
+  Py_ssize_t ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 7) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 4) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalPoseTracker, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          int res = SWIG_ConvertPtr(argv[3], 0, SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t, 0);
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            return _wrap_FractalPoseTracker_fractal_solve_ransac__SWIG_3(self, args);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 5) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalPoseTracker, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          int res = SWIG_ConvertPtr(argv[3], 0, SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t, 0);
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            int res = SWIG_ConvertPtr(argv[4], 0, SWIGTYPE_p_uint32_t, 0);
+            _v = SWIG_CheckState(res);
+            if (_v) {
+              return _wrap_FractalPoseTracker_fractal_solve_ransac__SWIG_2(self, args);
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 6) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalPoseTracker, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          int res = SWIG_ConvertPtr(argv[3], 0, SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t, 0);
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            int res = SWIG_ConvertPtr(argv[4], 0, SWIGTYPE_p_uint32_t, 0);
+            _v = SWIG_CheckState(res);
+            if (_v) {
+              {
+                int res = SWIG_AsVal_float(argv[5], NULL);
+                _v = SWIG_CheckState(res);
+              }
+              if (_v) {
+                return _wrap_FractalPoseTracker_fractal_solve_ransac__SWIG_1(self, args);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 7) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalPoseTracker, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          int res = SWIG_ConvertPtr(argv[3], 0, SWIGTYPE_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t, 0);
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            int res = SWIG_ConvertPtr(argv[4], 0, SWIGTYPE_p_uint32_t, 0);
+            _v = SWIG_CheckState(res);
+            if (_v) {
+              {
+                int res = SWIG_AsVal_float(argv[5], NULL);
+                _v = SWIG_CheckState(res);
+              }
+              if (_v) {
+                {
+                  int res = SWIG_AsVal_float(argv[6], NULL);
+                  _v = SWIG_CheckState(res);
+                }
+                if (_v) {
+                  return _wrap_FractalPoseTracker_fractal_solve_ransac__SWIG_0(self, args);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'FractalPoseTracker_fractal_solve_ransac'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    aruco::FractalPoseTracker::fractal_solve_ransac(int,std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > >,std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > >,uint32_t,float,float)\n"
+    "    aruco::FractalPoseTracker::fractal_solve_ransac(int,std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > >,std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > >,uint32_t,float)\n"
+    "    aruco::FractalPoseTracker::fractal_solve_ransac(int,std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > >,std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > >,uint32_t)\n"
+    "    aruco::FractalPoseTracker::fractal_solve_ransac(int,std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > >,std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > >)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_fractalRefinement__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  cv::Ptr< aruco::MarkerDetector > arg2 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:FractalPoseTracker_fractalRefinement",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_fractalRefinement" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cv__PtrT_aruco__MarkerDetector_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalPoseTracker_fractalRefinement" "', argument " "2"" of type '" "cv::Ptr< aruco::MarkerDetector > const""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractalRefinement" "', argument " "2"" of type '" "cv::Ptr< aruco::MarkerDetector > const""'");
+    } else {
+      cv::Ptr< aruco::MarkerDetector > * temp = reinterpret_cast< cv::Ptr< aruco::MarkerDetector > * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "FractalPoseTracker_fractalRefinement" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  result = (bool)(arg1)->fractalRefinement(arg2,arg3);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_fractalRefinement__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  cv::Ptr< aruco::MarkerDetector > arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalPoseTracker_fractalRefinement",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_fractalRefinement" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cv__PtrT_aruco__MarkerDetector_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalPoseTracker_fractalRefinement" "', argument " "2"" of type '" "cv::Ptr< aruco::MarkerDetector > const""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalPoseTracker_fractalRefinement" "', argument " "2"" of type '" "cv::Ptr< aruco::MarkerDetector > const""'");
+    } else {
+      cv::Ptr< aruco::MarkerDetector > * temp = reinterpret_cast< cv::Ptr< aruco::MarkerDetector > * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  result = (bool)(arg1)->fractalRefinement(arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_fractalRefinement(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[4] = {
+    0
+  };
+  Py_ssize_t ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalPoseTracker, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_cv__PtrT_aruco__MarkerDetector_t, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_FractalPoseTracker_fractalRefinement__SWIG_1(self, args);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalPoseTracker, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_cv__PtrT_aruco__MarkerDetector_t, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_FractalPoseTracker_fractalRefinement__SWIG_0(self, args);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'FractalPoseTracker_fractalRefinement'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    aruco::FractalPoseTracker::fractalRefinement(cv::Ptr< aruco::MarkerDetector > const,int)\n"
+    "    aruco::FractalPoseTracker::fractalRefinement(cv::Ptr< aruco::MarkerDetector > const)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_getRvec(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cv::Mat result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalPoseTracker_getRvec",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_getRvec" "', argument " "1"" of type '" "aruco::FractalPoseTracker const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  result = ((aruco::FractalPoseTracker const *)arg1)->getRvec();
+  {
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_getTvec(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cv::Mat result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalPoseTracker_getTvec",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_getTvec" "', argument " "1"" of type '" "aruco::FractalPoseTracker const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  result = ((aruco::FractalPoseTracker const *)arg1)->getTvec();
+  {
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_getInner3d(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  SwigValueWrapper< std::vector< cv::Point3f,std::allocator< cv::Point3f > > > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalPoseTracker_getInner3d",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_getInner3d" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  result = (arg1)->getInner3d();
+  resultobj = SWIG_NewPointerObj((new std::vector< cv::Point3f,std::allocator< cv::Point3f > >(static_cast< const std::vector< cv::Point3f,std::allocator< cv::Point3f > >& >(result))), SWIGTYPE_p_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalPoseTracker_isPoseValid(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalPoseTracker_isPoseValid",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalPoseTracker_isPoseValid" "', argument " "1"" of type '" "aruco::FractalPoseTracker const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  result = (bool)((aruco::FractalPoseTracker const *)arg1)->isPoseValid();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_FractalPoseTracker(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalPoseTracker *arg1 = (aruco::FractalPoseTracker *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_FractalPoseTracker",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalPoseTracker, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_FractalPoseTracker" "', argument " "1"" of type '" "aruco::FractalPoseTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalPoseTracker * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *FractalPoseTracker_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_aruco__FractalPoseTracker, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_FractalMarkerLabeler_create__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::string arg1 ;
+  PyObject * obj0 = 0 ;
+  cv::Ptr< aruco::FractalMarkerLabeler > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerLabeler_create",&obj0)) SWIG_fail;
+  {
+    std::string *ptr = (std::string *)0;
+    int res = SWIG_AsPtr_std_string(obj0, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "FractalMarkerLabeler_create" "', argument " "1"" of type '" "std::string""'"); 
+    }
+    arg1 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  result = aruco::FractalMarkerLabeler::create(arg1);
+  resultobj = SWIG_NewPointerObj((new cv::Ptr< aruco::FractalMarkerLabeler >(static_cast< const cv::Ptr< aruco::FractalMarkerLabeler >& >(result))), SWIGTYPE_p_cv__PtrT_aruco__FractalMarkerLabeler_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerLabeler_create__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FractalMarkerSet::CONF_TYPES arg1 ;
+  void *argp1 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cv::Ptr< aruco::FractalMarkerLabeler > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerLabeler_create",&obj0)) SWIG_fail;
+  {
+    res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_FractalMarkerSet__CONF_TYPES,  0  | 0);
+    if (!SWIG_IsOK(res1)) {
+      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerLabeler_create" "', argument " "1"" of type '" "FractalMarkerSet::CONF_TYPES""'"); 
+    }  
+    if (!argp1) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerLabeler_create" "', argument " "1"" of type '" "FractalMarkerSet::CONF_TYPES""'");
+    } else {
+      FractalMarkerSet::CONF_TYPES * temp = reinterpret_cast< FractalMarkerSet::CONF_TYPES * >(argp1);
+      arg1 = *temp;
+      if (SWIG_IsNewObj(res1)) delete temp;
+    }
+  }
+  result = aruco::FractalMarkerLabeler::create(arg1);
+  resultobj = SWIG_NewPointerObj((new cv::Ptr< aruco::FractalMarkerLabeler >(static_cast< const cv::Ptr< aruco::FractalMarkerLabeler >& >(result))), SWIGTYPE_p_cv__PtrT_aruco__FractalMarkerLabeler_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerLabeler_create(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[2] = {
+    0
+  };
+  Py_ssize_t ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 1) {
+    int _v;
+    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_FractalMarkerSet__CONF_TYPES, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_FractalMarkerLabeler_create__SWIG_1(self, args);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    int res = SWIG_AsPtr_std_string(argv[0], (std::string**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_FractalMarkerLabeler_create__SWIG_0(self, args);
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'FractalMarkerLabeler_create'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    aruco::FractalMarkerLabeler::create(std::string)\n"
+    "    aruco::FractalMarkerLabeler::create(FractalMarkerSet::CONF_TYPES)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerLabeler_setConfiguration(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerLabeler *arg1 = (aruco::FractalMarkerLabeler *) 0 ;
+  FractalMarkerSet *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalMarkerLabeler_setConfiguration",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerLabeler, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerLabeler_setConfiguration" "', argument " "1"" of type '" "aruco::FractalMarkerLabeler *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerLabeler * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_FractalMarkerSet,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalMarkerLabeler_setConfiguration" "', argument " "2"" of type '" "FractalMarkerSet const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerLabeler_setConfiguration" "', argument " "2"" of type '" "FractalMarkerSet const &""'"); 
+  }
+  arg2 = reinterpret_cast< FractalMarkerSet * >(argp2);
+  (arg1)->setConfiguration((FractalMarkerSet const &)*arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_FractalMarkerLabeler(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerLabeler *arg1 = (aruco::FractalMarkerLabeler *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_FractalMarkerLabeler",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerLabeler, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_FractalMarkerLabeler" "', argument " "1"" of type '" "aruco::FractalMarkerLabeler *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerLabeler * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerLabeler_getName(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerLabeler *arg1 = (aruco::FractalMarkerLabeler *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::string result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerLabeler_getName",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerLabeler, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerLabeler_getName" "', argument " "1"" of type '" "aruco::FractalMarkerLabeler const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerLabeler * >(argp1);
+  result = ((aruco::FractalMarkerLabeler const *)arg1)->getName();
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerLabeler_detect(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerLabeler *arg1 = (aruco::FractalMarkerLabeler *) 0 ;
+  cv::Mat *arg2 = 0 ;
+  int *arg3 = 0 ;
+  int *arg4 = 0 ;
+  std::string *arg5 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  void *argp5 = 0 ;
+  int res5 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOOO:FractalMarkerLabeler_detect",&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerLabeler, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerLabeler_detect" "', argument " "1"" of type '" "aruco::FractalMarkerLabeler *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerLabeler * >(argp1);
+  {
+    arg2 = array_to_mat(obj1);
+    if (arg2 == NULL)
+    SWIG_fail;
+  }
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_int,  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "FractalMarkerLabeler_detect" "', argument " "3"" of type '" "int &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerLabeler_detect" "', argument " "3"" of type '" "int &""'"); 
+  }
+  arg3 = reinterpret_cast< int * >(argp3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_int,  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "FractalMarkerLabeler_detect" "', argument " "4"" of type '" "int &""'"); 
+  }
+  if (!argp4) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerLabeler_detect" "', argument " "4"" of type '" "int &""'"); 
+  }
+  arg4 = reinterpret_cast< int * >(argp4);
+  res5 = SWIG_ConvertPtr(obj4, &argp5, SWIGTYPE_p_std__string,  0 );
+  if (!SWIG_IsOK(res5)) {
+    SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "FractalMarkerLabeler_detect" "', argument " "5"" of type '" "std::string &""'"); 
+  }
+  if (!argp5) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerLabeler_detect" "', argument " "5"" of type '" "std::string &""'"); 
+  }
+  arg5 = reinterpret_cast< std::string * >(argp5);
+  result = (bool)(arg1)->detect((cv::Mat const &)*arg2,*arg3,*arg4,*arg5);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  {
+    
+  }
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return resultobj;
+fail:
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerLabeler_getNSubdivisions(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerLabeler *arg1 = (aruco::FractalMarkerLabeler *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  int result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerLabeler_getNSubdivisions",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerLabeler, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerLabeler_getNSubdivisions" "', argument " "1"" of type '" "aruco::FractalMarkerLabeler const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerLabeler * >(argp1);
+  result = (int)((aruco::FractalMarkerLabeler const *)arg1)->getNSubdivisions();
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerLabeler__fractalMarkerSet_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerLabeler *arg1 = (aruco::FractalMarkerLabeler *) 0 ;
+  FractalMarkerSet arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalMarkerLabeler__fractalMarkerSet_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerLabeler, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerLabeler__fractalMarkerSet_set" "', argument " "1"" of type '" "aruco::FractalMarkerLabeler *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerLabeler * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_FractalMarkerSet,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalMarkerLabeler__fractalMarkerSet_set" "', argument " "2"" of type '" "FractalMarkerSet""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerLabeler__fractalMarkerSet_set" "', argument " "2"" of type '" "FractalMarkerSet""'");
+    } else {
+      FractalMarkerSet * temp = reinterpret_cast< FractalMarkerSet * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  if (arg1) (arg1)->_fractalMarkerSet = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerLabeler__fractalMarkerSet_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerLabeler *arg1 = (aruco::FractalMarkerLabeler *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FractalMarkerSet result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerLabeler__fractalMarkerSet_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerLabeler, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerLabeler__fractalMarkerSet_get" "', argument " "1"" of type '" "aruco::FractalMarkerLabeler *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerLabeler * >(argp1);
+  result =  ((arg1)->_fractalMarkerSet);
+  resultobj = SWIG_NewPointerObj((new FractalMarkerSet(static_cast< const FractalMarkerSet& >(result))), SWIGTYPE_p_FractalMarkerSet, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_FractalMarkerLabeler(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerLabeler *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_FractalMarkerLabeler")) SWIG_fail;
+  result = (aruco::FractalMarkerLabeler *)new aruco::FractalMarkerLabeler();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_aruco__FractalMarkerLabeler, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *FractalMarkerLabeler_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_aruco__FractalMarkerLabeler, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_create(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  SwigValueWrapper< std::vector< std::pair< int,int >,std::allocator< std::pair< int,int > > > > arg2 ;
+  float arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
   int res2 = 0 ;
   float val3 ;
   int ecode3 = 0 ;
@@ -25450,26 +27407,31 @@ SWIGINTERN PyObject *_wrap_DictionaryBased_setParams(PyObject *SWIGUNUSEDPARM(se
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OOO:DictionaryBased_setParams",&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__DictionaryBased, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOO:FractalMarkerSet_create",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "DictionaryBased_setParams" "', argument " "1"" of type '" "aruco::DictionaryBased *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_create" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
   }
-  arg1 = reinterpret_cast< aruco::DictionaryBased * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_aruco__Dictionary,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "DictionaryBased_setParams" "', argument " "2"" of type '" "aruco::Dictionary const &""'"); 
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__vectorT_std__pairT_int_int_t_std__allocatorT_std__pairT_int_int_t_t_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalMarkerSet_create" "', argument " "2"" of type '" "std::vector< std::pair< int,int >,std::allocator< std::pair< int,int > > >""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerSet_create" "', argument " "2"" of type '" "std::vector< std::pair< int,int >,std::allocator< std::pair< int,int > > >""'");
+    } else {
+      std::vector< std::pair< int,int >,std::allocator< std::pair< int,int > > > * temp = reinterpret_cast< std::vector< std::pair< int,int >,std::allocator< std::pair< int,int > > > * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "DictionaryBased_setParams" "', argument " "2"" of type '" "aruco::Dictionary const &""'"); 
-  }
-  arg2 = reinterpret_cast< aruco::Dictionary * >(argp2);
   ecode3 = SWIG_AsVal_float(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "DictionaryBased_setParams" "', argument " "3"" of type '" "float""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "FractalMarkerSet_create" "', argument " "3"" of type '" "float""'");
   } 
   arg3 = static_cast< float >(val3);
-  (arg1)->setParams((aruco::Dictionary const &)*arg2,arg3);
+  (arg1)->create(arg2,arg3);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -25477,97 +27439,456 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_DictionaryBased_detect(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_configureMat__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  aruco::DictionaryBased *arg1 = (aruco::DictionaryBased *) 0 ;
-  cv::Mat *arg2 = 0 ;
-  int *arg3 = 0 ;
-  int *arg4 = 0 ;
-  std::string *arg5 = 0 ;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  int arg4 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  void *argp4 = 0 ;
-  int res4 = 0 ;
-  void *argp5 = 0 ;
-  int res5 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  int val4 ;
+  int ecode4 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
   PyObject * obj3 = 0 ;
-  PyObject * obj4 = 0 ;
-  bool result;
+  cv::Mat result;
   
-  if (!PyArg_ParseTuple(args,(char *)"OOOOO:DictionaryBased_detect",&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__DictionaryBased, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:FractalMarkerSet_configureMat",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "DictionaryBased_detect" "', argument " "1"" of type '" "aruco::DictionaryBased *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_configureMat" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
   }
-  arg1 = reinterpret_cast< aruco::DictionaryBased * >(argp1);
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "FractalMarkerSet_configureMat" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "FractalMarkerSet_configureMat" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_int(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "FractalMarkerSet_configureMat" "', argument " "4"" of type '" "int""'");
+  } 
+  arg4 = static_cast< int >(val4);
+  result = (arg1)->configureMat(arg2,arg3,arg4);
   {
-    arg2 = array_to_mat(obj1);
-    if (arg2 == NULL)
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
     SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
   }
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_int,  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "DictionaryBased_detect" "', argument " "3"" of type '" "int &""'"); 
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_configureMat__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  cv::Mat result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:FractalMarkerSet_configureMat",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_configureMat" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
   }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "DictionaryBased_detect" "', argument " "3"" of type '" "int &""'"); 
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "FractalMarkerSet_configureMat" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "FractalMarkerSet_configureMat" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  result = (arg1)->configureMat(arg2,arg3);
+  {
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
   }
-  arg3 = reinterpret_cast< int * >(argp3);
-  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_int,  0 );
-  if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "DictionaryBased_detect" "', argument " "4"" of type '" "int &""'"); 
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_configureMat(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[5] = {
+    0
+  };
+  Py_ssize_t ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 4) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
   }
-  if (!argp4) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "DictionaryBased_detect" "', argument " "4"" of type '" "int &""'"); 
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalMarkerSet, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_FractalMarkerSet_configureMat__SWIG_1(self, args);
+        }
+      }
+    }
   }
-  arg4 = reinterpret_cast< int * >(argp4);
-  res5 = SWIG_ConvertPtr(obj4, &argp5, SWIGTYPE_p_std__string,  0 );
-  if (!SWIG_IsOK(res5)) {
-    SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "DictionaryBased_detect" "', argument " "5"" of type '" "std::string &""'"); 
+  if (argc == 4) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalMarkerSet, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          {
+            int res = SWIG_AsVal_int(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            return _wrap_FractalMarkerSet_configureMat__SWIG_0(self, args);
+          }
+        }
+      }
+    }
   }
-  if (!argp5) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "DictionaryBased_detect" "', argument " "5"" of type '" "std::string &""'"); 
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'FractalMarkerSet_configureMat'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    aruco::FractalMarkerSet::configureMat(int,int,int)\n"
+    "    aruco::FractalMarkerSet::configureMat(int,int)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_dstMarker(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  cv::Mat arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  cv::Mat *mat2 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  int result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalMarkerSet_dstMarker",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_dstMarker" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
   }
-  arg5 = reinterpret_cast< std::string * >(argp5);
-  result = (bool)(arg1)->detect((cv::Mat const &)*arg2,*arg3,*arg4,*arg5);
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  {
+    mat2 = array_to_mat(obj1);
+    if (mat2 == NULL)
+    SWIG_fail;
+    arg2 = *mat2;
+  }
+  result = (int)(arg1)->dstMarker(arg2);
+  resultobj = SWIG_From_int(static_cast< int >(result));
   {
     
   }
   {
-    if (arg2 != NULL)
-    delete arg2;
+    if (mat2 != NULL)
+    delete mat2;
   }
   return resultobj;
 fail:
   {
-    if (arg2 != NULL)
-    delete arg2;
+    if (mat2 != NULL)
+    delete mat2;
   }
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_DictionaryBased_getName(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_dstMarkerToMarker(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  aruco::DictionaryBased *arg1 = (aruco::DictionaryBased *) 0 ;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  cv::Mat arg2 ;
+  cv::Mat arg3 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
+  cv::Mat *mat2 ;
+  cv::Mat *mat3 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  int result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:FractalMarkerSet_dstMarkerToMarker",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_dstMarkerToMarker" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  {
+    mat2 = array_to_mat(obj1);
+    if (mat2 == NULL)
+    SWIG_fail;
+    arg2 = *mat2;
+  }
+  {
+    mat3 = array_to_mat(obj2);
+    if (mat3 == NULL)
+    SWIG_fail;
+    arg3 = *mat3;
+  }
+  result = (int)(arg1)->dstMarkerToMarker(arg2,arg3);
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  {
+    
+  }
+  {
+    
+  }
+  {
+    if (mat2 != NULL)
+    delete mat2;
+  }
+  {
+    if (mat3 != NULL)
+    delete mat3;
+  }
+  return resultobj;
+fail:
+  {
+    if (mat2 != NULL)
+    delete mat2;
+  }
+  {
+    if (mat3 != NULL)
+    delete mat3;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_dstMarkerToFractalDict(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  cv::Mat arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  cv::Mat *mat2 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  int result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalMarkerSet_dstMarkerToFractalDict",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_dstMarkerToFractalDict" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  {
+    mat2 = array_to_mat(obj1);
+    if (mat2 == NULL)
+    SWIG_fail;
+    arg2 = *mat2;
+  }
+  result = (int)(arg1)->dstMarkerToFractalDict(arg2);
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  {
+    
+  }
+  {
+    if (mat2 != NULL)
+    delete mat2;
+  }
+  return resultobj;
+fail:
+  {
+    if (mat2 != NULL)
+    delete mat2;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet__toStream(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = 0 ;
+  std::ostream *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalMarkerSet__toStream",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_aruco__FractalMarkerSet,  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet__toStream" "', argument " "1"" of type '" "aruco::FractalMarkerSet &""'"); 
+  }
+  if (!argp1) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerSet__toStream" "', argument " "1"" of type '" "aruco::FractalMarkerSet &""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__ostream,  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalMarkerSet__toStream" "', argument " "2"" of type '" "std::ostream &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerSet__toStream" "', argument " "2"" of type '" "std::ostream &""'"); 
+  }
+  arg2 = reinterpret_cast< std::ostream * >(argp2);
+  aruco::FractalMarkerSet::_toStream(*arg1,*arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet__fromStream(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = 0 ;
+  std::istream *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalMarkerSet__fromStream",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_aruco__FractalMarkerSet,  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet__fromStream" "', argument " "1"" of type '" "aruco::FractalMarkerSet &""'"); 
+  }
+  if (!argp1) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerSet__fromStream" "', argument " "1"" of type '" "aruco::FractalMarkerSet &""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__istream,  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalMarkerSet__fromStream" "', argument " "2"" of type '" "std::istream &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerSet__fromStream" "', argument " "2"" of type '" "std::istream &""'"); 
+  }
+  arg2 = reinterpret_cast< std::istream * >(argp2);
+  aruco::FractalMarkerSet::_fromStream(*arg1,*arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_isPredefinedConfigurationString(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::string arg1 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_isPredefinedConfigurationString",&obj0)) SWIG_fail;
+  {
+    std::string *ptr = (std::string *)0;
+    int res = SWIG_AsPtr_std_string(obj0, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "FractalMarkerSet_isPredefinedConfigurationString" "', argument " "1"" of type '" "std::string""'"); 
+    }
+    arg1 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  result = (bool)aruco::FractalMarkerSet::isPredefinedConfigurationString(arg1);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_getTypeString(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet::CONF_TYPES arg1 ;
+  int val1 ;
+  int ecode1 = 0 ;
   PyObject * obj0 = 0 ;
   std::string result;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:DictionaryBased_getName",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__DictionaryBased, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "DictionaryBased_getName" "', argument " "1"" of type '" "aruco::DictionaryBased const *""'"); 
-  }
-  arg1 = reinterpret_cast< aruco::DictionaryBased * >(argp1);
-  result = ((aruco::DictionaryBased const *)arg1)->getName();
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_getTypeString",&obj0)) SWIG_fail;
+  ecode1 = SWIG_AsVal_int(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "FractalMarkerSet_getTypeString" "', argument " "1"" of type '" "aruco::FractalMarkerSet::CONF_TYPES""'");
+  } 
+  arg1 = static_cast< aruco::FractalMarkerSet::CONF_TYPES >(val1);
+  result = aruco::FractalMarkerSet::getTypeString(arg1);
   resultobj = SWIG_From_std_string(static_cast< std::string >(result));
   return resultobj;
 fail:
@@ -25575,21 +27896,23 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_DictionaryBased_getNSubdivisions(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_getTypeFromString(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  aruco::DictionaryBased *arg1 = (aruco::DictionaryBased *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
+  std::string arg1 ;
   PyObject * obj0 = 0 ;
-  int result;
+  aruco::FractalMarkerSet::CONF_TYPES result;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:DictionaryBased_getNSubdivisions",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__DictionaryBased, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "DictionaryBased_getNSubdivisions" "', argument " "1"" of type '" "aruco::DictionaryBased const *""'"); 
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_getTypeFromString",&obj0)) SWIG_fail;
+  {
+    std::string *ptr = (std::string *)0;
+    int res = SWIG_AsPtr_std_string(obj0, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "FractalMarkerSet_getTypeFromString" "', argument " "1"" of type '" "std::string""'"); 
+    }
+    arg1 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
   }
-  arg1 = reinterpret_cast< aruco::DictionaryBased * >(argp1);
-  result = (int)((aruco::DictionaryBased const *)arg1)->getNSubdivisions();
+  result = (aruco::FractalMarkerSet::CONF_TYPES)aruco::FractalMarkerSet::getTypeFromString(arg1);
   resultobj = SWIG_From_int(static_cast< int >(result));
   return resultobj;
 fail:
@@ -25597,52 +27920,805 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_new_DictionaryBased(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_load(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  aruco::DictionaryBased *result = 0 ;
+  std::string arg1 ;
+  PyObject * obj0 = 0 ;
+  aruco::FractalMarkerSet result;
   
-  if (!PyArg_ParseTuple(args,(char *)":new_DictionaryBased")) SWIG_fail;
-  result = (aruco::DictionaryBased *)new aruco::DictionaryBased();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_aruco__DictionaryBased, SWIG_POINTER_NEW |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_load",&obj0)) SWIG_fail;
+  {
+    std::string *ptr = (std::string *)0;
+    int res = SWIG_AsPtr_std_string(obj0, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "FractalMarkerSet_load" "', argument " "1"" of type '" "std::string""'"); 
+    }
+    arg1 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  result = aruco::FractalMarkerSet::load(arg1);
+  resultobj = SWIG_NewPointerObj((new aruco::FractalMarkerSet(static_cast< const aruco::FractalMarkerSet& >(result))), SWIGTYPE_p_aruco__FractalMarkerSet, SWIG_POINTER_OWN |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *DictionaryBased_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *obj;
-  if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_aruco__DictionaryBased, SWIG_NewClientData(obj));
-  return SWIG_Py_Void();
-}
-
-SWIGINTERN PyObject *_wrap_new_SVMMarkers(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_loadPredefined__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  aruco::SVMMarkers *result = 0 ;
+  std::string arg1 ;
+  PyObject * obj0 = 0 ;
+  aruco::FractalMarkerSet result;
   
-  if (!PyArg_ParseTuple(args,(char *)":new_SVMMarkers")) SWIG_fail;
-  result = (aruco::SVMMarkers *)new aruco::SVMMarkers();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_aruco__SVMMarkers, SWIG_POINTER_NEW |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_loadPredefined",&obj0)) SWIG_fail;
+  {
+    std::string *ptr = (std::string *)0;
+    int res = SWIG_AsPtr_std_string(obj0, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "FractalMarkerSet_loadPredefined" "', argument " "1"" of type '" "std::string""'"); 
+    }
+    arg1 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  result = aruco::FractalMarkerSet::loadPredefined(arg1);
+  resultobj = SWIG_NewPointerObj((new aruco::FractalMarkerSet(static_cast< const aruco::FractalMarkerSet& >(result))), SWIGTYPE_p_aruco__FractalMarkerSet, SWIG_POINTER_OWN |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_delete_SVMMarkers(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_loadPredefined__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  aruco::SVMMarkers *arg1 = (aruco::SVMMarkers *) 0 ;
+  aruco::FractalMarkerSet::CONF_TYPES arg1 ;
+  int val1 ;
+  int ecode1 = 0 ;
+  PyObject * obj0 = 0 ;
+  aruco::FractalMarkerSet result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_loadPredefined",&obj0)) SWIG_fail;
+  ecode1 = SWIG_AsVal_int(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "FractalMarkerSet_loadPredefined" "', argument " "1"" of type '" "aruco::FractalMarkerSet::CONF_TYPES""'");
+  } 
+  arg1 = static_cast< aruco::FractalMarkerSet::CONF_TYPES >(val1);
+  result = aruco::FractalMarkerSet::loadPredefined(arg1);
+  resultobj = SWIG_NewPointerObj((new aruco::FractalMarkerSet(static_cast< const aruco::FractalMarkerSet& >(result))), SWIGTYPE_p_aruco__FractalMarkerSet, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_loadPredefined(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[2] = {
+    0
+  };
+  Py_ssize_t ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 1) {
+    int _v;
+    {
+      int res = SWIG_AsVal_int(argv[0], NULL);
+      _v = SWIG_CheckState(res);
+    }
+    if (_v) {
+      return _wrap_FractalMarkerSet_loadPredefined__SWIG_1(self, args);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    int res = SWIG_AsPtr_std_string(argv[0], (std::string**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_FractalMarkerSet_loadPredefined__SWIG_0(self, args);
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'FractalMarkerSet_loadPredefined'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    aruco::FractalMarkerSet::loadPredefined(std::string)\n"
+    "    aruco::FractalMarkerSet::loadPredefined(aruco::FractalMarkerSet::CONF_TYPES)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_readFromFile(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::string arg1 ;
+  PyObject * obj0 = 0 ;
+  aruco::FractalMarkerSet result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_readFromFile",&obj0)) SWIG_fail;
+  {
+    std::string *ptr = (std::string *)0;
+    int res = SWIG_AsPtr_std_string(obj0, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "FractalMarkerSet_readFromFile" "', argument " "1"" of type '" "std::string""'"); 
+    }
+    arg1 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  result = aruco::FractalMarkerSet::readFromFile(arg1);
+  resultobj = SWIG_NewPointerObj((new aruco::FractalMarkerSet(static_cast< const aruco::FractalMarkerSet& >(result))), SWIGTYPE_p_aruco__FractalMarkerSet, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_saveToFile(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  cv::FileStorage *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalMarkerSet_saveToFile",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_saveToFile" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cv__FileStorage,  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalMarkerSet_saveToFile" "', argument " "2"" of type '" "cv::FileStorage &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerSet_saveToFile" "', argument " "2"" of type '" "cv::FileStorage &""'"); 
+  }
+  arg2 = reinterpret_cast< cv::FileStorage * >(argp2);
+  (arg1)->saveToFile(*arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_fractalMarkerCollection_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  std::map< int,FractalMarker > arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalMarkerSet_fractalMarkerCollection_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_fractalMarkerCollection_set" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__mapT_int_FractalMarker_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalMarkerSet_fractalMarkerCollection_set" "', argument " "2"" of type '" "std::map< int,FractalMarker >""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerSet_fractalMarkerCollection_set" "', argument " "2"" of type '" "std::map< int,FractalMarker >""'");
+    } else {
+      std::map< int,FractalMarker > * temp = reinterpret_cast< std::map< int,FractalMarker > * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  if (arg1) (arg1)->fractalMarkerCollection = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_fractalMarkerCollection_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::map< int,FractalMarker > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_fractalMarkerCollection_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_fractalMarkerCollection_get" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  result =  ((arg1)->fractalMarkerCollection);
+  resultobj = SWIG_NewPointerObj((new std::map< int,FractalMarker >(static_cast< const std::map< int,FractalMarker >& >(result))), SWIGTYPE_p_std__mapT_int_FractalMarker_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_nbits_fractalMarkerIDs_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  std::map< int,std::vector< int,std::allocator< int > > > arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalMarkerSet_nbits_fractalMarkerIDs_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_nbits_fractalMarkerIDs_set" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__mapT_int_std__vectorT_int_std__allocatorT_int_t_t_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalMarkerSet_nbits_fractalMarkerIDs_set" "', argument " "2"" of type '" "std::map< int,std::vector< int,std::allocator< int > > >""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerSet_nbits_fractalMarkerIDs_set" "', argument " "2"" of type '" "std::map< int,std::vector< int,std::allocator< int > > >""'");
+    } else {
+      std::map< int,std::vector< int,std::allocator< int > > > * temp = reinterpret_cast< std::map< int,std::vector< int,std::allocator< int > > > * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  if (arg1) (arg1)->nbits_fractalMarkerIDs = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_nbits_fractalMarkerIDs_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::map< int,std::vector< int,std::allocator< int > > > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_nbits_fractalMarkerIDs_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_nbits_fractalMarkerIDs_get" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  result =  ((arg1)->nbits_fractalMarkerIDs);
+  resultobj = SWIG_NewPointerObj((new std::map< int,std::vector< int,std::allocator< int > > >(static_cast< const std::map< int,std::vector< int,std::allocator< int > > >& >(result))), SWIGTYPE_p_std__mapT_int_std__vectorT_int_std__allocatorT_int_t_t_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_isExpressedInMeters(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_isExpressedInMeters",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_isExpressedInMeters" "', argument " "1"" of type '" "aruco::FractalMarkerSet const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  result = (bool)((aruco::FractalMarkerSet const *)arg1)->isExpressedInMeters();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_isExpressedInPixels(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_isExpressedInPixels",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_isExpressedInPixels" "', argument " "1"" of type '" "aruco::FractalMarkerSet const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  result = (bool)((aruco::FractalMarkerSet const *)arg1)->isExpressedInPixels();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_isNormalize(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_isNormalize",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_isNormalize" "', argument " "1"" of type '" "aruco::FractalMarkerSet const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  result = (bool)((aruco::FractalMarkerSet const *)arg1)->isNormalize();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_normalize(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  aruco::FractalMarkerSet result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_normalize",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_normalize" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  result = (arg1)->normalize();
+  resultobj = SWIG_NewPointerObj((new aruco::FractalMarkerSet(static_cast< const aruco::FractalMarkerSet& >(result))), SWIGTYPE_p_aruco__FractalMarkerSet, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_convertToMeters(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  aruco::FractalMarkerSet result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalMarkerSet_convertToMeters",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_convertToMeters" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "FractalMarkerSet_convertToMeters" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  result = (arg1)->convertToMeters(arg2);
+  resultobj = SWIG_NewPointerObj((new aruco::FractalMarkerSet(static_cast< const aruco::FractalMarkerSet& >(result))), SWIGTYPE_p_aruco__FractalMarkerSet, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_getConfigurations(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  SwigValueWrapper< std::vector< std::string,std::allocator< std::string > > > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)":FractalMarkerSet_getConfigurations")) SWIG_fail;
+  result = aruco::FractalMarkerSet::getConfigurations();
+  resultobj = SWIG_NewPointerObj((new std::vector< std::string,std::allocator< std::string > >(static_cast< const std::vector< std::string,std::allocator< std::string > >& >(result))), SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_getFractalSize(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_getFractalSize",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_getFractalSize" "', argument " "1"" of type '" "aruco::FractalMarkerSet const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  result = (float)((aruco::FractalMarkerSet const *)arg1)->getFractalSize();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_nBits(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  int result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_nBits",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_nBits" "', argument " "1"" of type '" "aruco::FractalMarkerSet const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  result = (int)((aruco::FractalMarkerSet const *)arg1)->nBits();
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_isFractalMarker(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  cv::Mat *arg2 = 0 ;
+  int arg3 ;
+  int *arg4 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uchar *data_ptr2 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:FractalMarkerSet_isFractalMarker",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_isFractalMarker" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  {
+    arg2 = array_to_mat(obj1);
+    if (arg2 == NULL)
+    SWIG_fail;
+    // save dataptr to check whether it changed
+    data_ptr2 = arg2->data;
+  }
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "FractalMarkerSet_isFractalMarker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_int,  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "FractalMarkerSet_isFractalMarker" "', argument " "4"" of type '" "int &""'"); 
+  }
+  if (!argp4) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarkerSet_isFractalMarker" "', argument " "4"" of type '" "int &""'"); 
+  }
+  arg4 = reinterpret_cast< int * >(argp4);
+  result = (bool)(arg1)->isFractalMarker(*arg2,arg3,*arg4);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  {
+    // check if the underlying data changed
+    if (data_ptr2 != arg2->data) {
+      // TODO don't fail if we can reallocate the underlying memory
+      // (not always possible due to the way NumPy does reference counting)
+      PyErr_Format(PyExc_RuntimeError,
+        "Underlying data changed. Please make sure that the "
+        "input data is of correct size and type: %d %d %d",
+        arg2->rows, arg2->cols, arg2->type());
+      SWIG_fail;
+    }
+  }
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return resultobj;
+fail:
+  {
+    if (arg2 != NULL)
+    delete arg2;
+  }
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_getInnerCorners(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::map< int,std::vector< cv::Point3f,std::allocator< cv::Point3f > > > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_getInnerCorners",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_getInnerCorners" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  result = (arg1)->getInnerCorners();
+  resultobj = SWIG_NewPointerObj((new std::map< int,std::vector< cv::Point3f,std::allocator< cv::Point3f > > >(static_cast< const std::map< int,std::vector< cv::Point3f,std::allocator< cv::Point3f > > >& >(result))), SWIGTYPE_p_std__mapT_int_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_getFractalMarkerImage__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  int arg2 ;
+  bool arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  bool val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  cv::Mat result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:FractalMarkerSet_getFractalMarkerImage",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_getFractalMarkerImage" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "FractalMarkerSet_getFractalMarkerImage" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_bool(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "FractalMarkerSet_getFractalMarkerImage" "', argument " "3"" of type '" "bool""'");
+  } 
+  arg3 = static_cast< bool >(val3);
+  result = (arg1)->getFractalMarkerImage(arg2,arg3);
+  {
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_getFractalMarkerImage__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  cv::Mat result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalMarkerSet_getFractalMarkerImage",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_getFractalMarkerImage" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "FractalMarkerSet_getFractalMarkerImage" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  result = (arg1)->getFractalMarkerImage(arg2);
+  {
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_getFractalMarkerImage(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[4] = {
+    0
+  };
+  Py_ssize_t ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalMarkerSet, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_FractalMarkerSet_getFractalMarkerImage__SWIG_1(self, args);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__FractalMarkerSet, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_bool(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_FractalMarkerSet_getFractalMarkerImage__SWIG_0(self, args);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'FractalMarkerSet_getFractalMarkerImage'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    aruco::FractalMarkerSet::getFractalMarkerImage(int,bool)\n"
+    "    aruco::FractalMarkerSet::getFractalMarkerImage(int)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_mInfoType_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalMarkerSet_mInfoType_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_mInfoType_set" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "FractalMarkerSet_mInfoType_set" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  if (arg1) (arg1)->mInfoType = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarkerSet_mInfoType_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  int result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarkerSet_mInfoType_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarkerSet_mInfoType_get" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
+  result = (int) ((arg1)->mInfoType);
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_FractalMarkerSet(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_FractalMarkerSet")) SWIG_fail;
+  result = (aruco::FractalMarkerSet *)new aruco::FractalMarkerSet();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_aruco__FractalMarkerSet, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_FractalMarkerSet(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarkerSet *arg1 = (aruco::FractalMarkerSet *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:delete_SVMMarkers",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__SVMMarkers, SWIG_POINTER_DISOWN |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_FractalMarkerSet",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarkerSet, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_SVMMarkers" "', argument " "1"" of type '" "aruco::SVMMarkers *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_FractalMarkerSet" "', argument " "1"" of type '" "aruco::FractalMarkerSet *""'"); 
   }
-  arg1 = reinterpret_cast< aruco::SVMMarkers * >(argp1);
+  arg1 = reinterpret_cast< aruco::FractalMarkerSet * >(argp1);
   delete arg1;
   resultobj = SWIG_Py_Void();
   return resultobj;
@@ -25651,218 +28727,297 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SVMMarkers_getName(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *FractalMarkerSet_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_aruco__FractalMarkerSet, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_FractalMarker__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  aruco::SVMMarkers *arg1 = (aruco::SVMMarkers *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  std::string result;
+  aruco::FractalMarker *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SVMMarkers_getName",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__SVMMarkers, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SVMMarkers_getName" "', argument " "1"" of type '" "aruco::SVMMarkers const *""'"); 
-  }
-  arg1 = reinterpret_cast< aruco::SVMMarkers * >(argp1);
-  result = ((aruco::SVMMarkers const *)arg1)->getName();
-  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  if (!PyArg_ParseTuple(args,(char *)":new_FractalMarker")) SWIG_fail;
+  result = (aruco::FractalMarker *)new aruco::FractalMarker();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_aruco__FractalMarker, SWIG_POINTER_NEW |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_SVMMarkers_load__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_FractalMarker__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  aruco::SVMMarkers *arg1 = (aruco::SVMMarkers *) 0 ;
-  std::string arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
+  int arg1 ;
+  cv::Mat arg2 ;
+  SwigValueWrapper< std::vector< cv::Point3f,std::allocator< cv::Point3f > > > arg3 ;
+  std::vector< int,std::allocator< int > > arg4 ;
+  int val1 ;
+  int ecode1 = 0 ;
+  cv::Mat *mat2 ;
+  void *argp3 ;
+  int res3 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
-  bool result;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  aruco::FractalMarker *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SVMMarkers_load",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__SVMMarkers, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SVMMarkers_load" "', argument " "1"" of type '" "aruco::SVMMarkers *""'"); 
-  }
-  arg1 = reinterpret_cast< aruco::SVMMarkers * >(argp1);
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:new_FractalMarker",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  ecode1 = SWIG_AsVal_int(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "new_FractalMarker" "', argument " "1"" of type '" "int""'");
+  } 
+  arg1 = static_cast< int >(val1);
   {
-    std::string *ptr = (std::string *)0;
-    int res = SWIG_AsPtr_std_string(obj1, &ptr);
-    if (!SWIG_IsOK(res) || !ptr) {
-      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "SVMMarkers_load" "', argument " "2"" of type '" "std::string""'"); 
+    mat2 = array_to_mat(obj1);
+    if (mat2 == NULL)
+    SWIG_fail;
+    arg2 = *mat2;
+  }
+  {
+    res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t,  0  | 0);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "new_FractalMarker" "', argument " "3"" of type '" "std::vector< cv::Point3f,std::allocator< cv::Point3f > >""'"); 
+    }  
+    if (!argp3) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_FractalMarker" "', argument " "3"" of type '" "std::vector< cv::Point3f,std::allocator< cv::Point3f > >""'");
+    } else {
+      std::vector< cv::Point3f,std::allocator< cv::Point3f > > * temp = reinterpret_cast< std::vector< cv::Point3f,std::allocator< cv::Point3f > > * >(argp3);
+      arg3 = *temp;
+      if (SWIG_IsNewObj(res3)) delete temp;
     }
-    arg2 = *ptr;
+  }
+  {
+    std::vector< int,std::allocator< int > > *ptr = (std::vector< int,std::allocator< int > > *)0;
+    int res = swig::asptr(obj3, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "new_FractalMarker" "', argument " "4"" of type '" "std::vector< int,std::allocator< int > >""'"); 
+    }
+    arg4 = *ptr;
     if (SWIG_IsNewObj(res)) delete ptr;
   }
-  result = (bool)(arg1)->load(arg2);
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SVMMarkers_load__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  aruco::SVMMarkers *arg1 = (aruco::SVMMarkers *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  bool result;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:SVMMarkers_load",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__SVMMarkers, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SVMMarkers_load" "', argument " "1"" of type '" "aruco::SVMMarkers *""'"); 
+  result = (aruco::FractalMarker *)new aruco::FractalMarker(arg1,arg2,arg3,arg4);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_aruco__FractalMarker, SWIG_POINTER_NEW |  0 );
+  {
+    
   }
-  arg1 = reinterpret_cast< aruco::SVMMarkers * >(argp1);
-  result = (bool)(arg1)->load();
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  {
+    if (mat2 != NULL)
+    delete mat2;
+  }
   return resultobj;
 fail:
+  {
+    if (mat2 != NULL)
+    delete mat2;
+  }
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_SVMMarkers_load(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_FractalMarker(PyObject *self, PyObject *args) {
   Py_ssize_t argc;
-  PyObject *argv[3] = {
+  PyObject *argv[5] = {
     0
   };
   Py_ssize_t ii;
   
   if (!PyTuple_Check(args)) SWIG_fail;
   argc = args ? PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
+  for (ii = 0; (ii < 4) && (ii < argc); ii++) {
     argv[ii] = PyTuple_GET_ITEM(args,ii);
   }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__SVMMarkers, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_SVMMarkers_load__SWIG_1(self, args);
-    }
+  if (argc == 0) {
+    return _wrap_new_FractalMarker__SWIG_0(self, args);
   }
-  if (argc == 2) {
+  if (argc == 4) {
     int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_aruco__SVMMarkers, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_AsPtr_std_string(argv[1], (std::string**)(0));
+    {
+      int res = SWIG_AsVal_int(argv[0], NULL);
       _v = SWIG_CheckState(res);
+    }
+    if (_v) {
+      {
+        _v = is_array(argv[1]) || PySequence_Check(argv[1]);
+      }
       if (_v) {
-        return _wrap_SVMMarkers_load__SWIG_0(self, args);
+        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          int res = swig::asptr(argv[3], (std::vector< int,std::allocator< int > >**)(0));
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            return _wrap_new_FractalMarker__SWIG_1(self, args);
+          }
+        }
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SVMMarkers_load'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_FractalMarker'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    aruco::SVMMarkers::load(std::string)\n"
-    "    aruco::SVMMarkers::load()\n");
+    "    aruco::FractalMarker::FractalMarker()\n"
+    "    aruco::FractalMarker::FractalMarker(int,cv::Mat,std::vector< cv::Point3f,std::allocator< cv::Point3f > >,std::vector< int,std::allocator< int > >)\n");
   return 0;
 }
 
 
-SWIGINTERN PyObject *_wrap_SVMMarkers_detect(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_FractalMarker_addSubFractalMarker(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  aruco::SVMMarkers *arg1 = (aruco::SVMMarkers *) 0 ;
-  cv::Mat *arg2 = 0 ;
-  int *arg3 = 0 ;
-  int *arg4 = 0 ;
-  std::string *arg5 = 0 ;
+  aruco::FractalMarker *arg1 = (aruco::FractalMarker *) 0 ;
+  aruco::FractalMarker arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  void *argp4 = 0 ;
-  int res4 = 0 ;
-  void *argp5 = 0 ;
-  int res5 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  PyObject * obj3 = 0 ;
-  PyObject * obj4 = 0 ;
-  bool result;
   
-  if (!PyArg_ParseTuple(args,(char *)"OOOOO:SVMMarkers_detect",&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__SVMMarkers, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:FractalMarker_addSubFractalMarker",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarker, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SVMMarkers_detect" "', argument " "1"" of type '" "aruco::SVMMarkers *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarker_addSubFractalMarker" "', argument " "1"" of type '" "aruco::FractalMarker *""'"); 
   }
-  arg1 = reinterpret_cast< aruco::SVMMarkers * >(argp1);
+  arg1 = reinterpret_cast< aruco::FractalMarker * >(argp1);
   {
-    arg2 = array_to_mat(obj1);
-    if (arg2 == NULL)
-    SWIG_fail;
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_aruco__FractalMarker,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FractalMarker_addSubFractalMarker" "', argument " "2"" of type '" "aruco::FractalMarker""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "FractalMarker_addSubFractalMarker" "', argument " "2"" of type '" "aruco::FractalMarker""'");
+    } else {
+      aruco::FractalMarker * temp = reinterpret_cast< aruco::FractalMarker * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
   }
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_int,  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "SVMMarkers_detect" "', argument " "3"" of type '" "int &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SVMMarkers_detect" "', argument " "3"" of type '" "int &""'"); 
-  }
-  arg3 = reinterpret_cast< int * >(argp3);
-  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_int,  0 );
-  if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "SVMMarkers_detect" "', argument " "4"" of type '" "int &""'"); 
-  }
-  if (!argp4) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SVMMarkers_detect" "', argument " "4"" of type '" "int &""'"); 
-  }
-  arg4 = reinterpret_cast< int * >(argp4);
-  res5 = SWIG_ConvertPtr(obj4, &argp5, SWIGTYPE_p_std__string,  0 );
-  if (!SWIG_IsOK(res5)) {
-    SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "SVMMarkers_detect" "', argument " "5"" of type '" "std::string &""'"); 
-  }
-  if (!argp5) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SVMMarkers_detect" "', argument " "5"" of type '" "std::string &""'"); 
-  }
-  arg5 = reinterpret_cast< std::string * >(argp5);
-  result = (bool)(arg1)->detect((cv::Mat const &)*arg2,*arg3,*arg4,*arg5);
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  {
-    
-  }
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
+  (arg1)->addSubFractalMarker(arg2);
+  resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
-  {
-    if (arg2 != NULL)
-    delete arg2;
-  }
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_SVMMarkers_getBestInputSize(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_FractalMarker_getInnerCorners(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  aruco::SVMMarkers *arg1 = (aruco::SVMMarkers *) 0 ;
+  aruco::FractalMarker *arg1 = (aruco::FractalMarker *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  SwigValueWrapper< std::vector< cv::Point3f,std::allocator< cv::Point3f > > > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarker_getInnerCorners",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarker_getInnerCorners" "', argument " "1"" of type '" "aruco::FractalMarker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarker * >(argp1);
+  result = (arg1)->getInnerCorners();
+  resultobj = SWIG_NewPointerObj((new std::vector< cv::Point3f,std::allocator< cv::Point3f > >(static_cast< const std::vector< cv::Point3f,std::allocator< cv::Point3f > >& >(result))), SWIGTYPE_p_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarker_mat(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarker *arg1 = (aruco::FractalMarker *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cv::Mat result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarker_mat",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarker_mat" "', argument " "1"" of type '" "aruco::FractalMarker const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarker * >(argp1);
+  result = ((aruco::FractalMarker const *)arg1)->mat();
+  {
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarker_mask(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarker *arg1 = (aruco::FractalMarker *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cv::Mat result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarker_mask",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarker_mask" "', argument " "1"" of type '" "aruco::FractalMarker const *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarker * >(argp1);
+  result = ((aruco::FractalMarker const *)arg1)->mask();
+  {
+    PyObject* array = mat_to_array(result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    // add a reference to the underlying cv::Mat so
+    // that the memory is not freed before the NumPy array
+    // is released or reassigned
+    cv::Mat *m = new cv::Mat(result);
+    // printf("created new mat object at %p\n", m);
+#ifdef CAPSULES_SUPPORTED
+    PyArray_BASE(array) = PyCapsule_New(m, NULL, delete_mat_capsule);
+#else
+    PyArray_BASE(array) = PyCObject_FromVoidPtr(m, delete_mat);
+#endif
+    
+    resultobj = array;
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FractalMarker_nBits(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarker *arg1 = (aruco::FractalMarker *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   int result;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SVMMarkers_getBestInputSize",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__SVMMarkers, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarker_nBits",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarker, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SVMMarkers_getBestInputSize" "', argument " "1"" of type '" "aruco::SVMMarkers *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarker_nBits" "', argument " "1"" of type '" "aruco::FractalMarker *""'"); 
   }
-  arg1 = reinterpret_cast< aruco::SVMMarkers * >(argp1);
-  result = (int)(arg1)->getBestInputSize();
+  arg1 = reinterpret_cast< aruco::FractalMarker * >(argp1);
+  result = (int)(arg1)->nBits();
   resultobj = SWIG_From_int(static_cast< int >(result));
   return resultobj;
 fail:
@@ -25870,10 +29025,53 @@ fail:
 }
 
 
-SWIGINTERN PyObject *SVMMarkers_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_FractalMarker_subMarkers(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarker *arg1 = (aruco::FractalMarker *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< int,std::allocator< int > > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FractalMarker_subMarkers",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FractalMarker_subMarkers" "', argument " "1"" of type '" "aruco::FractalMarker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarker * >(argp1);
+  result = (arg1)->subMarkers();
+  resultobj = swig::from(static_cast< std::vector< int,std::allocator< int > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_FractalMarker(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  aruco::FractalMarker *arg1 = (aruco::FractalMarker *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_FractalMarker",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_aruco__FractalMarker, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_FractalMarker" "', argument " "1"" of type '" "aruco::FractalMarker *""'"); 
+  }
+  arg1 = reinterpret_cast< aruco::FractalMarker * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *FractalMarker_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
   if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_aruco__SVMMarkers, SWIG_NewClientData(obj));
+  SWIG_TypeNewClientData(SWIGTYPE_p_aruco__FractalMarker, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
 
@@ -27432,6 +30630,30 @@ SWIGINTERN PyObject *Timer_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject
   return SWIG_Py_Void();
 }
 
+SWIGINTERN PyObject *_wrap___pf_aruco_methodName(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::string arg1 ;
+  PyObject * obj0 = 0 ;
+  std::string result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:__pf_aruco_methodName",&obj0)) SWIG_fail;
+  {
+    std::string *ptr = (std::string *)0;
+    int res = SWIG_AsPtr_std_string(obj0, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "__pf_aruco_methodName" "', argument " "1"" of type '" "std::string""'"); 
+    }
+    arg1 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  result = aruco::__pf_aruco_methodName(arg1);
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
 	 { (char *)"delete_SwigPyIterator", _wrap_delete_SwigPyIterator, METH_VARARGS, NULL},
@@ -27665,11 +30887,13 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"Marker_getCenter", _wrap_Marker_getCenter, METH_VARARGS, NULL},
 	 { (char *)"Marker_getPerimeter", _wrap_Marker_getPerimeter, METH_VARARGS, NULL},
 	 { (char *)"Marker_getArea", _wrap_Marker_getArea, METH_VARARGS, NULL},
+	 { (char *)"Marker_getRadius", _wrap_Marker_getRadius, METH_VARARGS, NULL},
 	 { (char *)"Marker___eq__", _wrap_Marker___eq__, METH_VARARGS, NULL},
 	 { (char *)"Marker_copyTo", _wrap_Marker_copyTo, METH_VARARGS, NULL},
 	 { (char *)"Marker_toStream", _wrap_Marker_toStream, METH_VARARGS, NULL},
 	 { (char *)"Marker_fromStream", _wrap_Marker_fromStream, METH_VARARGS, NULL},
 	 { (char *)"Marker_get3DPoints", _wrap_Marker_get3DPoints, METH_VARARGS, NULL},
+	 { (char *)"Marker_getTransformMatrix", _wrap_Marker_getTransformMatrix, METH_VARARGS, NULL},
 	 { (char *)"Marker___getitem__", _wrap_Marker___getitem__, METH_VARARGS, NULL},
 	 { (char *)"Marker_swigregister", Marker_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_MarkerDetector", _wrap_new_MarkerDetector, METH_VARARGS, NULL},
@@ -27682,11 +30906,11 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"MarkerDetector_getParameters", _wrap_MarkerDetector_getParameters, METH_VARARGS, NULL},
 	 { (char *)"MarkerDetector_setDictionary", _wrap_MarkerDetector_setDictionary, METH_VARARGS, NULL},
 	 { (char *)"MarkerDetector_getThresholdedImage", _wrap_MarkerDetector_getThresholdedImage, METH_VARARGS, NULL},
-	 { (char *)"MarkerDetector_getNhresholdedImages", _wrap_MarkerDetector_getNhresholdedImages, METH_VARARGS, NULL},
 	 { (char *)"MarkerDetector_setMarkerLabeler", _wrap_MarkerDetector_setMarkerLabeler, METH_VARARGS, NULL},
 	 { (char *)"MarkerDetector_getMarkerLabeler", _wrap_MarkerDetector_getMarkerLabeler, METH_VARARGS, NULL},
 	 { (char *)"MarkerDetector_getCandidates", _wrap_MarkerDetector_getCandidates, METH_VARARGS, NULL},
-	 { (char *)"MarkerDetector_warp", _wrap_MarkerDetector_warp, METH_VARARGS, NULL},
+	 { (char *)"MarkerDetector_getImagePyramid", _wrap_MarkerDetector_getImagePyramid, METH_VARARGS, NULL},
+	 { (char *)"MarkerDetector_cornerUpsample", _wrap_MarkerDetector_cornerUpsample, METH_VARARGS, NULL},
 	 { (char *)"MarkerDetector_toStream", _wrap_MarkerDetector_toStream, METH_VARARGS, NULL},
 	 { (char *)"MarkerDetector_fromStream", _wrap_MarkerDetector_fromStream, METH_VARARGS, NULL},
 	 { (char *)"MarkerDetector_setParameters", _wrap_MarkerDetector_setParameters, METH_VARARGS, NULL},
@@ -27698,6 +30922,21 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"MarkerLabeler_getName", _wrap_MarkerLabeler_getName, METH_VARARGS, NULL},
 	 { (char *)"delete_MarkerLabeler", _wrap_delete_MarkerLabeler, METH_VARARGS, NULL},
 	 { (char *)"MarkerLabeler_swigregister", MarkerLabeler_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_FractalDetector", _wrap_new_FractalDetector, METH_VARARGS, NULL},
+	 { (char *)"FractalDetector_setConfiguration", _wrap_FractalDetector_setConfiguration, METH_VARARGS, NULL},
+	 { (char *)"FractalDetector_setParams", _wrap_FractalDetector_setParams, METH_VARARGS, NULL},
+	 { (char *)"FractalDetector_getConfiguration", _wrap_FractalDetector_getConfiguration, METH_VARARGS, NULL},
+	 { (char *)"FractalDetector_detect", _wrap_FractalDetector_detect, METH_VARARGS, NULL},
+	 { (char *)"FractalDetector_poseEstimation", _wrap_FractalDetector_poseEstimation, METH_VARARGS, NULL},
+	 { (char *)"FractalDetector_getRvec", _wrap_FractalDetector_getRvec, METH_VARARGS, NULL},
+	 { (char *)"FractalDetector_getTvec", _wrap_FractalDetector_getTvec, METH_VARARGS, NULL},
+	 { (char *)"FractalDetector_drawMarkers", _wrap_FractalDetector_drawMarkers, METH_VARARGS, NULL},
+	 { (char *)"FractalDetector_draw2d", _wrap_FractalDetector_draw2d, METH_VARARGS, NULL},
+	 { (char *)"FractalDetector_draw3d", _wrap_FractalDetector_draw3d, METH_VARARGS, NULL},
+	 { (char *)"FractalDetector_draw3dCube", _wrap_FractalDetector_draw3dCube, METH_VARARGS, NULL},
+	 { (char *)"FractalDetector_getMarkers", _wrap_FractalDetector_getMarkers, METH_VARARGS, NULL},
+	 { (char *)"delete_FractalDetector", _wrap_delete_FractalDetector, METH_VARARGS, NULL},
+	 { (char *)"FractalDetector_swigregister", FractalDetector_swigregister, METH_VARARGS, NULL},
 	 { (char *)"Marker3DInfo_points_set", _wrap_Marker3DInfo_points_set, METH_VARARGS, NULL},
 	 { (char *)"Marker3DInfo_points_get", _wrap_Marker3DInfo_points_get, METH_VARARGS, NULL},
 	 { (char *)"Marker3DInfo_id_set", _wrap_Marker3DInfo_id_set, METH_VARARGS, NULL},
@@ -27750,20 +30989,76 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"MarkerMapPoseTracker_setMaxTrackingDifference", _wrap_MarkerMapPoseTracker_setMaxTrackingDifference, METH_VARARGS, NULL},
 	 { (char *)"delete_MarkerMapPoseTracker", _wrap_delete_MarkerMapPoseTracker, METH_VARARGS, NULL},
 	 { (char *)"MarkerMapPoseTracker_swigregister", MarkerMapPoseTracker_swigregister, METH_VARARGS, NULL},
-	 { (char *)"delete_DictionaryBased", _wrap_delete_DictionaryBased, METH_VARARGS, NULL},
-	 { (char *)"DictionaryBased_setParams", _wrap_DictionaryBased_setParams, METH_VARARGS, NULL},
-	 { (char *)"DictionaryBased_detect", _wrap_DictionaryBased_detect, METH_VARARGS, NULL},
-	 { (char *)"DictionaryBased_getName", _wrap_DictionaryBased_getName, METH_VARARGS, NULL},
-	 { (char *)"DictionaryBased_getNSubdivisions", _wrap_DictionaryBased_getNSubdivisions, METH_VARARGS, NULL},
-	 { (char *)"new_DictionaryBased", _wrap_new_DictionaryBased, METH_VARARGS, NULL},
-	 { (char *)"DictionaryBased_swigregister", DictionaryBased_swigregister, METH_VARARGS, NULL},
-	 { (char *)"new_SVMMarkers", _wrap_new_SVMMarkers, METH_VARARGS, NULL},
-	 { (char *)"delete_SVMMarkers", _wrap_delete_SVMMarkers, METH_VARARGS, NULL},
-	 { (char *)"SVMMarkers_getName", _wrap_SVMMarkers_getName, METH_VARARGS, NULL},
-	 { (char *)"SVMMarkers_load", _wrap_SVMMarkers_load, METH_VARARGS, NULL},
-	 { (char *)"SVMMarkers_detect", _wrap_SVMMarkers_detect, METH_VARARGS, NULL},
-	 { (char *)"SVMMarkers_getBestInputSize", _wrap_SVMMarkers_getBestInputSize, METH_VARARGS, NULL},
-	 { (char *)"SVMMarkers_swigregister", SVMMarkers_swigregister, METH_VARARGS, NULL},
+	 { (char *)"PicoFlann_KeyPointAdapter___call__", _wrap_PicoFlann_KeyPointAdapter___call__, METH_VARARGS, NULL},
+	 { (char *)"new_PicoFlann_KeyPointAdapter", _wrap_new_PicoFlann_KeyPointAdapter, METH_VARARGS, NULL},
+	 { (char *)"delete_PicoFlann_KeyPointAdapter", _wrap_delete_PicoFlann_KeyPointAdapter, METH_VARARGS, NULL},
+	 { (char *)"PicoFlann_KeyPointAdapter_swigregister", PicoFlann_KeyPointAdapter_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_FractalPoseTracker", _wrap_new_FractalPoseTracker, METH_VARARGS, NULL},
+	 { (char *)"FractalPoseTracker_setParams", _wrap_FractalPoseTracker_setParams, METH_VARARGS, NULL},
+	 { (char *)"FractalPoseTracker_fractalInnerPose", _wrap_FractalPoseTracker_fractalInnerPose, METH_VARARGS, NULL},
+	 { (char *)"FractalPoseTracker_ROI", _wrap_FractalPoseTracker_ROI, METH_VARARGS, NULL},
+	 { (char *)"FractalPoseTracker_assignClass", _wrap_FractalPoseTracker_assignClass, METH_VARARGS, NULL},
+	 { (char *)"FractalPoseTracker_fractal_solve_ransac", _wrap_FractalPoseTracker_fractal_solve_ransac, METH_VARARGS, NULL},
+	 { (char *)"FractalPoseTracker_fractalRefinement", _wrap_FractalPoseTracker_fractalRefinement, METH_VARARGS, NULL},
+	 { (char *)"FractalPoseTracker_getRvec", _wrap_FractalPoseTracker_getRvec, METH_VARARGS, NULL},
+	 { (char *)"FractalPoseTracker_getTvec", _wrap_FractalPoseTracker_getTvec, METH_VARARGS, NULL},
+	 { (char *)"FractalPoseTracker_getInner3d", _wrap_FractalPoseTracker_getInner3d, METH_VARARGS, NULL},
+	 { (char *)"FractalPoseTracker_isPoseValid", _wrap_FractalPoseTracker_isPoseValid, METH_VARARGS, NULL},
+	 { (char *)"delete_FractalPoseTracker", _wrap_delete_FractalPoseTracker, METH_VARARGS, NULL},
+	 { (char *)"FractalPoseTracker_swigregister", FractalPoseTracker_swigregister, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerLabeler_create", _wrap_FractalMarkerLabeler_create, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerLabeler_setConfiguration", _wrap_FractalMarkerLabeler_setConfiguration, METH_VARARGS, NULL},
+	 { (char *)"delete_FractalMarkerLabeler", _wrap_delete_FractalMarkerLabeler, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerLabeler_getName", _wrap_FractalMarkerLabeler_getName, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerLabeler_detect", _wrap_FractalMarkerLabeler_detect, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerLabeler_getNSubdivisions", _wrap_FractalMarkerLabeler_getNSubdivisions, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerLabeler__fractalMarkerSet_set", _wrap_FractalMarkerLabeler__fractalMarkerSet_set, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerLabeler__fractalMarkerSet_get", _wrap_FractalMarkerLabeler__fractalMarkerSet_get, METH_VARARGS, NULL},
+	 { (char *)"new_FractalMarkerLabeler", _wrap_new_FractalMarkerLabeler, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerLabeler_swigregister", FractalMarkerLabeler_swigregister, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_create", _wrap_FractalMarkerSet_create, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_configureMat", _wrap_FractalMarkerSet_configureMat, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_dstMarker", _wrap_FractalMarkerSet_dstMarker, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_dstMarkerToMarker", _wrap_FractalMarkerSet_dstMarkerToMarker, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_dstMarkerToFractalDict", _wrap_FractalMarkerSet_dstMarkerToFractalDict, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet__toStream", _wrap_FractalMarkerSet__toStream, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet__fromStream", _wrap_FractalMarkerSet__fromStream, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_isPredefinedConfigurationString", _wrap_FractalMarkerSet_isPredefinedConfigurationString, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_getTypeString", _wrap_FractalMarkerSet_getTypeString, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_getTypeFromString", _wrap_FractalMarkerSet_getTypeFromString, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_load", _wrap_FractalMarkerSet_load, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_loadPredefined", _wrap_FractalMarkerSet_loadPredefined, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_readFromFile", _wrap_FractalMarkerSet_readFromFile, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_saveToFile", _wrap_FractalMarkerSet_saveToFile, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_fractalMarkerCollection_set", _wrap_FractalMarkerSet_fractalMarkerCollection_set, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_fractalMarkerCollection_get", _wrap_FractalMarkerSet_fractalMarkerCollection_get, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_nbits_fractalMarkerIDs_set", _wrap_FractalMarkerSet_nbits_fractalMarkerIDs_set, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_nbits_fractalMarkerIDs_get", _wrap_FractalMarkerSet_nbits_fractalMarkerIDs_get, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_isExpressedInMeters", _wrap_FractalMarkerSet_isExpressedInMeters, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_isExpressedInPixels", _wrap_FractalMarkerSet_isExpressedInPixels, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_isNormalize", _wrap_FractalMarkerSet_isNormalize, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_normalize", _wrap_FractalMarkerSet_normalize, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_convertToMeters", _wrap_FractalMarkerSet_convertToMeters, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_getConfigurations", _wrap_FractalMarkerSet_getConfigurations, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_getFractalSize", _wrap_FractalMarkerSet_getFractalSize, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_nBits", _wrap_FractalMarkerSet_nBits, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_isFractalMarker", _wrap_FractalMarkerSet_isFractalMarker, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_getInnerCorners", _wrap_FractalMarkerSet_getInnerCorners, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_getFractalMarkerImage", _wrap_FractalMarkerSet_getFractalMarkerImage, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_mInfoType_set", _wrap_FractalMarkerSet_mInfoType_set, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_mInfoType_get", _wrap_FractalMarkerSet_mInfoType_get, METH_VARARGS, NULL},
+	 { (char *)"new_FractalMarkerSet", _wrap_new_FractalMarkerSet, METH_VARARGS, NULL},
+	 { (char *)"delete_FractalMarkerSet", _wrap_delete_FractalMarkerSet, METH_VARARGS, NULL},
+	 { (char *)"FractalMarkerSet_swigregister", FractalMarkerSet_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_FractalMarker", _wrap_new_FractalMarker, METH_VARARGS, NULL},
+	 { (char *)"FractalMarker_addSubFractalMarker", _wrap_FractalMarker_addSubFractalMarker, METH_VARARGS, NULL},
+	 { (char *)"FractalMarker_getInnerCorners", _wrap_FractalMarker_getInnerCorners, METH_VARARGS, NULL},
+	 { (char *)"FractalMarker_mat", _wrap_FractalMarker_mat, METH_VARARGS, NULL},
+	 { (char *)"FractalMarker_mask", _wrap_FractalMarker_mask, METH_VARARGS, NULL},
+	 { (char *)"FractalMarker_nBits", _wrap_FractalMarker_nBits, METH_VARARGS, NULL},
+	 { (char *)"FractalMarker_subMarkers", _wrap_FractalMarker_subMarkers, METH_VARARGS, NULL},
+	 { (char *)"delete_FractalMarker", _wrap_delete_FractalMarker, METH_VARARGS, NULL},
+	 { (char *)"FractalMarker_swigregister", FractalMarker_swigregister, METH_VARARGS, NULL},
 	 { (char *)"ScopeTimer_begin_set", _wrap_ScopeTimer_begin_set, METH_VARARGS, NULL},
 	 { (char *)"ScopeTimer_begin_get", _wrap_ScopeTimer_begin_get, METH_VARARGS, NULL},
 	 { (char *)"ScopeTimer_end_set", _wrap_ScopeTimer_end_set, METH_VARARGS, NULL},
@@ -27806,32 +31101,40 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"Timer_getAverage", _wrap_Timer_getAverage, METH_VARARGS, NULL},
 	 { (char *)"delete_Timer", _wrap_delete_Timer, METH_VARARGS, NULL},
 	 { (char *)"Timer_swigregister", Timer_swigregister, METH_VARARGS, NULL},
+	 { (char *)"__pf_aruco_methodName", _wrap___pf_aruco_methodName, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
 
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
+static void *_p_aruco__FractalMarkerTo_p_aruco__Marker3DInfo(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((aruco::Marker3DInfo *)  ((aruco::FractalMarker *) x));
+}
 static void *_p_aruco__MarkerTo_p_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((std::vector< cv::Point2f,std::allocator< cv::Point2f > > *)  ((aruco::Marker *) x));
 }
 static void *_p_aruco__MarkerMapTo_p_std__vectorT_aruco__Marker3DInfo_std__allocatorT_aruco__Marker3DInfo_t_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((std::vector< aruco::Marker3DInfo,std::allocator< aruco::Marker3DInfo > > *)  ((aruco::MarkerMap *) x));
 }
-static void *_p_aruco__SVMMarkersTo_p_aruco__MarkerLabeler(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((aruco::MarkerLabeler *)  ((aruco::SVMMarkers *) x));
+static void *_p_aruco__FractalMarkerLabelerTo_p_aruco__MarkerLabeler(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((aruco::MarkerLabeler *)  ((aruco::FractalMarkerLabeler *) x));
 }
-static void *_p_aruco__DictionaryBasedTo_p_aruco__MarkerLabeler(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((aruco::MarkerLabeler *)  ((aruco::DictionaryBased *) x));
-}
+static swig_type_info _swigt__p_FractalMarker = {"_p_FractalMarker", "FractalMarker *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FractalMarkerSet = {"_p_FractalMarkerSet", "FractalMarkerSet *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FractalMarkerSet__CONF_TYPES = {"_p_FractalMarkerSet__CONF_TYPES", "FractalMarkerSet::CONF_TYPES *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Marker = {"_p_Marker", "Marker *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_allocator_type = {"_p_allocator_type", "allocator_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_aruco__CameraParameters = {"_p_aruco__CameraParameters", "aruco::CameraParameters *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_aruco__CvDrawingUtils = {"_p_aruco__CvDrawingUtils", "aruco::CvDrawingUtils *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_aruco__Debug = {"_p_aruco__Debug", "aruco::Debug *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_aruco__Dictionary = {"_p_aruco__Dictionary", "aruco::Dictionary *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_aruco__DictionaryBased = {"_p_aruco__DictionaryBased", "aruco::DictionaryBased *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_aruco__Marker = {"_p_aruco__Marker", "std::vector< aruco::Marker,std::allocator< aruco::Marker > >::value_type *|aruco::Marker *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_aruco__FractalDetector = {"_p_aruco__FractalDetector", "aruco::FractalDetector *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_aruco__FractalMarker = {"_p_aruco__FractalMarker", "aruco::FractalMarker *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_aruco__FractalMarkerLabeler = {"_p_aruco__FractalMarkerLabeler", "aruco::FractalMarkerLabeler *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_aruco__FractalMarkerSet = {"_p_aruco__FractalMarkerSet", "aruco::FractalMarkerSet *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_aruco__FractalPoseTracker = {"_p_aruco__FractalPoseTracker", "aruco::FractalPoseTracker *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_aruco__Marker = {"_p_aruco__Marker", "std::vector< aruco::Marker,std::allocator< aruco::Marker > >::value_type *|aruco::MarkerCandidate *|aruco::Marker *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_aruco__Marker3DInfo = {"_p_aruco__Marker3DInfo", "aruco::Marker3DInfo *|std::vector< aruco::Marker3DInfo >::value_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_aruco__MarkerDetector = {"_p_aruco__MarkerDetector", "aruco::MarkerDetector *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_aruco__MarkerDetector__Params = {"_p_aruco__MarkerDetector__Params", "aruco::MarkerDetector::Params *", 0, 0, (void*)0, 0};
@@ -27839,17 +31142,22 @@ static swig_type_info _swigt__p_aruco__MarkerLabeler = {"_p_aruco__MarkerLabeler
 static swig_type_info _swigt__p_aruco__MarkerMap = {"_p_aruco__MarkerMap", "aruco::MarkerMap *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_aruco__MarkerMapPoseTracker = {"_p_aruco__MarkerMapPoseTracker", "aruco::MarkerMapPoseTracker *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_aruco__MarkerPoseTracker = {"_p_aruco__MarkerPoseTracker", "aruco::MarkerPoseTracker *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_aruco__SVMMarkers = {"_p_aruco__SVMMarkers", "aruco::SVMMarkers *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_aruco__PicoFlann_KeyPointAdapter = {"_p_aruco__PicoFlann_KeyPointAdapter", "aruco::PicoFlann_KeyPointAdapter *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_aruco__ScopeTimer = {"_p_aruco__ScopeTimer", "aruco::ScopeTimer *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_aruco__ScopedTimerEvents = {"_p_aruco__ScopedTimerEvents", "aruco::ScopedTimerEvents *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_aruco__Timer = {"_p_aruco__Timer", "aruco::Timer *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_cv__FileStorage = {"_p_cv__FileStorage", "cv::FileStorage *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_cv__KeyPoint = {"_p_cv__KeyPoint", "cv::KeyPoint *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_cv__Point2f = {"_p_cv__Point2f", "std::vector< cv::Point2f >::value_type *|cv::Point2f *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_cv__Point3f = {"_p_cv__Point3f", "cv::Point3f *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_cv__PtrT_aruco__FractalMarkerLabeler_t = {"_p_cv__PtrT_aruco__FractalMarkerLabeler_t", "cv::Ptr< aruco::FractalMarkerLabeler > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_cv__PtrT_aruco__MarkerDetector_t = {"_p_cv__PtrT_aruco__MarkerDetector_t", "cv::Ptr< aruco::MarkerDetector > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_cv__PtrT_aruco__MarkerLabeler_t = {"_p_cv__PtrT_aruco__MarkerLabeler_t", "cv::Ptr< aruco::MarkerLabeler > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_cv__Size = {"_p_cv__Size", "cv::Size *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_difference_type = {"_p_difference_type", "difference_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_double = {"_p_double", "double *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_float = {"_p_float", "float *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int = {"_p_int", "int *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_p_PyObject = {"_p_p_PyObject", "PyObject **", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_size_type = {"_p_size_type", "size_type *", 0, 0, (void*)0, 0};
@@ -27860,16 +31168,23 @@ static swig_type_info _swigt__p_std__allocatorT_int_t = {"_p_std__allocatorT_int
 static swig_type_info _swigt__p_std__chrono__high_resolution_clock__time_point = {"_p_std__chrono__high_resolution_clock__time_point", "std::chrono::high_resolution_clock::time_point *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__invalid_argument = {"_p_std__invalid_argument", "std::invalid_argument *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__istream = {"_p_std__istream", "std::istream *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__mapT_int_FractalMarker_t = {"_p_std__mapT_int_FractalMarker_t", "std::map< int,FractalMarker > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__mapT_int_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t_t = {"_p_std__mapT_int_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t_t", "std::map< int,std::vector< cv::Point3f,std::allocator< cv::Point3f > > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__mapT_int_std__vectorT_int_std__allocatorT_int_t_t_t = {"_p_std__mapT_int_std__vectorT_int_std__allocatorT_int_t_t_t", "std::map< int,std::vector< int,std::allocator< int > > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__mapT_uint64_t_uint16_t_t = {"_p_std__mapT_uint64_t_uint16_t_t", "std::map< uint64_t,uint16_t > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__ostream = {"_p_std__ostream", "std::ostream *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__pairT_cv__Mat_cv__Mat_t = {"_p_std__pairT_cv__Mat_cv__Mat_t", "std::pair< cv::Mat,cv::Mat > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__string = {"_p_std__string", "std::string *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_aruco__Marker3DInfo_std__allocatorT_aruco__Marker3DInfo_t_t = {"_p_std__vectorT_aruco__Marker3DInfo_std__allocatorT_aruco__Marker3DInfo_t_t", "std::vector< aruco::Marker3DInfo,std::allocator< aruco::Marker3DInfo > > *|std::vector< aruco::Marker3DInfo > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t = {"_p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t", "std::vector< aruco::Marker,std::allocator< aruco::Marker > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t = {"_p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t", "std::vector< cv::KeyPoint,std::allocator< cv::KeyPoint > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_cv__Mat_std__allocatorT_cv__Mat_t_t = {"_p_std__vectorT_cv__Mat_std__allocatorT_cv__Mat_t_t", "std::vector< cv::Mat,std::allocator< cv::Mat > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t = {"_p_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t", "std::vector< cv::Point2f > *|std::vector< cv::Point2f,std::allocator< cv::Point2f > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t = {"_p_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t", "std::vector< cv::Point3f,std::allocator< cv::Point3f > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_int_std__allocatorT_int_t_t = {"_p_std__vectorT_int_std__allocatorT_int_t_t", "std::vector< int,std::allocator< int > > *|std::vector< int > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_std__chrono__high_resolution_clock__time_point_std__allocatorT_std__chrono__high_resolution_clock__time_point_t_t = {"_p_std__vectorT_std__chrono__high_resolution_clock__time_point_std__allocatorT_std__chrono__high_resolution_clock__time_point_t_t", "std::vector< std::chrono::high_resolution_clock::time_point,std::allocator< std::chrono::high_resolution_clock::time_point > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_std__pairT_int_int_t_std__allocatorT_std__pairT_int_int_t_t_t = {"_p_std__vectorT_std__pairT_int_int_t_std__allocatorT_std__pairT_int_int_t_t_t", "std::vector< std::pair< int,int >,std::allocator< std::pair< int,int > > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t = {"_p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t", "std::vector< std::pair< uint,std::vector< uint,std::allocator< uint > > >,std::allocator< std::pair< uint,std::vector< uint,std::allocator< uint > > > > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_std__string_std__allocatorT_std__string_t_t = {"_p_std__vectorT_std__string_std__allocatorT_std__string_t_t", "std::vector< std::string,std::allocator< std::string > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_std__allocatorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_t_t = {"_p_std__vectorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_std__allocatorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_t_t", "std::vector< std::vector< cv::Point2f,std::allocator< cv::Point2f > >,std::allocator< std::vector< cv::Point2f,std::allocator< cv::Point2f > > > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_swig__SwigPyIterator = {"_p_swig__SwigPyIterator", "swig::SwigPyIterator *", 0, 0, (void*)0, 0};
@@ -27882,13 +31197,20 @@ static swig_type_info _swigt__p_vectorT_cv__Point_t = {"_p_vectorT_cv__Point_t",
 static swig_type_info _swigt__p_vectorT_int_t = {"_p_vectorT_int_t", "vector< int > *", 0, 0, (void*)0, 0};
 
 static swig_type_info *swig_type_initial[] = {
+  &_swigt__p_FractalMarker,
+  &_swigt__p_FractalMarkerSet,
+  &_swigt__p_FractalMarkerSet__CONF_TYPES,
   &_swigt__p_Marker,
   &_swigt__p_allocator_type,
   &_swigt__p_aruco__CameraParameters,
   &_swigt__p_aruco__CvDrawingUtils,
   &_swigt__p_aruco__Debug,
   &_swigt__p_aruco__Dictionary,
-  &_swigt__p_aruco__DictionaryBased,
+  &_swigt__p_aruco__FractalDetector,
+  &_swigt__p_aruco__FractalMarker,
+  &_swigt__p_aruco__FractalMarkerLabeler,
+  &_swigt__p_aruco__FractalMarkerSet,
+  &_swigt__p_aruco__FractalPoseTracker,
   &_swigt__p_aruco__Marker,
   &_swigt__p_aruco__Marker3DInfo,
   &_swigt__p_aruco__MarkerDetector,
@@ -27897,17 +31219,22 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_aruco__MarkerMap,
   &_swigt__p_aruco__MarkerMapPoseTracker,
   &_swigt__p_aruco__MarkerPoseTracker,
-  &_swigt__p_aruco__SVMMarkers,
+  &_swigt__p_aruco__PicoFlann_KeyPointAdapter,
   &_swigt__p_aruco__ScopeTimer,
   &_swigt__p_aruco__ScopedTimerEvents,
   &_swigt__p_aruco__Timer,
   &_swigt__p_char,
+  &_swigt__p_cv__FileStorage,
+  &_swigt__p_cv__KeyPoint,
   &_swigt__p_cv__Point2f,
   &_swigt__p_cv__Point3f,
+  &_swigt__p_cv__PtrT_aruco__FractalMarkerLabeler_t,
+  &_swigt__p_cv__PtrT_aruco__MarkerDetector_t,
   &_swigt__p_cv__PtrT_aruco__MarkerLabeler_t,
   &_swigt__p_cv__Size,
   &_swigt__p_difference_type,
   &_swigt__p_double,
+  &_swigt__p_float,
   &_swigt__p_int,
   &_swigt__p_p_PyObject,
   &_swigt__p_size_type,
@@ -27918,16 +31245,23 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_std__chrono__high_resolution_clock__time_point,
   &_swigt__p_std__invalid_argument,
   &_swigt__p_std__istream,
+  &_swigt__p_std__mapT_int_FractalMarker_t,
+  &_swigt__p_std__mapT_int_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t_t,
+  &_swigt__p_std__mapT_int_std__vectorT_int_std__allocatorT_int_t_t_t,
   &_swigt__p_std__mapT_uint64_t_uint16_t_t,
   &_swigt__p_std__ostream,
   &_swigt__p_std__pairT_cv__Mat_cv__Mat_t,
   &_swigt__p_std__string,
   &_swigt__p_std__vectorT_aruco__Marker3DInfo_std__allocatorT_aruco__Marker3DInfo_t_t,
   &_swigt__p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t,
+  &_swigt__p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t,
+  &_swigt__p_std__vectorT_cv__Mat_std__allocatorT_cv__Mat_t_t,
   &_swigt__p_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t,
   &_swigt__p_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t,
   &_swigt__p_std__vectorT_int_std__allocatorT_int_t_t,
   &_swigt__p_std__vectorT_std__chrono__high_resolution_clock__time_point_std__allocatorT_std__chrono__high_resolution_clock__time_point_t_t,
+  &_swigt__p_std__vectorT_std__pairT_int_int_t_std__allocatorT_std__pairT_int_int_t_t_t,
+  &_swigt__p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t,
   &_swigt__p_std__vectorT_std__string_std__allocatorT_std__string_t_t,
   &_swigt__p_std__vectorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_std__allocatorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_t_t,
   &_swigt__p_swig__SwigPyIterator,
@@ -27940,32 +31274,44 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_vectorT_int_t,
 };
 
+static swig_cast_info _swigc__p_FractalMarker[] = {  {&_swigt__p_FractalMarker, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FractalMarkerSet[] = {  {&_swigt__p_FractalMarkerSet, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FractalMarkerSet__CONF_TYPES[] = {  {&_swigt__p_FractalMarkerSet__CONF_TYPES, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Marker[] = {  {&_swigt__p_Marker, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_allocator_type[] = {  {&_swigt__p_allocator_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_aruco__CameraParameters[] = {  {&_swigt__p_aruco__CameraParameters, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_aruco__CvDrawingUtils[] = {  {&_swigt__p_aruco__CvDrawingUtils, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_aruco__Debug[] = {  {&_swigt__p_aruco__Debug, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_aruco__Dictionary[] = {  {&_swigt__p_aruco__Dictionary, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_aruco__DictionaryBased[] = {  {&_swigt__p_aruco__DictionaryBased, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_aruco__FractalDetector[] = {  {&_swigt__p_aruco__FractalDetector, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_aruco__FractalMarker[] = {  {&_swigt__p_aruco__FractalMarker, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_aruco__FractalMarkerLabeler[] = {  {&_swigt__p_aruco__FractalMarkerLabeler, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_aruco__FractalMarkerSet[] = {  {&_swigt__p_aruco__FractalMarkerSet, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_aruco__FractalPoseTracker[] = {  {&_swigt__p_aruco__FractalPoseTracker, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_aruco__Marker[] = {  {&_swigt__p_aruco__Marker, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_aruco__Marker3DInfo[] = {  {&_swigt__p_aruco__Marker3DInfo, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_aruco__Marker3DInfo[] = {  {&_swigt__p_aruco__FractalMarker, _p_aruco__FractalMarkerTo_p_aruco__Marker3DInfo, 0, 0},  {&_swigt__p_aruco__Marker3DInfo, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_aruco__MarkerDetector[] = {  {&_swigt__p_aruco__MarkerDetector, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_aruco__MarkerDetector__Params[] = {  {&_swigt__p_aruco__MarkerDetector__Params, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_aruco__MarkerLabeler[] = {  {&_swigt__p_aruco__SVMMarkers, _p_aruco__SVMMarkersTo_p_aruco__MarkerLabeler, 0, 0},  {&_swigt__p_aruco__MarkerLabeler, 0, 0, 0},  {&_swigt__p_aruco__DictionaryBased, _p_aruco__DictionaryBasedTo_p_aruco__MarkerLabeler, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_aruco__MarkerLabeler[] = {  {&_swigt__p_aruco__MarkerLabeler, 0, 0, 0},  {&_swigt__p_aruco__FractalMarkerLabeler, _p_aruco__FractalMarkerLabelerTo_p_aruco__MarkerLabeler, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_aruco__MarkerMap[] = {  {&_swigt__p_aruco__MarkerMap, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_aruco__MarkerMapPoseTracker[] = {  {&_swigt__p_aruco__MarkerMapPoseTracker, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_aruco__MarkerPoseTracker[] = {  {&_swigt__p_aruco__MarkerPoseTracker, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_aruco__SVMMarkers[] = {  {&_swigt__p_aruco__SVMMarkers, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_aruco__PicoFlann_KeyPointAdapter[] = {  {&_swigt__p_aruco__PicoFlann_KeyPointAdapter, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_aruco__ScopeTimer[] = {  {&_swigt__p_aruco__ScopeTimer, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_aruco__ScopedTimerEvents[] = {  {&_swigt__p_aruco__ScopedTimerEvents, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_aruco__Timer[] = {  {&_swigt__p_aruco__Timer, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_cv__FileStorage[] = {  {&_swigt__p_cv__FileStorage, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_cv__KeyPoint[] = {  {&_swigt__p_cv__KeyPoint, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_cv__Point2f[] = {  {&_swigt__p_cv__Point2f, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_cv__Point3f[] = {  {&_swigt__p_cv__Point3f, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_cv__PtrT_aruco__FractalMarkerLabeler_t[] = {  {&_swigt__p_cv__PtrT_aruco__FractalMarkerLabeler_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_cv__PtrT_aruco__MarkerDetector_t[] = {  {&_swigt__p_cv__PtrT_aruco__MarkerDetector_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_cv__PtrT_aruco__MarkerLabeler_t[] = {  {&_swigt__p_cv__PtrT_aruco__MarkerLabeler_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_cv__Size[] = {  {&_swigt__p_cv__Size, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_difference_type[] = {  {&_swigt__p_difference_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_double[] = {  {&_swigt__p_double, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_float[] = {  {&_swigt__p_float, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_PyObject[] = {  {&_swigt__p_p_PyObject, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_size_type[] = {  {&_swigt__p_size_type, 0, 0, 0},{0, 0, 0, 0}};
@@ -27976,16 +31322,23 @@ static swig_cast_info _swigc__p_std__allocatorT_int_t[] = {  {&_swigt__p_std__al
 static swig_cast_info _swigc__p_std__chrono__high_resolution_clock__time_point[] = {  {&_swigt__p_std__chrono__high_resolution_clock__time_point, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__invalid_argument[] = {  {&_swigt__p_std__invalid_argument, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__istream[] = {  {&_swigt__p_std__istream, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__mapT_int_FractalMarker_t[] = {  {&_swigt__p_std__mapT_int_FractalMarker_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__mapT_int_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t_t[] = {  {&_swigt__p_std__mapT_int_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__mapT_int_std__vectorT_int_std__allocatorT_int_t_t_t[] = {  {&_swigt__p_std__mapT_int_std__vectorT_int_std__allocatorT_int_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__mapT_uint64_t_uint16_t_t[] = {  {&_swigt__p_std__mapT_uint64_t_uint16_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__ostream[] = {  {&_swigt__p_std__ostream, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__pairT_cv__Mat_cv__Mat_t[] = {  {&_swigt__p_std__pairT_cv__Mat_cv__Mat_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__string[] = {  {&_swigt__p_std__string, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_aruco__Marker3DInfo_std__allocatorT_aruco__Marker3DInfo_t_t[] = {  {&_swigt__p_std__vectorT_aruco__Marker3DInfo_std__allocatorT_aruco__Marker3DInfo_t_t, 0, 0, 0},  {&_swigt__p_aruco__MarkerMap, _p_aruco__MarkerMapTo_p_std__vectorT_aruco__Marker3DInfo_std__allocatorT_aruco__Marker3DInfo_t_t, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t[] = {  {&_swigt__p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t[] = {  {&_swigt__p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_cv__Mat_std__allocatorT_cv__Mat_t_t[] = {  {&_swigt__p_std__vectorT_cv__Mat_std__allocatorT_cv__Mat_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t[] = {  {&_swigt__p_aruco__Marker, _p_aruco__MarkerTo_p_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t, 0, 0},  {&_swigt__p_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t[] = {  {&_swigt__p_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_int_std__allocatorT_int_t_t[] = {  {&_swigt__p_std__vectorT_int_std__allocatorT_int_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_std__chrono__high_resolution_clock__time_point_std__allocatorT_std__chrono__high_resolution_clock__time_point_t_t[] = {  {&_swigt__p_std__vectorT_std__chrono__high_resolution_clock__time_point_std__allocatorT_std__chrono__high_resolution_clock__time_point_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_std__pairT_int_int_t_std__allocatorT_std__pairT_int_int_t_t_t[] = {  {&_swigt__p_std__vectorT_std__pairT_int_int_t_std__allocatorT_std__pairT_int_int_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t[] = {  {&_swigt__p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_std__string_std__allocatorT_std__string_t_t[] = {  {&_swigt__p_std__vectorT_std__string_std__allocatorT_std__string_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_std__allocatorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_t_t[] = {  {&_swigt__p_std__vectorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_std__allocatorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_swig__SwigPyIterator[] = {  {&_swigt__p_swig__SwigPyIterator, 0, 0, 0},{0, 0, 0, 0}};
@@ -27998,13 +31351,20 @@ static swig_cast_info _swigc__p_vectorT_cv__Point_t[] = {  {&_swigt__p_vectorT_c
 static swig_cast_info _swigc__p_vectorT_int_t[] = {  {&_swigt__p_vectorT_int_t, 0, 0, 0},{0, 0, 0, 0}};
 
 static swig_cast_info *swig_cast_initial[] = {
+  _swigc__p_FractalMarker,
+  _swigc__p_FractalMarkerSet,
+  _swigc__p_FractalMarkerSet__CONF_TYPES,
   _swigc__p_Marker,
   _swigc__p_allocator_type,
   _swigc__p_aruco__CameraParameters,
   _swigc__p_aruco__CvDrawingUtils,
   _swigc__p_aruco__Debug,
   _swigc__p_aruco__Dictionary,
-  _swigc__p_aruco__DictionaryBased,
+  _swigc__p_aruco__FractalDetector,
+  _swigc__p_aruco__FractalMarker,
+  _swigc__p_aruco__FractalMarkerLabeler,
+  _swigc__p_aruco__FractalMarkerSet,
+  _swigc__p_aruco__FractalPoseTracker,
   _swigc__p_aruco__Marker,
   _swigc__p_aruco__Marker3DInfo,
   _swigc__p_aruco__MarkerDetector,
@@ -28013,17 +31373,22 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_aruco__MarkerMap,
   _swigc__p_aruco__MarkerMapPoseTracker,
   _swigc__p_aruco__MarkerPoseTracker,
-  _swigc__p_aruco__SVMMarkers,
+  _swigc__p_aruco__PicoFlann_KeyPointAdapter,
   _swigc__p_aruco__ScopeTimer,
   _swigc__p_aruco__ScopedTimerEvents,
   _swigc__p_aruco__Timer,
   _swigc__p_char,
+  _swigc__p_cv__FileStorage,
+  _swigc__p_cv__KeyPoint,
   _swigc__p_cv__Point2f,
   _swigc__p_cv__Point3f,
+  _swigc__p_cv__PtrT_aruco__FractalMarkerLabeler_t,
+  _swigc__p_cv__PtrT_aruco__MarkerDetector_t,
   _swigc__p_cv__PtrT_aruco__MarkerLabeler_t,
   _swigc__p_cv__Size,
   _swigc__p_difference_type,
   _swigc__p_double,
+  _swigc__p_float,
   _swigc__p_int,
   _swigc__p_p_PyObject,
   _swigc__p_size_type,
@@ -28034,16 +31399,23 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_std__chrono__high_resolution_clock__time_point,
   _swigc__p_std__invalid_argument,
   _swigc__p_std__istream,
+  _swigc__p_std__mapT_int_FractalMarker_t,
+  _swigc__p_std__mapT_int_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t_t,
+  _swigc__p_std__mapT_int_std__vectorT_int_std__allocatorT_int_t_t_t,
   _swigc__p_std__mapT_uint64_t_uint16_t_t,
   _swigc__p_std__ostream,
   _swigc__p_std__pairT_cv__Mat_cv__Mat_t,
   _swigc__p_std__string,
   _swigc__p_std__vectorT_aruco__Marker3DInfo_std__allocatorT_aruco__Marker3DInfo_t_t,
   _swigc__p_std__vectorT_aruco__Marker_std__allocatorT_aruco__Marker_t_t,
+  _swigc__p_std__vectorT_cv__KeyPoint_std__allocatorT_cv__KeyPoint_t_t,
+  _swigc__p_std__vectorT_cv__Mat_std__allocatorT_cv__Mat_t_t,
   _swigc__p_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t,
   _swigc__p_std__vectorT_cv__Point3f_std__allocatorT_cv__Point3f_t_t,
   _swigc__p_std__vectorT_int_std__allocatorT_int_t_t,
   _swigc__p_std__vectorT_std__chrono__high_resolution_clock__time_point_std__allocatorT_std__chrono__high_resolution_clock__time_point_t_t,
+  _swigc__p_std__vectorT_std__pairT_int_int_t_std__allocatorT_std__pairT_int_int_t_t_t,
+  _swigc__p_std__vectorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_std__allocatorT_std__pairT_uint_std__vectorT_uint_std__allocatorT_uint_t_t_t_t_t,
   _swigc__p_std__vectorT_std__string_std__allocatorT_std__string_t_t,
   _swigc__p_std__vectorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_std__allocatorT_std__vectorT_cv__Point2f_std__allocatorT_cv__Point2f_t_t_t_t,
   _swigc__p_swig__SwigPyIterator,
@@ -28773,6 +32145,15 @@ SWIG_init(void) {
   SWIG_Python_SetConstant(d, "MarkerMap_NONE",SWIG_From_int(static_cast< int >(aruco::MarkerMap::NONE)));
   SWIG_Python_SetConstant(d, "MarkerMap_PIX",SWIG_From_int(static_cast< int >(aruco::MarkerMap::PIX)));
   SWIG_Python_SetConstant(d, "MarkerMap_METERS",SWIG_From_int(static_cast< int >(aruco::MarkerMap::METERS)));
+  SWIG_Python_SetConstant(d, "FractalMarkerSet_FRACTAL_2L_6",SWIG_From_int(static_cast< int >(aruco::FractalMarkerSet::FRACTAL_2L_6)));
+  SWIG_Python_SetConstant(d, "FractalMarkerSet_FRACTAL_3L_6",SWIG_From_int(static_cast< int >(aruco::FractalMarkerSet::FRACTAL_3L_6)));
+  SWIG_Python_SetConstant(d, "FractalMarkerSet_FRACTAL_4L_6",SWIG_From_int(static_cast< int >(aruco::FractalMarkerSet::FRACTAL_4L_6)));
+  SWIG_Python_SetConstant(d, "FractalMarkerSet_FRACTAL_5L_6",SWIG_From_int(static_cast< int >(aruco::FractalMarkerSet::FRACTAL_5L_6)));
+  SWIG_Python_SetConstant(d, "FractalMarkerSet_CUSTOM",SWIG_From_int(static_cast< int >(aruco::FractalMarkerSet::CUSTOM)));
+  SWIG_Python_SetConstant(d, "FractalMarkerSet_NONE",SWIG_From_int(static_cast< int >(aruco::FractalMarkerSet::NONE)));
+  SWIG_Python_SetConstant(d, "FractalMarkerSet_PIX",SWIG_From_int(static_cast< int >(aruco::FractalMarkerSet::PIX)));
+  SWIG_Python_SetConstant(d, "FractalMarkerSet_METERS",SWIG_From_int(static_cast< int >(aruco::FractalMarkerSet::METERS)));
+  SWIG_Python_SetConstant(d, "FractalMarkerSet_NORM",SWIG_From_int(static_cast< int >(aruco::FractalMarkerSet::NORM)));
   SWIG_Python_SetConstant(d, "ScopeTimer_NSEC",SWIG_From_int(static_cast< int >(aruco::ScopeTimer::NSEC)));
   SWIG_Python_SetConstant(d, "ScopeTimer_MSEC",SWIG_From_int(static_cast< int >(aruco::ScopeTimer::MSEC)));
   SWIG_Python_SetConstant(d, "ScopeTimer_SEC",SWIG_From_int(static_cast< int >(aruco::ScopeTimer::SEC)));

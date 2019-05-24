@@ -19,9 +19,9 @@ with open("LICENSE", "r") as fh:
 
 sourcefiles = ['aruco_wrap.cxx']
 sourcefiles.extend(glob.glob("src/aruco/*.cpp"))
-sourcefiles.extend(glob.glob("src/aruco/markerlabelers/*.cpp"))
+sourcefiles.extend(glob.glob("src/aruco/fractallabelers/*.cpp"))
 
-extra_cpp_args = ["-std=c++11", "-Wall", "-Wunused-variable"]
+extra_cpp_args = ["-std=c++11", "-Wall", "-O3", "-g0", "-DNDEBUG"]
 
 # Compiling on OSX does not work with openmp switch
 if platform.system().lower() not in ("darwin", "osx"):
@@ -36,7 +36,7 @@ aruco_module = Extension('_aruco',
                          library_dirs=["/usr/local/lib"])
 
 setup(name='aruco',
-      version='3.0.13.0',
+      version='3.1.2.0',
       author="""ArUco: Rafael Muñoz Salinas, Python wrappers: Marcus Degenkolbe""",
       author_email='marcus@degenkolbe.eu',
       description="""ArUco Python wrappers""",
@@ -49,3 +49,4 @@ setup(name='aruco',
       ext_modules=[aruco_module],
       py_modules=["aruco"],
       )
+

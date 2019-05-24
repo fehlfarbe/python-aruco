@@ -27,10 +27,12 @@ authors and should not be interpreted as representing official policies, either 
 or implied, of Rafael Muñoz Salinas.
 */
 
+#include "fractaldetector.h"
 #include "markerdetector.h"
 #include "posetracker.h"
 #include "cvdrawingutils.h"
 #include "dictionary.h"
+
 #define ARUCO_VERSION_MAJOR 3
 #define ARUCO_VERSION_MINOR 0
 

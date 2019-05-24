@@ -3,9 +3,9 @@ import sys
 import cv2
 import numpy as np
 import aruco
+import pkg_resources  # part of setuptools
 
 if __name__ == '__main__':
-
     # load board and camera parameters
     #boardconfig = aruco.BoardConfiguration("chessboardinfo_small_meters.yml")
     camparam = aruco.CameraParameters()
@@ -42,7 +42,17 @@ if __name__ == '__main__':
             # calculate marker extrinsics for marker size of 3.5cm
             marker.calculateExtrinsics(0.035, camparam)
             # print("Marker extrinsics:\n{}\n{}".format(marker.Tvec, marker.Rvec))
+            aruco.CvDrawingUtils.draw3dAxis(frame, camparam, marker.Rvec, marker.Tvec, .1)
             print("detected ids: {}".format(", ".join(str(m.id) for m in markers)))
+
+        # add aruco version to frame
+        y, x, c = frame.shape
+        text = "aruco {}".format(pkg_resources.require("aruco")[0].version)
+        font = cv2.FONT_HERSHEY_PLAIN
+        font_scale = 2
+        thickness = 2
+        cv2.putText(frame, text, (15, y - 15), font, font_scale, (255, 255, 255), thickness,
+                    cv2.LINE_AA)
 
         # show frame
         cv2.imshow("frame", frame)

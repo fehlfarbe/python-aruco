@@ -34,6 +34,7 @@ or implied, of Rafael Muñoz Salinas.
 #include <string>
 #include <vector>
 #include <iostream>
+#include "aruco_export.h"
  namespace aruco{
 
 //timer
@@ -182,6 +183,26 @@ struct ARUCO_EXPORT Timer{
     }
 
 };
+inline std::string __pf_aruco_methodName(  std::string  prettyFunction)
+{
+    std::string   res;
+    res.reserve(prettyFunction.size());
+    bool spaceFound=false;
+    for(auto c:prettyFunction){
+        if(c==' '  && !spaceFound)spaceFound=true;
+        else if(c!='(' && spaceFound) res.push_back(c);
+        else if (c=='(' &&spaceFound) break;
+        }
+    return res;
+}
+#ifdef USE_TIMERS
+
+#define __ARUCO_ADDTIMER__ ScopedTimerEvents XTIMER_X(__pf_aruco_methodName(__PRETTY_FUNCTION__));
+#define __ARUCO_TIMER_EVENT__(Y) XTIMER_X.add(Y);
+#else
+#define __ARUCO_ADDTIMER__
+#define __ARUCO_TIMER_EVENT__(Y)
+#endif
 }
 
 

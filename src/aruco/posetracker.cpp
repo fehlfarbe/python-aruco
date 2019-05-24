@@ -357,11 +357,6 @@ inline double getHubberMonoWeight(double SqErr,double Information){
             auto solutions =  solvePnP_(Marker::get3DPoints(_msize), m, _cam_params.CameraMatrix, _cam_params.Distorsion);
             double errorRatio = solutions[1].second / solutions[0].second;
             if (errorRatio < minerrorRatio)
-                return false;  // is te error ratio big enough
-//            cv::solvePnP(Marker::get3DPoints(_msize), m, _cam_params.CameraMatrix, _cam_params.Distorsion, rv, tv);
-            //__aruco_solve_pnp(Marker::get3DPoints(_msize), m, _cam_params.CameraMatrix, _cam_params.Distorsion, _rvec,  _tvec);
-//            rv.convertTo(_rvec, CV_32F);
-//            tv.convertTo(_tvec, CV_32F);
             aruco_private::impl__aruco_getRTfromMatrix44(solutions[0].first, _rvec, _tvec);
         }
         else
