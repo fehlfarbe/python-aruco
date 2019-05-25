@@ -55,8 +55,11 @@ if __name__ == '__main__':
                     cv2.LINE_AA)
 
         # show frame
-        cv2.imshow("frame", frame)
-        cv2.waitKey(100)
+        if 'DISPLAY' in os.environ.keys():
+            cv2.imshow("frame", frame)
+            cv2.waitKey(10)
+        else:
+            print("No display!")
         
         # read next frame
         ret, frame = cap.read()

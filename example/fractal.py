@@ -30,5 +30,8 @@ if __name__ == '__main__':
         detector.draw2d(frame)
 
     # show frame
-    cv2.imshow("frame", frame)
-    cv2.waitKey(0)
+    if 'DISPLAY' in os.environ.keys():
+        cv2.imshow("frame", frame)
+        cv2.waitKey(0)
+    else:
+        print("No display!")

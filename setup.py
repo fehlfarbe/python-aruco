@@ -12,9 +12,9 @@ if sys.version_info[0] < 3:
 else:
     shutil.copy("./py3/aruco.py", ".")
 
-with open("README.md", "r") as fh:
+with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
-with open("LICENSE", "r") as fh:
+with open("LICENSE", "r", encoding="utf-8") as fh:
     license = fh.read()
 
 sourcefiles = ['aruco_wrap.cxx']
