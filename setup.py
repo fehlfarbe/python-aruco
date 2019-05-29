@@ -31,7 +31,7 @@ aruco_module = Extension('_aruco',
                          sources=sourcefiles,
                          language="c++",
                          extra_compile_args=extra_cpp_args,
-                         include_dirs=["/usr/local/include/opencv2", "/usr/include/eigen3/", "src/"],
+                         include_dirs=["/usr/local/include/opencv4/", "/usr/local/include/opencv2", "/usr/include/eigen3/", "src/"],
                          libraries=["opencv_core", "opencv_imgproc", "opencv_calib3d", "opencv_highgui", "opencv_ml"],
                          library_dirs=["/usr/local/lib"])
 
