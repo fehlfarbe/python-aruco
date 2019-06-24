@@ -14,8 +14,6 @@ else:
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
-with open("LICENSE", "r", encoding="utf-8") as fh:
-    license = fh.read()
 
 sourcefiles = ['aruco_wrap.cxx']
 sourcefiles.extend(glob.glob("src/aruco/*.cpp"))
@@ -41,8 +39,8 @@ setup(name='aruco',
       author_email='marcus@degenkolbe.eu',
       description="""ArUco Python wrappers""",
       long_description=long_description,
-      long_description_content_type="text/markdown",
-      license=license,
+      long_description_content_type='text/markdown',
+      license="Copyright 2011 Rafael Muñoz Salinas. All rights reserved.",
       url='https://github.com/fehlfarbe/python-aruco',
       keywords='aruco wrapper',
       install_requires=['numpy', 'opencv-contrib-python'],
