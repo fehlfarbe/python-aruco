@@ -224,6 +224,18 @@ import_array();
         return array;
     }
 
+    PyObject* point3f_to_array(cv::Point3f* point)
+    {
+        npy_intp dims = 3;
+        npy_intp strides[1] = { 1 };
+        int flags = NPY_WRITEABLE;
+        float *data = new float[3];
+        data[0] = point->x;
+        data[1] = point->y;
+        data[2] = point->z;
+        PyObject* array = PyArray_SimpleNewFromData(1, &dims, NPY_FLOAT, data);
+        return array;
+    }
 }
 
 ///////////////////////////////////////
@@ -597,3 +609,19 @@ cv::Point2f
 
     $result = array;
 }
+
+///////////////////////////////////////
+/// return cv::Point3f *
+///////////////////////////////////////
+
+%typemap(out,
+         fragment="OKAPI_Fragments")
+cv::Point3f
+{
+    PyObject* array = point3f_to_array(&$1);
+    if (array == NULL)
+        SWIG_fail;
+
+    $result = array;
+}
+

@@ -6148,6 +6148,18 @@ SWIGINTERN void std_vector_Sl_int_Sg__insert__SWIG_1(std::vector< int > *self,st
         return array;
     }
 
+    PyObject* point3f_to_array(cv::Point3f* point)
+    {
+        npy_intp dims = 3;
+        npy_intp strides[1] = { 1 };
+        int flags = NPY_WRITEABLE;
+        float *data = new float[3];
+        data[0] = point->x;
+        data[1] = point->y;
+        data[2] = point->z;
+        PyObject* array = PyArray_SimpleNewFromData(1, &dims, NPY_FLOAT, data);
+        return array;
+    }
 
 
 SWIGINTERN swig_type_info*
@@ -10187,7 +10199,13 @@ SWIGINTERN PyObject *_wrap_CameraParameters_getCameraLocation(PyObject *SWIGUNUS
     SWIG_fail;
   }
   result = aruco::CameraParameters::getCameraLocation((cv::Mat const &)*arg1,(cv::Mat const &)*arg2);
-  resultobj = SWIG_NewPointerObj((new cv::Point3f(static_cast< const cv::Point3f& >(result))), SWIGTYPE_p_cv__Point3f, SWIG_POINTER_OWN |  0 );
+  {
+    PyObject* array = point3f_to_array(&result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    resultobj = array;
+  }
   {
     
   }
@@ -23591,7 +23609,13 @@ SWIGINTERN PyObject *_wrap_Marker3DInfo_at(PyObject *SWIGUNUSEDPARM(self), PyObj
   } 
   arg2 = static_cast< size_t >(val2);
   result = ((aruco::Marker3DInfo const *)arg1)->at(arg2);
-  resultobj = SWIG_NewPointerObj((new cv::Point3f(static_cast< const cv::Point3f& >(result))), SWIGTYPE_p_cv__Point3f, SWIG_POINTER_OWN |  0 );
+  {
+    PyObject* array = point3f_to_array(&result);
+    if (array == NULL)
+    SWIG_fail;
+    
+    resultobj = array;
+  }
   return resultobj;
 fail:
   return NULL;
