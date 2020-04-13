@@ -5,6 +5,7 @@ print(cv2.__file__)
 print(cv2.__version__)
 import numpy as np
 import aruco
+print(aruco.__file__)
 import pkg_resources  # part of setuptools
 
 if __name__ == '__main__':
@@ -40,7 +41,16 @@ if __name__ == '__main__':
             for i, point in enumerate(marker):
                 print("\t{:d} {}".format(i, str(point)))
             marker.draw(frame, np.array([255, 255, 255]), 2)
-            print("3D points: {:}".format(marker.get3DPoints()))
+            # points3d = marker.get3DPoints()
+            # print("3D points: {:}".format(points3d))
+            # for p in points3d:
+            #     print("\t{}".format(p))
+            print("center: {}".format(marker.getCenter()))
+            print("contour: {}".format(marker.contourPoints))
+            points3d = marker.get3DPoints()
+            print("3D points: {:}".format(points3d))
+            for p in points3d:
+                print("\t{}".format(p))
 
             # calculate marker extrinsics for marker size of 3.5cm
             marker.calculateExtrinsics(0.035, camparam)

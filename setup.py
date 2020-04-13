@@ -29,7 +29,7 @@ aruco_module = Extension('_aruco',
                          sources=sourcefiles,
                          language="c++",
                          extra_compile_args=extra_cpp_args,
-                         include_dirs=["/usr/local/include/opencv4/", "/usr/local/include/opencv2", "/usr/include/eigen3/", "src/"],
+                         include_dirs=["/usr/local/include/opencv2", "/usr/include/eigen3/", "src/"],
                          libraries=["opencv_core", "opencv_imgproc", "opencv_calib3d", "opencv_highgui", "opencv_ml"],
                          library_dirs=["/usr/local/lib"])
 
@@ -43,8 +43,7 @@ setup(name='aruco',
       license="Copyright 2011 Rafael Muñoz Salinas. All rights reserved.",
       url='https://github.com/fehlfarbe/python-aruco',
       keywords='aruco wrapper',
-      # install_requires=['numpy', 'opencv-contrib-python'],
-      install_requires=['numpy'],
+      install_requires=['numpy', 'opencv-contrib-python'],
       ext_modules=[aruco_module],
       py_modules=["aruco"],
       )

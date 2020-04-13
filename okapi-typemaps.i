@@ -236,6 +236,21 @@ import_array();
         PyObject* array = PyArray_SimpleNewFromData(1, &dims, NPY_FLOAT, data);
         return array;
     }
+
+    PyObject* point3fvec_to_array(std::vector<cv::Point3f>* v)
+    {
+        npy_intp dims = 3;
+        npy_intp strides[1] = { 1 };
+        int flags = NPY_WRITEABLE;
+        float *data = new float[3*v->size()];
+        for(size_t i=0; i<v->size(); i++){
+            data[i*3] = v->at(i).x;
+            data[i*3+1] = v->at(i).y;
+            data[i*3+2] = v->at(i).z;
+        }
+        PyObject* array = PyArray_SimpleNewFromData(v->size(), &dims, NPY_FLOAT, data);
+        return array;
+    }
 }
 
 ///////////////////////////////////////
@@ -600,7 +615,7 @@ import_array();
 ///////////////////////////////////////
 
 %typemap(out,
-         fragment="OKAPI_Fragments") 
+         fragment="OKAPI_Fragments")
 cv::Point2f
 {
     PyObject* array = point2f_to_array(&$1);
@@ -625,3 +640,25 @@ cv::Point3f
     $result = array;
 }
 
+// %typemap(out,
+//          fragment="OKAPI_Fragments")
+// std::vector< cv::Point3f >::value_type *
+// {
+//     PyObject* array = point3f_to_array($1);
+//     if (array == NULL)
+//         SWIG_fail;
+//
+//     $result = array;
+// }
+
+
+// %typemap(out,
+//          fragment="OKAPI_Fragments")
+// cv::Point3f *
+// {
+//     PyObject* array = point3f_to_array($1);
+//     if (array == NULL)
+//         SWIG_fail;
+//
+//     $result = array;
+// }

@@ -94,6 +94,7 @@ ArUco stuff
 // Marker is std::vector< cv::Point2f >, template definition
 // needed for std::vector -> Python List conversion
 %template(Point2fVec) std::vector< cv::Point2f >;
+%template(Point3fVec) std::vector< cv::Point3f >;
 %template(MarkerVec) std::vector< aruco::Marker, std::allocator< aruco::Marker > >;
 %template(VectorMarker3DInfo) std::vector< aruco::Marker3DInfo >;
 

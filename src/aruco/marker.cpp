@@ -365,7 +365,11 @@ namespace aruco
 //        res[3]=cv::Point3f(-halfSize,- halfSize, 0);
 //        return res;
         return {cv::Point3f(-halfSize, halfSize, 0),cv::Point3f(halfSize, halfSize, 0),cv::Point3f(halfSize,-halfSize, 0),cv::Point3f(-halfSize, -halfSize, 0)};
+    }
 
+
+    std::vector<cv::Point3f> Marker::get3DPoints() const {
+        return get3DPoints(ssize);
     }
 
     void Marker::rotateXAxis( cv::Mat& rotation)

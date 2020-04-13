@@ -176,11 +176,9 @@ or implied, of Rafael Muñoz Salinas.
         void fromStream(std::istream& str);
 
         // returns the 3d points of a marker wrt its center
-        static vector<cv::Point3f> get3DPoints(float msize);
+        static std::vector<cv::Point3f> get3DPoints(float msize);
         //returns the 3d points of this marker wrt its center
-          inline vector<cv::Point3f> get3DPoints()const{
-              return get3DPoints(ssize);
-          }
+        std::vector<cv::Point3f> get3DPoints() const;
 
           //returns the SE3 (4x4) transform matrix
 
