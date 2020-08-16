@@ -24,7 +24,8 @@ Installation Python3
 1. Install / compile [OpenCV](http://opencv.org/) >= 2.4.9 with Python3 support. [Install-OpenCV script helps to install the latest version.](https://github.com/jayrambhia/Install-OpenCV/)
 3. Install swig3: `sudo apt-get install swig3.0` for Debian/Ubuntu like systems. On 14.04 and other older systems you will need to go to "Software Sources" and check backports in the Updates tab, and reload before installing.
 4. Install NumPy `sudo pip3 install numpy` (maybe you already need it for OpenCV Python support) or install via system package manager.
-5. run `./swigbuild.sh python3`: it compiles the shared library (_aruco.so) and generates Python3 wrappers (aruco.py)
+5. Create a symlink `sudo ln -s /usr/local/include/opencv4/opencv2/ /usr/local/include/opencv2`
+6. run `./swigbuild.sh python3`: it compiles the shared library (_aruco.so) and generates Python3 wrappers (aruco.py)
 6. run `sudo python3 setup.py install` to install the library globally
 
 Test
