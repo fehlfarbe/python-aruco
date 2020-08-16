@@ -4,6 +4,7 @@ import platform
 from setuptools import setup, Extension
 import shutil
 import sys
+import numpy as np
 import glob
 
 # use python2/3 version of aruco
@@ -29,7 +30,13 @@ aruco_module = Extension('_aruco',
                          sources=sourcefiles,
                          language="c++",
                          extra_compile_args=extra_cpp_args,
-                         include_dirs=["/usr/local/include/opencv4/", "/usr/local/include/opencv2", "/usr/include/eigen3/", "src/"],
+                         include_dirs=[
+                             np.get_include(),
+                             "/usr/local/include/opencv4/",
+                             "/usr/include/opencv4/opencv2/",
+                             "/usr/local/include/opencv2",
+                             "/usr/include/eigen3/",
+                             "src/"],
                          libraries=["opencv_core", "opencv_imgproc", "opencv_calib3d", "opencv_highgui", "opencv_ml"],
                          library_dirs=["/usr/local/lib"])
 
