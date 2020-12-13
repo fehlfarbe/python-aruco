@@ -18,12 +18,6 @@ if __name__ == '__main__':
     detector = aruco.MarkerDetector()
     params = detector.getParameters()
 
-    # print detector parameters
-    print("detector params:")
-    for val in dir(params):
-        if not val.startswith("__"):
-            print("\t{} : {}".format(val, params.__getattribute__(val)))
-
     # load video
     cap = cv2.VideoCapture(os.path.join(os.path.dirname(__file__), "example.mp4"))
     ret, frame = cap.read()
@@ -41,16 +35,13 @@ if __name__ == '__main__':
             for i, point in enumerate(marker):
                 print("\t{:d} {}".format(i, str(point)))
             marker.draw(frame, np.array([255, 255, 255]), 2)
-            # points3d = marker.get3DPoints()
-            # print("3D points: {:}".format(points3d))
-            # for p in points3d:
-            #     print("\t{}".format(p))
             print("center: {}".format(marker.getCenter()))
-            print("contour: {}".format(marker.contourPoints))
+            # print("contour: {}".format(marker.contourPoints))
             points3d = marker.get3DPoints()
             print("3D points: {:}".format(points3d))
-            for p in points3d:
-                print("\t{}".format(p))
+            # not working because "vector<Point3f> --> list" conversion doesnt work yet
+            # for p in points3d:
+            #     print("\t{}".format(p))
 
             # calculate marker extrinsics for marker size of 3.5cm
             marker.calculateExtrinsics(0.035, camparam)

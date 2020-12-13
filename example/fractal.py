@@ -6,6 +6,8 @@ import aruco
 
 if __name__ == '__main__':
 
+    print(aruco.__dict__)
+
     # create fractaldetector and set config
     detector = aruco.FractalDetector()
     print(detector.setConfiguration(0))
@@ -32,6 +34,7 @@ if __name__ == '__main__':
     # show frame
     if 'DISPLAY' in os.environ.keys():
         cv2.imshow("frame", frame)
-        cv2.waitKey(0)
+        k = cv2.waitKey(0)
+        print(k)
     else:
         print("No display!")
