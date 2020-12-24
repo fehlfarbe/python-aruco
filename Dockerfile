@@ -43,14 +43,12 @@ RUN cd /home/user/src/ \
 && mkdir build || cd build \
 && rm -rf * \
 && pip3 install --upgrade pip \
-&& pip install --upgrade pip \
+&& pip3 install --upgrade cmake \
 && pip3 install --upgrade numpy \
-&& pip2 install --upgrade numpy \
-&& pip2 install --upgrade cmake \
 && ldconfig \
 && python3 -c "import numpy as n; print(n.__version__); print(n.get_include());" \
 && cmake .. \
-&& make -j$(grep -c ^processor /proc/cpuinfo) \
+&& make -j2 \
 && pip3 install python/dist/aruco-*.whl \
 && python3 -c "import aruco; print(aruco.__version__)" \
 && python3 ../example/fractal.py \
