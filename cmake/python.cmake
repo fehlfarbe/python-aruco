@@ -35,9 +35,9 @@ configure_file(
         python/setup.py.in
         ${CMAKE_CURRENT_BINARY_DIR}/python/setup.py.in
         @ONLY)
-#file(GENERATE
-#        OUTPUT python/$<CONFIG>/setup.py
-#        INPUT ${CMAKE_CURRENT_BINARY_DIR}/python/setup.py.in)
+file(GENERATE
+        OUTPUT python/$<CONFIG>/setup.py
+        INPUT ${CMAKE_CURRENT_BINARY_DIR}/python/setup.py.in)
 
 # __init__.py.in contains cmake variable e.g. @PROJECT_NAME@ and
 # generator expression e.g. $<TARGET_FILE_NAME:pyFoo>
