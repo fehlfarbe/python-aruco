@@ -42,8 +42,8 @@ if __name__ == '__main__':
             points3d = marker.get3DPoints()
             print("3D points: {:}".format(points3d))
             # not working because "vector<Point3f> --> list" conversion doesnt work yet
-            for p in points3d:
-                print("\t{}".format(p))
+            # for p in points3d:
+            #     print("\t{}".format(p))
             # calculate marker extrinsics for marker size of 3.5cm
             marker.calculateExtrinsics(0.035, camparam)
             # print("Marker extrinsics:\n{}\n{}".format(marker.Tvec, marker.Rvec))

@@ -640,16 +640,16 @@ cv::Point3f
     $result = array;
 }
 
-// %typemap(out,
-//          fragment="OKAPI_Fragments")
-// std::vector< cv::Point3f >::value_type *
-// {
-//     PyObject* array = point3f_to_array($1);
-//     if (array == NULL)
-//         SWIG_fail;
-//
-//     $result = array;
-// }
+%typemap(out,
+      fragment="OKAPI_Fragments")
+std::vector< cv::Point3f >::value_type *
+{
+ PyObject* array = point3f_to_array($1);
+ if (array == NULL)
+     SWIG_fail;
+
+ $result = array;
+}
 
 
 // %typemap(out,

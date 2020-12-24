@@ -17,11 +17,6 @@ Swig Module for ArUco Python wrapper
 	using namespace std;
 %}
 
-namespace std {
-    // for  vector<int> to Python list conversion
-    %template(VectorInt) vector<int>;
-};
-
 // NumPy <--> OpenCV typemaps
 %include "okapi-typemaps.i"
 //%include <opencv.i>
@@ -70,6 +65,19 @@ ArUco stuff
 %}
 
 
+// Marker is std::vector< cv::Point2f >, template definition
+// needed for std::vector -> Python List conversion
+//namespace std {
+//        // for  vector<int> to Python list conversion
+//        %template(VectorInt) vector<int>;
+//};
+namespace std {
+    %template(VectorInt) vector<int>;
+    %template(Point2fVec) vector<cv::Point2f>;
+    %template(Point3fVec) vector<cv::Point3f>;
+    %template(MarkerPoint3fVecVec) vector< aruco::Marker, allocator< aruco::Marker > >;
+    %template(VectorMarker3DInfo) vector< aruco::Marker3DInfo >;
+};
 
 %include <aruco.h>
 %include <aruco_export.h>
@@ -77,14 +85,9 @@ ArUco stuff
 %include <cvdrawingutils.h>
 %include <debug.h>
 %include <dictionary.h>
+//%include <ippe.h>
 %include <levmarq.h>
 
-// Marker is std::vector< cv::Point2f >, template definition
-// needed for std::vector -> Python List conversion
-%template(Point2fVec) std::vector<cv::Point2f>;
-%template(Point3fVec) std::vector<cv::Point3f>;
-%template(MarkerPoint3fVecVec) std::vector< aruco::Marker, std::allocator< aruco::Marker > >;
-%template(VectorMarker3DInfo) std::vector< aruco::Marker3DInfo >;
 
 %include <marker.h>
 /***
@@ -123,22 +126,28 @@ class VectorIterator(object):
 %extend aruco::Marker {
 	public:
         cv::Point2f __getitem__(int i) {
-            return $self->at(i);
+            return $self->at($self->size()-1);
+        }
+
+        int __len__() {
+            return $self->size();
         }
 }
 
 %extend aruco::Marker {
 %pythoncode {
-    def iterator(self):
+    def __iter__(self):
         return VectorIterator(self)
    }
 }
 
 
 %include <markerdetector.h>
+%include <markerdetector_impl.h>
 %include <markerlabeler.h>
 %include <fractaldetector.h>
 %include <markermap.h>
+%include <picoflann.h>
 %include <posetracker.h>
 %include <fractallabelers/fractalposetracker.h>
 %include <fractallabelers/fractallabeler.h>

@@ -5,13 +5,15 @@ import numpy as np
 import aruco
 
 if __name__ == '__main__':
+    print("aruco-python version {}".format(aruco.__version__))
+
     # create fractaldetector and set config
     detector = aruco.FractalDetector()
     # set detector config first or it will throw an exception
     detector.setConfiguration(0)
     # load camera parameters
     camparam = aruco.CameraParameters()
-    camparam.readFromXMLFile(filePath="rollei_live.yml")
+    camparam.readFromXMLFile(filePath=os.path.join(os.path.dirname(__file__), "rollei_live.yml"))
     # set camera parameters
     if camparam.isValid():
         detector.setParams(camparam, 0.17)
@@ -41,7 +43,7 @@ if __name__ == '__main__':
     if detector.poseEstimation():
         tvec = detector.getTvec()
         rvec = detector.getRvec()
-        print("TVec: {}\nR: {}".format(tvec, rvec))
+        print("TVec:\n{}\nR:\n{}".format(tvec, rvec))
         # draw cube
         detector.draw3d(frame)
 

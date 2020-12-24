@@ -1,1 +1,2 @@
 from .pyaruco import *
+__version__='@PROJECT_VERSION@'
