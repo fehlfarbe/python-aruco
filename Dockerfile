@@ -13,26 +13,45 @@ libxvidcore-dev libx264-dev libgtk-3-dev libatlas-base-dev gfortran \
 python2.7-dev python3-dev python-pip python3-pip swig unzip python3-numpy libeigen3-dev
 RUN pip3 install --upgrade pip setuptools wheel cython numpy
 
-# install opencv and aruco
+# install opencv
 RUN mkdir -p /home/user/src \
-&& cd /home/user/src/ && wget -q -O opencv.zip https://github.com/opencv/opencv/archive/3.4.5.zip && ls -l && unzip opencv.zip \
-&& cd opencv-3.4.5 && mkdir build && cd build && cmake -D CMAKE_BUILD_TYPE=RELEASE -DCMAKE_CXX_STANDARD=11 -DENABLE_PRECOMPILED_HEADERS=OFF .. \
-&& make -j6 \
+&& cd /home/user/src/ && wget -q -O opencv.zip https://github.com/opencv/opencv/archive/4.5.0.zip && ls -l && unzip opencv.zip \
+&& cd opencv-4.5.0 && mkdir build && cd build && cmake -D CMAKE_BUILD_TYPE=RELEASE -DCMAKE_CXX_STANDARD=11 -DENABLE_PRECOMPILED_HEADERS=OFF .. \
+&& make -j$(grep -c ^processor /proc/cpuinfo) \
 && make install \
 && cd /home/user/src/
+
+# install aruco
+RUN cd /home/user/src/ \
+&& wget -O aruco.zip https://downloads.sourceforge.net/project/aruco/3.1.12/aruco-3.1.12.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Faruco%2Ffiles%2Flatest%2Fdownload \
+&& ls -l \
+&& unzip aruco.zip \
+&& cd aruco-3.1.12 \
+&& ls -l \
+&& mkdir build \
+&& cd build \
+&& cmake .. \
+&& make -j$(grep -c ^processor /proc/cpuinfo) \
+&& make install
 
 #RUN mkdir -p /home/user/src/python-aruco
 COPY . /home/user/src/python-aruco
 RUN cd /home/user/src/ \
 && ls -lr /usr/local/include/ \
-#&& git clone --single-branch --branch aruco-3.1.2 https://github.com/fehlfarbe/python-aruco.git \
 && cd python-aruco \
 && ls -lr \
-&& ./swigbuild.sh python3 \
+&& mkdir build || cd build \
+&& rm -rf * \
+&& pip3 install --upgrade pip \
+&& pip install --upgrade pip \
+&& pip3 install --upgrade numpy \
+&& pip2 install --upgrade numpy \
+&& pip2 install --upgrade cmake \
 && ldconfig \
-&& ls -l *.so \
-&& python3 setup.py sdist bdist_wheel \
-&& pip3 install dist/aruco-3.1.2.0-cp36-cp36m-linux_x86_64.whl \
-&& python3 -c "import aruco; print(aruco)" \
-&& python3 ./example/fractal.py \
+&& python3 -c "import numpy as n; print(n.__version__); print(n.get_include());" \
+&& cmake .. \
+&& make -j$(grep -c ^processor /proc/cpuinfo) \
+&& pip3 install python/dist/aruco-*.whl \
+&& python3 -c "import aruco; print(aruco.__version__)" \
+&& python3 ../example/fractal.py \
 && echo "SUCCESS!"

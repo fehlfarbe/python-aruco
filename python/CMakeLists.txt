@@ -29,6 +29,7 @@ target_include_directories(pyaruco
         ../3rdparty/eigen3/
         ${Python_INCLUDE_DIRS}
         ${NUMPY_INCLUDE_DIRS}
+        ${OpenCV_INCLUDE_DIRS}
         )
 set_property(TARGET pyaruco PROPERTY SWIG_USE_TARGET_INCLUDE_DIRECTORIES ON)
 #message(${pyarcuo_INCLUDE_DIRS})
