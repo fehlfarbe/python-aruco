@@ -2,7 +2,7 @@
 FIND_PACKAGE(SWIG REQUIRED)
 INCLUDE(${SWIG_USE_FILE})
 
-FIND_PACKAGE(PythonLibs)
+find_package (Python3 COMPONENTS Interpreter Development)
 #INCLUDE_DIRECTORIES(${PYTHON_INCLUDE_PATH})
 #INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR})
 
@@ -27,7 +27,7 @@ target_include_directories(pyaruco
         PRIVATE
         ../include
         ../3rdparty/eigen3/
-        ${Python_INCLUDE_DIRS}
+        ${Python3_INCLUDE_DIRS}
         ${NUMPY_INCLUDE_DIRS}
         ${OpenCV_INCLUDE_DIRS}
         )
@@ -57,5 +57,5 @@ target_link_libraries(pyaruco PRIVATE aruco)
 # i.e. we can't use: $<$<PLATFORM_ID:Windows>:${PYTHON_LIBRARIES}>
 # see: https://cmake.org/cmake/help/git-stage/command/target_link_libraries.html#command:target_link_libraries
 if (MSVC)
-    target_link_libraries(pyaruco PRIVATE ${Python_LIBRARIES})
+    target_link_libraries(pyaruco PRIVATE ${Python3_LIBRARIES})
 endif ()

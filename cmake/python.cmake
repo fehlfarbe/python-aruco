@@ -6,7 +6,7 @@ set(CMAKE_SWIG_FLAGS)
 find_package(SWIG REQUIRED)
 include(UseSWIG)
 
-message("Using SWIG ${SWIG_VERSION}")
+message(STATUS "Using SWIG ${SWIG_VERSION}")
 
 if (${SWIG_VERSION} VERSION_GREATER_EQUAL 4)
     list(APPEND CMAKE_SWIG_FLAGS "-doxygen")

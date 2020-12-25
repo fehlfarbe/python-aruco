@@ -19,14 +19,17 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 # aruco lib is required
 find_package(aruco REQUIRED)
 if (${aruco_FOUND})
-    message("Using aruco ${aruco_VERSION}")
+    message(STATUS "Using aruco ${aruco_VERSION}")
     link_directories(${aruco_LIB_DIR})
     set(aruco_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/include")
-    message(${aruco_INCLUDE_DIRS})
+    message(STATUS "Aruco include dir ${aruco_INCLUDE_DIRS}")
 endif ()
 
 # numpy headers are required
 find_package(NumPy REQUIRED)
-include_directories(${NUMPY_INCLUDE_DIRS})
+if (${NUMPY_FOUND})
+    message(STATUS "Using NumPy ${NUMPY_VERSION}")
+    message(STATUS "NumPy include dir ${NUMPY_INCLUDE_DIRS}")
+endif ()
 
 include(python)

@@ -37,14 +37,12 @@ RUN cd /home/user/src/ \
 #RUN mkdir -p /home/user/src/python-aruco
 COPY . /home/user/src/python-aruco
 RUN cd /home/user/src/ \
-&& ls -lr /usr/local/include/ \
 && cd python-aruco \
-&& ls -lr \
 && mkdir build || cd build \
 && rm -rf * \
 && pip3 install --upgrade pip \
 && pip3 install --upgrade cmake \
-&& pip3 install --upgrade numpy \
+#&& pip3 install --upgrade numpy \
 && ldconfig \
 && python3 -c "import numpy as n; print(n.__version__); print(n.get_include());" \
 && cmake .. \
@@ -52,4 +50,5 @@ RUN cd /home/user/src/ \
 && pip3 install python/dist/aruco-*.whl \
 && python3 -c "import aruco; print(aruco.__version__)" \
 && python3 ../example/fractal.py \
+&& python3 ../example/example.py \
 && echo "SUCCESS!"
