@@ -17,3 +17,4 @@ venv
 src
 dist
 cmake-build-debug
+release

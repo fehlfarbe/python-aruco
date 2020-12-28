@@ -62,4 +62,8 @@ RUN cd /home/user/src/ \
 && python3 -c "import aruco; print(aruco.__version__)" \
 && python3 ../example/fractal.py \
 && python3 ../example/example.py \
+# test sdist package from testpypi
+&& pip uninstall -y aruco \
+&& pip install -i https://test.pypi.org/simple/ aruco --no-cache-dir \
+&& python3 -c "import aruco; print(aruco.__version__)" \
 && echo "SUCCESS!"

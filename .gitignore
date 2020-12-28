@@ -67,3 +67,4 @@ target/
 /cmake-build-debug/
 /venv/
 /src/
+/token
