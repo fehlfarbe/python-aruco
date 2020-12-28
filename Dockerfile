@@ -38,7 +38,8 @@ RUN cd /home/user/src/ \
 COPY . /home/user/src/python-aruco
 RUN cd /home/user/src/ \
 && cd python-aruco \
-&& mkdir build || cd build \
+&& mkdir build \
+&& cd build \
 && rm -rf * \
 && pip3 install --upgrade pip \
 && pip3 install --upgrade cmake \
@@ -46,8 +47,18 @@ RUN cd /home/user/src/ \
 && ldconfig \
 && python3 -c "import numpy as n; print(n.__version__); print(n.get_include());" \
 && cmake .. \
-&& make -j2 \
-&& pip3 install python/dist/aruco-*.whl \
+&& ls -l /usr/local/include/ \
+#&& cmake --build . --target python_package_sdist -- -j 6 \
+&& make -j6 \
+# test compiled whl package
+&& pip3 install --force-reinstall python/dist/aruco-*.whl \
+&& python3 -c "import aruco; print(aruco.__version__)" \
+&& python3 ../example/fractal.py \
+&& python3 ../example/example.py \
+# test sdist package
+&& pip3 uninstall -y aruco \
+&& make python_package_sdist -j6 \
+&& pip3 install python/dist/aruco-*.tar.gz \
 && python3 -c "import aruco; print(aruco.__version__)" \
 && python3 ../example/fractal.py \
 && python3 ../example/example.py \

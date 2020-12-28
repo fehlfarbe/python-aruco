@@ -1,5 +1,6 @@
 from setuptools import find_packages, setup
 from setuptools.dist import Distribution
+import platform
 
 class BinaryDistribution(Distribution):
   def is_pure(self):
@@ -13,6 +14,10 @@ class InstallPlatlib(install):
         install.finalize_options(self)
         self.install_lib=self.install_platlib
 
+# add README to long description
+with open("aruco/README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
   name='@PROJECT_NAME@',
   version='@PROJECT_VERSION@',
@@ -21,9 +26,12 @@ setup(
   description="""ArUco Python wrappers""",
   license="Copyright 2017 Rafael Muñoz Salinas. All rights reserved.",
   url='https://github.com/fehlfarbe/python-aruco',
+  long_description=long_description,
+  long_description_content_type='text/markdown',
   keywords='aruco wrapper',
   distclass=BinaryDistribution,
   cmdclass={'install': InstallPlatlib},
+  install_requires=['numpy', 'opencv-contrib-python'],
   packages=find_packages(),
   package_data={
   '@PROJECT_NAME@':[$<$<NOT:$<PLATFORM_ID:Windows>>:'*'>],

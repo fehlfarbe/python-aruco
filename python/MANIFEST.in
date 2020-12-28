@@ -1,0 +1,4 @@
+recursive-include @PROJECT_NAME@/include *
+include @PROJECT_NAME@/*.h
+include @PROJECT_NAME@/README.md
+include @PROJECT_NAME@/LICENSE

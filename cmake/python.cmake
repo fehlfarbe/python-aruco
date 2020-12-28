@@ -39,6 +39,26 @@ file(GENERATE
         OUTPUT python/$<CONFIG>/setup.py
         INPUT ${CMAKE_CURRENT_BINARY_DIR}/python/setup.py.in)
 
+# setup.py.in contains cmake variable e.g. @PROJECT_NAME@ and
+# generator expression e.g. $<TARGET_FILE_NAME:pyFoo>
+# sdist
+configure_file(
+        python/setup.ext.py.in
+        ${CMAKE_CURRENT_BINARY_DIR}/python/setup.ext.py.in
+        @ONLY)
+file(GENERATE
+        OUTPUT python/$<CONFIG>/setup.ext.py
+        INPUT ${CMAKE_CURRENT_BINARY_DIR}/python/setup.ext.py.in)
+
+# MANIFEST.in contains cmake variable e.g. @PROJECT_NAME@
+configure_file(
+        python/MANIFEST.in
+        ${CMAKE_CURRENT_BINARY_DIR}/python/MANIFEST.in
+        @ONLY)
+file(GENERATE
+        OUTPUT python/$<CONFIG>/MANIFEST
+        INPUT ${CMAKE_CURRENT_BINARY_DIR}/python/MANIFEST.in)
+
 # __init__.py.in contains cmake variable e.g. @PROJECT_NAME@ and
 # generator expression e.g. $<TARGET_FILE_NAME:pyFoo>
 configure_file(
@@ -75,22 +95,53 @@ search_python_module(setuptools)
 search_python_module(wheel)
 
 add_custom_target(python_package ALL
-        #  COMMAND ${CMAKE_COMMAND} -E copy $<CONFIG>/setup.py setup.py
+        COMMAND ${CMAKE_COMMAND} -E copy $<CONFIG>/setup.py setup.py
         COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/python/__init__.py.in ${PROJECT_NAME}/__init__.py
-#        COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/python/version.py.in ${PROJECT_NAME}/version.py
-        #  COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_SOURCE_DIR}/python/__init__.py.in ${PROJECT_NAME}/Foo/__init__.py
-        #  COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_SOURCE_DIR}/python/__init__.py.in ${PROJECT_NAME}/Bar/__init__.py
-        #  COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_SOURCE_DIR}/python/__init__.py.in ${PROJECT_NAME}/FooBar/__init__.py
+
+        # copy README and LICENSE
+        COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_SOURCE_DIR}/README.md ${PROJECT_NAME}/README.md
+        COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_SOURCE_DIR}/LICENSE ${PROJECT_NAME}/LICENSE
 
         COMMAND ${CMAKE_COMMAND} -E remove_directory dist
         COMMAND ${CMAKE_COMMAND} -E make_directory ${PROJECT_NAME}/.libs
         COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:pyaruco> ${PROJECT_NAME}/
-        #  COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:pyBar> ${PROJECT_NAME}/Bar
-        #  COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:pyFooBar> ${PROJECT_NAME}/FooBar
         # Don't need to copy static lib on Windows
         COMMAND ${CMAKE_COMMAND} -E $<IF:$<BOOL:${UNIX}>,copy,true>
         $<TARGET_FILE:pyaruco> ${PROJECT_NAME}/.libs
         COMMAND ${Python_EXECUTABLE} setup.py bdist_wheel
+        BYPRODUCTS
+        python/${PROJECT_NAME}
+        python/build
+        python/dist
+        python/${PROJECT_NAME}.egg-info
+        WORKING_DIRECTORY python
+        )
+
+# BUILD EXTENSION
+add_custom_target(python_package_sdist ALL
+        COMMAND ${CMAKE_COMMAND} -E copy $<CONFIG>/setup.ext.py setup.py
+        COMMAND ${CMAKE_COMMAND} -E copy $<CONFIG>/MANIFEST MANIFEST
+        COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/python/__init__.py.in ${PROJECT_NAME}/__init__.py
+
+        # copy README and LICENSE
+        COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_SOURCE_DIR}/README.md ${PROJECT_NAME}/README.md
+        COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_SOURCE_DIR}/LICENSE ${PROJECT_NAME}/LICENSE
+
+        # copy includes
+        COMMAND ${CMAKE_COMMAND} -E copy_directory ${PROJECT_SOURCE_DIR}/include ${PROJECT_NAME}/include
+        #        file(COPY ${PROJECT_SOURCE_DIR}/include DESTINATION ${PROJECT_NAME}/include)
+
+        # remove cpp headers
+#        COMMAND ${CMAKE_COMMAND} -E remove ${PROJECT_NAME}/arucoPYTHON_wrap.cxx
+#        COMMAND ${CMAKE_COMMAND} -E remove ${PROJECT_NAME}/arucoPYTHON_wrap.h
+
+        COMMAND ${CMAKE_COMMAND} -E remove_directory dist
+        COMMAND ${CMAKE_COMMAND} -E make_directory ${PROJECT_NAME}/.libs
+        COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:pyaruco> ${PROJECT_NAME}/
+        # Don't need to copy static lib on Windows
+        COMMAND ${CMAKE_COMMAND} -E $<IF:$<BOOL:${UNIX}>,copy,true>
+        $<TARGET_FILE:pyaruco> ${PROJECT_NAME}/.libs
+        COMMAND ${Python_EXECUTABLE} setup.py sdist build_ext
         BYPRODUCTS
         python/${PROJECT_NAME}
         python/build
