@@ -6,11 +6,11 @@ Tested on Linux Mint 19 x86_64, OpenCV 4.1.0, ArUco 3.1.12 Python 3.6.9 and NumP
 
 ## Installation via pip
 
-1. Install / compile [OpenCV](http://opencv.org/) with Python2 support
+1. Install / compile [OpenCV](http://opencv.org/) with Python3 support
 2. Install / compile [ArUco 3.1.12](https://sourceforge.net/projects/aruco/files/)
 3. run `pip3 install aruco`
 
-## Installation Python3 via CMake
+## Build Python3 module via CMake
 
 1. Install / compile [OpenCV](http://opencv.org/) with Python2 support
 2. Install / compile [ArUco 3.1.12](https://sourceforge.net/projects/aruco/files/)
@@ -25,10 +25,10 @@ Tested on Linux Mint 19 x86_64, OpenCV 4.1.0, ArUco 3.1.12 Python 3.6.9 and NumP
 ## Test
 
 ### example video
-open a prompt in `example/` and run: `python ./example.py` or `python3 ./example.py`
+open a prompt in `example/` and run: `python3 ./example.py`
 
 ### fractal marker example
-open a prompt in `example/` and run: `python ./fractal.py` or `python3 ./fractal.py`
+open a prompt in `example/` and run: `python3 ./fractal.py`
 
 If the Python doesn't find some shared objects, add the library location to LD_LIBRARY_PATH:
 `export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH`
